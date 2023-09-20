@@ -1,9 +1,6 @@
-baseURL = 'https://blueridgeboost.com/pythonbook'
+baseURL = 'https://blueridgeboost.com/pythonbook/'
 languageCode = 'en-us'
 title = 'How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)'
-
-[markup.goldmark.renderer]
-unsafe = true
 
 theme = 'hugo-book'
 
@@ -16,7 +13,15 @@ enableGitInfo = false
 
 # (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
 # You can remove related files with config below
-disableKinds = ['taxonomy', 'taxonomyTerm']
+disableKinds = ['taxonomy']
+
+
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.

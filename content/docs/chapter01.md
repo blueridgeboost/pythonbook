@@ -6,7 +6,7 @@ weight: 11
 ---
 
 
-# 1. The way of the program
+# The way of the program
 
 The goal of this book is to teach you to think like a computer scientist. As
 computer scientists, we will combine some of the best features of mathematics,
@@ -23,7 +23,7 @@ it turns out, the process of learning to program is an excellent opportunity to
 practice problem-solving skills. That&#8217;s why this chapter is called *The way of
 the program*.
 
-## 1.1. The Python programming language
+## The Python programming language
 
 The programming language you will be learning is Python. Python is an example
 of a **high-level language**; other high-level languages you might have heard
@@ -56,7 +56,7 @@ on the AoPS class homepage, and are also posted on the class message board. When
 IDLE on your computer, it should look something like this:
 
 
-![Screen shot of shell](images/shell_sshot.png) 
+<img src="/images/shell_sshot.png" alt="Screen shot of shell">
 
 The ```>>``` is called the **Python prompt**. The interpreter uses the prompt to indicate that it is ready for instructions. 
 We typed ```2+2```, and the interpreter evaluated our expression, and replied ```4```,
@@ -71,13 +71,13 @@ By convention, files that contain Python programs have names that end with
 ```.py```. To do this, select &#8220;New File&#8221; or &#8220;New Window&#8221; from the File menu of IDLE, and then type
 the following two lines into the new window that appears:
 
-[first program source screenshot](images/my_first_program_source.png)
+![first program source screenshot](/images/my_first_program_source.png)
 To run the program, we can select the &#8220;Run Module&#8221; or &#8220;Run Program&#8221; option from the &#8220;Run&#8221; menu of IDLE (or
 alternatively you can press the F5 key). IDLE will ask you to save your program before it
 can run it. Save it using the name ```firstprogram.py```. Then your program will run, and it
 should look something like the screenshot below:
 
-[first program output screenshot](images/my_first_program_output.png)
+![first program output screenshot](/images/my_first_program_output.png)
 Notice that the program always runs in the Shell window.
 
 Don&#8217;t worry, most programs are more interesting than this one.
@@ -113,19 +113,12 @@ symbolic computation, such as searching and replacing text in a document.
 The details look different in different languages, but a few basic instructions
 appear in just about every language:
 
-<!-- <dl class="docutils">
-<dt>input</dt>
-<dd>Get data from the keyboard, a file, or some other device.</dd>
-<dt>output</dt>
-<dd>Display data on the screen or send data to a file or other device.</dd>
-<dt>math</dt>
-<dd>Perform basic mathematical operations like addition and multiplication.</dd>
-<dt>conditional execution</dt>
-<dd>Check for certain conditions and execute the appropriate sequence of
-statements.</dd>
-<dt>repetition</dt>
-<dd>Perform some action repeatedly, usually with some variation.</dd>
-</dl> -->
+- input. Get data from the keyboard, a file, or some other device.
+- output. Display data on the screen or send data to a file or other device.
+- math. Perform basic mathematical operations like addition and multiplication.
+- conditional execution. Check for certain conditions and execute the appropriate sequence of
+statements.
+- repetition. Perform some action repeatedly, usually with some variation.
 
 Believe it or not, that&#8217;s pretty much all there is to it. Every program you&#8217;ve
 ever used, no matter how complicated, is made up of instructions that look more
@@ -148,7 +141,7 @@ Three kinds of errors can occur in a program: **syntax errors**, **runtime error
 and **semantic errors**.  It is useful to
 distinguish between them in order to track them down more quickly.
 
-# Syntax errors
+## Syntax errors
 
 Python can only execute a program if the program is syntactically correct;
 otherwise, the process fails and returns an error message.  **Syntax** refers
@@ -164,7 +157,7 @@ to run your program. During the first few weeks of your programming career, you
 will probably spend a lot of time tracking down syntax errors. As you gain
 experience, though, you will make fewer errors and find them faster.
 
-# Runtime errors
+## Runtime errors
 
 The second type of error is a runtime error, so called because the error does
 not appear until you run the program. These errors are also called
@@ -174,7 +167,7 @@ bad) has happened.
 Runtime errors are rare in the simple programs you will see in the first few
 chapters, so it might be a while before you encounter one.
 
-# Semantic errors
+## Semantic errors
 
 The third type of error is the **semantic error**. If there is a semantic error
 in your program, it will run successfully, in the sense that the computer will
@@ -212,7 +205,7 @@ always have a working program.
 Later chapters will make more suggestions about debugging and other programming
 practices.
 
-# Formal and natural languages
+## Formal and natural languages
 
 **Natural languages** are the languages that people speak, such as English,
 Spanish, and French. They were not designed by people (although people try to
@@ -315,7 +308,6 @@ looks like this:
 print("Hello World!")
 ```
 
-
 This is an example of using the **print function**, which doesn&#8217;t actually print
 anything on paper. It displays a value on the screen. In this case, the result shown
 is Hello, World!.
@@ -342,152 +334,21 @@ only for the human reader &#8212; it is completely ignored by the interpreter.
 In Python, the <cite>#</cite> token starts a comment.  The rest of the line
 is ignored.   Here is a new version of *Hello, World!*.
 
-
-<div id="helloworldwithcomments" class="pywindow" >
-
-<div id="helloworldwithcomments_code_div" style="display: block">
-<textarea rows="7" id="helloworldwithcomments_code" class="active_code" prefixcode="undefined">
+```
 #---------------------------------------------------
 # This demo program shows off how elegant Python is!
 # Written by Joe Soap, December 2010.
 # Anyone may freely copy or modify this program.
 #---------------------------------------------------
 
-print("Hello, World!")     # Isn't this easy!</textarea>
-</div>
-<script type="text/javascript">
-pythonTool.lineNumberFlags['helloworldwithcomments_code'] = true;
-pythonTool.readOnlyFlags['helloworldwithcomments_code'] = false;
-</script>
+print("Hello, World!")     # Isn't this easy!
 
-<div>
-<button style="float:left" type='button' class='btn btn-run' id="helloworldwithcomments_runb">Run</button>
-<button style="float:left; margin-left:150px;" type='button' class='btn' id="helloworldwithcomments_popb">Pop Out</button>
-<button style="float:right" type="button" class='btn btn-reset' id="helloworldwithcomments_resetb">Reset</button>
-<div style='clear:both'></div>
-</div>
-
-<div id='helloworldwithcomments_error'></div>
-
-<div style="text-align: center">
-<canvas id="helloworldwithcomments_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="helloworldwithcomments_suffix" style="display:none">
-</pre>
-<pre id="helloworldwithcomments_pre" class="active_out">
-
-</pre>
-
-<div id="helloworldwithcomments_files" class="ac-files ac-files-hidden"></div>
-
-</div>
+```
 
 You&#8217;ll also notice that we&#8217;ve left a blank line in the program.  Blank lines
 are also ignored by the interpreter, but comments and blank lines can make your
 programs much easier for humans to parse.  Use them!
 
-</div>
-<div class="section" id="glossary">
-<h2>1.11. Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
-<dl class="glossary docutils">
-<dt id="term-algorithm">algorithm</dt>
-<dd>A set of specific steps for solving a category of problems.</dd>
-<dt id="term-bug">bug</dt>
-<dd>An error in a program.</dd>
-<dt id="term-comment">comment</dt>
-<dd>Information in a program that is meant for other programmers (or anyone
-reading the source code) and has no effect on the execution of the
-program.</dd>
-<dt id="term-debugging">debugging</dt>
-<dd>The process of finding and removing any of the three kinds of
-programming errors.</dd>
-<dt id="term-exception">exception</dt>
-<dd>Another name for a runtime error.</dd>
-<dt id="term-formal-language">formal language</dt>
-<dd>Any one of the languages that people have designed for specific
-purposes, such as representing mathematical ideas or computer programs;
-all programming languages are formal languages.</dd>
-<dt id="term-high-level-language">high-level language</dt>
-<dd>A programming language like Python that is designed to be easy for
-humans to read and write.</dd>
-<dt id="term-immediate-mode">immediate mode</dt>
-<dd>A style of using Python where we type expressions at the command prompt, and
-the results are shown immediately.  Contrast with **script**, and see the
-entry under **Python shell**.</dd>
-<dt id="term-interpreter">interpreter</dt>
-<dd>The engine that executes your Python scripts or expressions.</dd>
-<dt id="term-low-level-language">low-level language</dt>
-<dd>A programming language that is designed to be easy for a computer to
-execute; also called machine language or assembly language.</dd>
-<dt id="term-natural-language">natural language</dt>
-<dd>Any one of the languages that people speak that evolved naturally.</dd>
-<dt id="term-object-code">object code</dt>
-<dd>The output of the compiler after it translates the program.</dd>
-<dt id="term-parse">parse</dt>
-<dd>To examine a program and analyze the syntactic structure.</dd>
-<dt id="term-portability">portability</dt>
-<dd>A property of a program that can run on more than one kind of computer.</dd>
-<dt id="term-print-function">print function</dt>
-<dd>A function used in a program or script that causes the Python interpreter to
-display a value on its output device.</dd>
-<dt id="term-problem-solving">problem solving</dt>
-<dd>The process of formulating a problem, finding a solution, and
-expressing the solution.</dd>
-<dt id="term-22">program</dt>
-<dd>a sequence of instructions that specifies to a computer actions and
-computations to be performed.</dd>
-<dt id="term-python-shell">Python shell</dt>
-<dd>An interactive user interface to the Python interpreter. The user of a
-Python shell types commands at the prompt (&gt;&gt;&gt;), and presses the return
-key to send these commands immediately to the interpreter for
-processing.  The word *shell* comes from Unix.</dd>
-<dt id="term-runtime-error">runtime error</dt>
-<dd>An error that does not occur until the program has started to execute
-but that prevents the program from continuing.</dd>
-<dt id="term-script">script</dt>
-<dd>A program stored in a file (usually one that will be interpreted).</dd>
-<dt id="term-semantic-error">semantic error</dt>
-<dd>An error in a program that makes it do something other than what the
-programmer intended.</dd>
-<dt id="term-semantics">semantics</dt>
-<dd>The meaning of a program.</dd>
-<dt id="term-source-code">source code</dt>
-<dd>A program in a high-level language before being compiled.</dd>
-<dt id="term-syntax">syntax</dt>
-<dd>The structure of a program.</dd>
-<dt id="term-syntax-error">syntax error</dt>
-<dd>An error in a program that makes it impossible to parse &#8212; and
-therefore impossible to interpret.</dd>
-<dt id="term-token">token</dt>
-<dd>One of the basic elements of the syntactic structure of a program,
-analogous to a word in a natural language.</dd>
-</dl>
-</div>
-</div>
+## Exercises
 
-
-          </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="variables_expressions_statements.html" title="2. Variables, expressions and statements"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="contrib.html" title="Contributor List"
-             >previous</a> |</li>
-        <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3 (AoPS Edition)</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; <a href="copyright.html">Copyright</a> 2014, AoPS Incorporated, 2012, Peter Wentworth, Jeffrey Elkner, Allen B. Downey and Chris Meyers.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
-    </div>
-  </body>
-</html>
+Download the [jupyter notebook](/notebooks/way_of_program.ipynb)!
