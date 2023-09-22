@@ -1,0 +1,5 @@
+<a id="logo" href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'>
+   <img src="{{ .Site.Params.brand_img | relURL }}" 
+   class="img-thumbnail"
+   alt="{{ .Site.Params.brand }}"/>
+</a>

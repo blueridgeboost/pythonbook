@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="description" content="Learn Python at Blue Ridge Boost!">
+<meta name="author" content="Nora Evans and David Evans">
+
+    <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
+
+    <title> - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+
+    
+    <link href="/pythonbook/css/nucleus.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1695394329" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1695394329" rel="stylesheet">
+    
+    <link href="/pythonbook/css/theme-blue.css?1695394329" rel="stylesheet">
+    
+    <link href="/pythonbook/css/foo.css?1695394329" rel="stylesheet"><link href="/pythonbook/css/bar.css?1695394329" rel="stylesheet">
+
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1695394329"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/pythonbook/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+   <img src="/pythonbook/images/brand/blue-ridge-highlands.webp" 
+   class="img-thumbnail"
+   alt="Blue Ridge Boost"/>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1695394329"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1695394329"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
+    
+</script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1695394329"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/docs/" title="Docs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/docs/">
+          Docs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/docs/copyright/" title="Copyright Notice" class="dd-item ">
+        <a href="/pythonbook/docs/copyright/">
+        Copyright Notice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/docs/foreword/" title="Forward" class="dd-item ">
+        <a href="/pythonbook/docs/foreword/">
+        Forward
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/docs/preface/" title="Preface" class="dd-item ">
+        <a href="/pythonbook/docs/preface/">
+        Preface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/docs/contrib/" title="Contributor List" class="dd-item ">
+        <a href="/pythonbook/docs/contrib/">
+        Contributor List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/docs/chapter01/" title="The way of program" class="dd-item ">
+        <a href="/pythonbook/docs/chapter01/">
+        The way of program
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+
+        
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+<h1 id="how-to-think-like-a-computer-scientist">How to Think Like a Computer Scientist:</h1>
+<h2 id="learning-with-python-3-blue-ridge-boost-edition">Learning with Python 3 (Blue Ridge Boost Edition)</h2>
+<p>Version date: September 2023</p>
+<p>by Blue Ridge Boost LLC, <a href="mailto:pythonbook@blueridgeboost.com">pythonbook@blueridgeboost.com</a></p>
+<p>(based on previous editions by Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers)</p>
+	
+  
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/pythonbook/js/clipboard.min.js?1695394329"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1695394329"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1695394329"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1695394329"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1695394329"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1695394329"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1695394329"></script>
+    <script src="/pythonbook/js/learn.js?1695394329"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1695394329"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

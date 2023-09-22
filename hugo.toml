@@ -1,19 +1,18 @@
-baseURL = 'https://blueridgeboost.com/pythonbook/'
+baseURL = 'https://blueridgeboost.com/pythonbook'
 languageCode = 'en-us'
 title = 'How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)'
 
-theme = 'hugo-book'
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
 
-# (Optional) Set this to true if you use capital letters in file names
-disablePathToLower = false
+disableLiveReload = true
+enableRobotsTXT = true
+cleanDestinationDir = true
 
-# (Optional) Set this to true to enable 'Last Modified by' date and git author
-#  information on 'doc' type pages.
-enableGitInfo = false
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-# (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
-# You can remove related files with config below
-disableKinds = ['taxonomy']
 
 
 [markup]
@@ -23,62 +22,70 @@ disableKinds = ['taxonomy']
 [markup.tableOfContents]
   startLevel = 1
 
+
 [params]
-  # (Optional, default light) Sets color theme: light, dark or auto.
-  # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'light'
 
-  # (Optional, default true) Controls table of contents visibility on right side of pages.
-  # Start and end levels can be controlled with markup.tableOfContents setting.
-  # You can also specify this parameter per page in front matter.
-  BookToC = true
+  # Author of the site, will be used in meta information
+  author = "Nora Evans and David Evans"
+  # Description of the site, will be used in meta information
+  description = "Learn Python at Blue Ridge Boost!"
+  title = "How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)"
 
-  # (Optional, default none) Set the path to a logo for the book. If the logo is
-  # /static/logo.png then the path would be 'logo.png'
-  # BookLogo = none
+  # If set to false, a Home button will appear below the search bar on the menu.
+  # It is redirecting to the landing page of the current language if specified. (Default is "/")
+  disableLandingPageButton = true
+  landingPageURL = "/"
+  landingPageName = "<i class='fas fa-home'></i> Home"
 
-  # (Optional, default docs) Specify section of content to render as menu
-  # You can also set value to "*" to render all sections to menu
-  BookSection = 'docs'
+  brand_img = "images/brand/blue-ridge-highlands.webp"
+  brand = "Blue Ridge Boost"
 
-  # Set source repository location.
-  # Used for 'Last Modified' and 'Edit this page' links.
-#   BookRepo = 'https://github.com/blueridgeboost/pythonbook'
+  # Change the title separator. Default to "::".
+  titleSeparator = "-"
 
-  # Specifies commit portion of the link to the page's last modified commit hash for 'doc' page
-  # type.
-  # Required if 'BookRepo' param is set.
-  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
-  # Github uses 'commit', Bitbucket uses 'commits'
-#   BookCommitPath = 'commit'
 
-  # Enable 'Edit this page' links for 'doc' page type.
-  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
-  # Path must point to the site directory.
-#   BookEditPath = 'edit/master/exampleSite'
+  # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
+  # Useful to give opportunity to people to create merge request for your doc.
+  # See the config.toml file from this documentation site to have an example.
+  editURL = ""
+  showVisitedLinks = false
+  # Disable search function. It will hide search bar
+  disableSearch = false
+  # Javascript and CSS cache are automatically busted when new version of site is generated.
+  # Set this to true to disable this behavior (some proxies don't handle well this optimization)
+  disableAssetsBusting = false
+  # Set this to true to disable copy-to-clipboard button for inline code.
+  disableInlineCopyToClipBoard = false
+  # A title for shortcuts in menu is set by default. Set this to true to disable it.
+  disableShortcutsTitle = false
+  # When using mulitlingual website, disable the switch language button.
+  disableLanguageSwitchingButton = false
+  # Hide breadcrumbs in the header and only show the current page title
+  disableBreadcrumb = true
+  # If set to true, prevents Hugo from including the mermaid module if not needed (will reduce load times and traffic)
+  disableMermaid = false
+  # Specifies the remote location of the mermaid js
+  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  # Hide Next and Previous page buttons normally displayed full height beside content
+  disableNextPrev = true
+  # Order sections in menu by "weight" or "title". Default to "weight"
+  ordersectionsby = "weight"
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "blue"
+  # Provide a list of custom css files to load relative from the `static/` folder in the site root.
+  custom_css = ["css/foo.css", "css/bar.css"]
+  
 
-  # (Optional, default January 2, 2006) Configure the date format used on the pages
-  # - In git information
-  # - In blog posts
-  BookDateFormat = 'Jan 2, 2006'
 
-  # (Optional, default true) Enables search function with flexsearch,
-  # Index is built on fly, therefore it might slowdown your website.
-  # Configuration for indexing can be adjusted in i18n folder per language.
-  BookSearch = false
+[module]
+    [[module.mounts]]
+      source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      target = "assets/js/bootstrap.bundle.min.js"
+      
+    [[module.mounts]]
+      source = "node_modules/lazysizes/"
+      target = "assets/lazysizes/"
 
-  # (Optional, default true) Enables comments template on pages
-  # By default partials/docs/comments.html includes Disqus template
-  # See https://gohugo.io/content-management/comments/#configure-disqus
-  # Can be overwritten by same param in page frontmatter
-  BookComments = false
-
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
-  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
-  # Theme will print warning if page referenced in markdown does not exists.
-  BookPortableLinks = false
-
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
-  BookServiceWorker = false
+    [[module.mounts]]
+        source = "assets"
+        target = "assets"
