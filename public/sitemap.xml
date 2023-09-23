@@ -2,21 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/copyright/</loc>
+    <loc>https://blueridgeboost.com/pythonbook/copyright/copyright/</loc>
   </url><url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/foreword/</loc>
+    <loc>https://blueridgeboost.com/pythonbook/copyright/foreword/</loc>
   </url><url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/preface/</loc>
+    <loc>https://blueridgeboost.com/pythonbook/copyright/</loc>
+    <lastmod>2023-09-22T11:01:09-04:00</lastmod>
   </url><url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/contrib/</loc>
+    <loc>https://blueridgeboost.com/pythonbook/copyright/preface/</loc>
   </url><url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/chapter01/</loc>
+    <loc>https://blueridgeboost.com/pythonbook/copyright/contrib/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/</loc>
+    <lastmod>2023-09-22T11:30:50-04:00</lastmod>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s01/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s02/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s03/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s04/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s05/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s06/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s07/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s08/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s09/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_01/s10/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/</loc>
+    <lastmod>2023-09-22T11:30:50-04:00</lastmod>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s01/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s02/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s03/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s04/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s05/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s06/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s07/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s08/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s09/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s10/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s11/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s12/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_02/s13/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/</loc>
+    <lastmod>2023-09-22T11:30:50-04:00</lastmod>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/s01/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/s02/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/s03/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/s04/</loc>
+  </url><url>
+    <loc>https://blueridgeboost.com/pythonbook/chapter_03/s05/</loc>
   </url><url>
     <loc>https://blueridgeboost.com/pythonbook/</loc>
+    <lastmod>2023-09-22T11:30:50-04:00</lastmod>
   </url><url>
     <loc>https://blueridgeboost.com/pythonbook/categories/</loc>
-  </url><url>
-    <loc>https://blueridgeboost.com/pythonbook/docs/</loc>
   </url><url>
     <loc>https://blueridgeboost.com/pythonbook/tags/</loc>
   </url>

@@ -1,6 +1,7 @@
 
 # How to Think Like a Computer Scientist: 
-## Learning with Python 3 (Blue Ridge Boost Edition)
+## Learning with Python 3 
+### (Blue Ridge Boost Edition)
 
 Version date: September 2023
 
