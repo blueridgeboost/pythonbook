@@ -1,143 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Variables, expressions and statements on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
-    <link>https://blueridgeboost.com/pythonbook/chapter_02/</link>
-    <description>Recent content in Variables, expressions and statements on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_02/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Values and data types</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s01/</guid>
-      <description>A value is one of the fundamental things — like a letter or a number — that a program manipulates. Some of the values we have seen so far are 5 (the result when we added 2+3), and Hello World!.
-These values are classified into different classes, or data types: 5 is an integer, and &amp;quot;Hello, World!&amp;quot; is a string, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.</description>
-    </item>
-    
-    <item>
-      <title>Variables</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s02/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s02/</guid>
-      <description>One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
-The assignment statement gives a value to a variable:
-&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34;&amp;gt;&amp;gt;&amp;gt; n = 17&amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
-    </item>
-    
-    <item>
-      <title>Variable names and keywords</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s03/</guid>
-      <description>Variable names can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. Bruce and bruce are different variables.
-The underscore character (_) can appear in a name. It is often used in names with multiple words, such as my_name or price_of_tea_in_china.</description>
-    </item>
-    
-    <item>
-      <title>Statements</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s04/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s04/</guid>
-      <description>A statement is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far. Some other kinds of statements that we’ll see shortly are while statements, for statements, if statements, and import statements. (There are other kinds too!)
-When you type a statement on the command line, Python executes it. Statements don’t produce any result.</description>
-    </item>
-    
-    <item>
-      <title>Evaluating expressions</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s05/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s05/</guid>
-      <description>An expression is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter evaluates it and displays the result:
-&amp;gt;&amp;gt;&amp;gt; 1 + 12&amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;)5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
-    </item>
-    
-    <item>
-      <title>Operators and operands</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s06/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s06/</guid>
-      <description>Operators are special tokens that represent computations like addition, multiplication and division. The values the operator uses are called operands.
-The following are all legal Python expressions whose meaning is more or less clear:
-20+32 hour-1 hour*60+minute minute/60 5**2 (5+9)*(15-7) The tokens +, -, and *, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk (*) is the token for multiplication, and ** is the token for exponentiation.</description>
-    </item>
-    
-    <item>
-      <title>Type converter functions</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s07/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s07/</guid>
-      <description>Here we’ll look at three more Python functions, int, float and str, which will (attempt to) convert their arguments into types int, float and str respectively. We call these type converter functions.
-The int function can take a floating point number or a string, and turn it into an int. For floating point numbers, it discards the decimal portion of the number — a process we call truncation towards zero on the number line.</description>
-    </item>
-    
-    <item>
-      <title>Order of operations</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s08/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s08/</guid>
-      <description>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS (which some people remember as “Please Excuse My Dear Aunt Sally”) is a useful way to remember the order of operations:
-**P**arentheses have the highest precedence and can be used to force anexpression to evaluate in the order you want.</description>
-    </item>
-    
-    <item>
-      <title>Operations on strings</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s09/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s09/</guid>
-      <description>In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that message has type string):
-&amp;gt;&amp;gt;&amp;gt; message - 1 # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error&amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
-    </item>
-    
-    <item>
-      <title>Input</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s10/</guid>
-      <description>There is a built-in function in Python for getting input from the user:
-n = input(&amp;#34;Please enter your name: &amp;#34;)print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
-    </item>
-    
-    <item>
-      <title>Composition</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s11/</guid>
-      <description>So far, we have looked at the elements of a program — variables, expressions, statements, and function calls — in isolation, without talking about how to combine them.
-One of the most useful features of programming languages is their ability to take small building blocks and compose them into larger chunks.
-For example, we know how to get the user to enter some input, we know how to convert the string we get into a float, we know how to write a complex expression, and we know how to print values.</description>
-    </item>
-    
-    <item>
-      <title>The modulus operator</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s12/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s12/</guid>
-      <description>The modulus operator works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (%). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
-&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator&amp;gt;&amp;gt;&amp;gt; print(q)2&amp;gt;&amp;gt;&amp;gt; r = 7 % 3&amp;gt;&amp;gt;&amp;gt; print(r)1 So 7 divided by 3 is 2 with a remainder of 1.</description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_02/s13/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_02/s13/</guid>
-      <description>TBD</description>
-    </item>
-    
-  </channel>
-</rss>

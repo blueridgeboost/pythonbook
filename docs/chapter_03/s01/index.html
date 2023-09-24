@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="description" content="Learn Python at Blue Ridge Boost!">
+<meta name="author" content="Nora Evans and David Evans">
+
+    <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
+
+    <title>Hello, little turtles! - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+
+    
+    <link href="/pythonbook/css/nucleus.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1695516739" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1695516739" rel="stylesheet">
+    
+    <link href="/pythonbook/css/theme-blue.css?1695516739" rel="stylesheet">
+    
+    
+
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1695516739"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/pythonbook/chapter_03/s01/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<p></p>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1695516739"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1695516739"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
+    
+</script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1695516739"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/pythonbook'>
+            <i class='fas fa-home'></i> Home
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_00/" title="Front Matter" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_00/">
+          <b>0. </b>Front Matter
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/copyright/" title="Copyright Notice" class="dd-item ">
+        <a href="/pythonbook/chapter_00/copyright/">
+        Copyright Notice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/foreword/" title="Foreword" class="dd-item ">
+        <a href="/pythonbook/chapter_00/foreword/">
+        Foreword
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/preface/" title="Preface" class="dd-item ">
+        <a href="/pythonbook/chapter_00/preface/">
+        Preface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/contrib/" title="Contributor List" class="dd-item ">
+        <a href="/pythonbook/chapter_00/contrib/">
+        Contributor List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_01/" title="The Way of the Program" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_01/">
+          <b>1. </b>The Way of the Program
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s01/" title="The Python Programming Language" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s01/">
+        The Python Programming Language
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s02/" title="What is a program?" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s02/">
+        What is a program?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s03/" title="What is debugging?" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s03/">
+        What is debugging?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s04/" title="Syntax errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s04/">
+        Syntax errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s05/" title="Runtime errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s05/">
+        Runtime errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s06/" title="Semantic errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s06/">
+        Semantic errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s07/" title="Experimental debugging" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s07/">
+        Experimental debugging
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s08/" title="Formal and natural languages" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s08/">
+        Formal and natural languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s09/" title="Comments" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s09/">
+        Comments
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s10/" title="Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s10/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_02/" title="Variables, expressions and statements" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_02/">
+          <b>2. </b>Variables, expressions and statements
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s01/" title="Values and data types" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s01/">
+        Values and data types
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s02/" title="Variables" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s02/">
+        Variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s03/" title="Variable names and keywords" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s03/">
+        Variable names and keywords
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s04/">
+        Statements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s05/">
+        Evaluating expressions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s06/" title="Operators and operands" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s06/">
+        Operators and operands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s07/" title="Type converter functions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s07/">
+        Type converter functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s08/" title="Order of operations" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s08/">
+        Order of operations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s09/" title="Operations on strings" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s09/">
+        Operations on strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s10/" title="Input" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s10/">
+        Input
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s11/" title="Composition" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s11/">
+        Composition
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s12/">
+        The modulus operator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s13/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_03/" title="Program flow" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/pythonbook/chapter_03/">
+          <b>3. </b>Program flow
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s01/" title="Hello, little turtles!" class="dd-item active">
+        <a href="/pythonbook/chapter_03/s01/">
+        Hello, little turtles!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s02/" title="Conditionals" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s02/">
+        Conditionals
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s03/" title="Iteration" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s03/">
+        Iteration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s04/" title="Some Tips, Tricks, and Common Errors" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s04/">
+        Some Tips, Tricks, and Common Errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s05/" title="" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s05/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   Hello, little turtles!
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#our-first-turtle-program">Our first turtle program</a></li>
+    <li><a href="#instances-8212-a-herd-of-turtles">Instances — a herd of turtles</a></li>
+    <li><a href="#the-for-loop">The <strong>for</strong> loop</a></li>
+    <li><a href="#flow-of-execution-of-the-for-loop">Flow of Execution of the for loop</a></li>
+    <li><a href="#the-loop-simplifies-our-turtle-program">The loop simplifies our turtle program</a></li>
+    <li><a href="#a-few-more-turtle-methods-and-tricks">A few more turtle methods and tricks</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Hello, little turtles!
+            </h1>
+          
+
+        
+
+
+<p>There are many <em>modules</em> in Python that provide very powerful features that we
+can use in our own programs.  Some of these can send email, or fetch web pages.
+The one we’ll look at in this chapter allows us to create turtles and get them
+to draw shapes and patterns.</p>
+<p>The turtles are fun, but the real purpose of the chapter is to teach ourselves
+a little more Python, and to develop our theme of <em>computational thinking</em>,
+or <em>thinking like a computer scientist</em>.  Most of the Python covered here
+will be explored in more depth later.</p>
+<h2 id="our-first-turtle-program">Our first turtle program</h2>
+<p>Let’s write a couple of lines of Python program to create a new
+turtle and start drawing a rectangle. (We’ll call the variable that
+refers to our first turtle <code>alex</code>, but we can choose another
+name if we follow the naming rules from the previous chapter).</p>
+<pre tabindex="0"><code>import turtle             # Allows us to use turtles
+wn = turtle.Screen()      # Creates a playground for turtles
+alex = turtle.Turtle()    # Create a turtle, assign to alex
+
+alex.forward(50)          # Tell alex to move forward by 50 units
+alex.left(90)             # Tell alex to turn left by 90 degrees
+alex.forward(30)          # Complete the second side of a rectangle
+
+wn.mainloop()             # Wait for user to close window
+</code></pre><p>If you copy and paste this program into a new IDLE module, and run it, it doesn’t run in the shell like our programs so far: instead, a new window pops up! (If you run it here in the ebook by clicking the “Run” button, a simulation of this window will appear within the book.)</p>
+<p>Here are a couple of things we’ll need to understand about this program. (Don’t worry if you don’t understand them all now—we’ll cover them in more detail as we work through the book.)</p>
+<p>The first line tells Python to load a module named <code>turtle</code>.
+That module brings us two new types that we can use:
+the <code>Turtle</code> type, and the <code>Screen</code> type.  The dot
+notation <code>turtle.Turtle</code> means <em>“The Turtle type that is defined within
+the turtle module”</em>.   (Remember that Python is case sensitive, so the
+module name, with a lowercase <cite>t</cite>, is different from the type <code>Turtle</code>.)</p>
+<p>We then create and open what it calls a screen (we would prefer to call it
+a window), which we assign to variable <code>wn</code>. Every window contains
+a <strong>canvas</strong>, which is the area inside the window on which we can draw.</p>
+<p>In line 3 we create a turtle. The variable <code>alex</code> is made to refer to this turtle.</p>
+<p>So these first three lines have set things up, we’re ready to get our turtle to draw on our canvas.</p>
+<p>In lines 5-7, we instruct the <strong>object</strong> <code>alex</code> to move, and to turn. We
+do this by <strong>invoking</strong>, or activating, <code>alex</code>‘s <strong>methods</strong> — these are
+the instructions that all turtles know how to respond to.</p>
+<p>The last line plays a part too: the <code>wn</code> variable refers to
+the window shown above. When we invoke its <code>mainloop</code> method, it enters
+a state where it waits for events (like keypresses, or mouse movement and clicks).
+The program will terminate when the user closes the window.  (Note: in our ebook, you can’t “close” the turtle window once it’s open. The <code>wn.mainloop()</code> line is there for when you run the program on your own computer inside of IDLE. If you leave it out, then your turtle program will never terminate, and you’ll have to shut down IDLE to continue working.)</p>
+<p>An object can have various methods — things it can do — and it can also have
+<strong>attributes</strong> (sometimes called <em>properties</em>).  For example, each turtle has
+a <em>color</em> attribute.  The method invocation
+<code>alex.color(&quot;red&quot;)</code> will make <code>alex</code> red, and drawing will be red too.</p>
+<p>The color of the turtle, the width of its pen, the position of the
+turtle within the window, which way it is facing, and so on are all part of its
+current <strong>state</strong>.   Similarly, the window object has a background color, and
+some text in the title bar, and a size and position on the screen.  These are all
+part of the state of the window object.</p>
+<p>Quite a number of methods exist that allow us to modify the turtle and the
+window objects.  We’ll just show a couple. In this program we’ve only commented those
+lines that are different from the previous example (and we’ve used a different
+variable name for this turtle):</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()
+wn.bgcolor(&#34;lightgreen&#34;)      # Set the window background color
+wn.title(&#34;Hello, Tess!&#34;)      # Set the window title
+
+tess = turtle.Turtle()
+tess.color(&#34;blue&#34;)            # Tell tess to change her color
+tess.pensize(3)               # Tell tess to set her pen width
+
+tess.forward(50)
+tess.left(120)
+tess.forward(50)
+
+wn.mainloop()
+</code></pre><p>When we run this program, a new window pops up. (Note: in this ebook, the turtle windows don’t have titles, so the line <code>wn.title(&quot;Hello, Tess!&quot;)</code> does nothing. But if you copy and paste this program into a module on your compute and run it in IDLE, you’ll see that the title bar of the window says <code>Hello, Tess!</code>.)</p>
+<h2 id="instances-8212-a-herd-of-turtles">Instances — a herd of turtles</h2>
+<p>Just like we can have many different integers in a program, we can have many turtles.
+Each of them is called an <strong>instance</strong>.  Each instance has its own attributes and
+methods — so <code>alex</code> might draw with a thin black pen and be at some position,
+while <code>tess</code> might be going in her own direction with a fat pink pen.</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor(&#34;lightgreen&#34;)
+wn.title(&#34;Tess &amp; Alex&#34;)
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.color(&#34;hotpink&#34;)
+tess.pensize(5)
+
+alex = turtle.Turtle()       # Create alex
+
+tess.forward(80)             # Make tess draw equilateral triangle
+tess.left(120)
+tess.forward(80)
+tess.left(120)
+tess.forward(80)
+tess.left(120)               # Complete the triangle
+
+tess.right(180)              # Turn tess around
+tess.forward(80)             # Move her away from the origin
+
+alex.forward(50)             # Make alex draw a square
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+
+wn.mainloop()
+</code></pre><p>Here are some observations about this program:</p>
+<ul class="simple">
+<li>There are 360 degrees in a full circle.  If we add up all the turns that a turtle makes,
+*no matter what steps occurred between the turns*, we can easily figure out if they
+add up to some multiple of 360.  This should convince us that ```alex``` is facing in
+exactly the same direction as he was when he was first created. (Geometry
+conventions have 0 degrees facing East, and that is the case here too!)</li>
+<li>We could have left out the last turn for ```alex```, but that would not have been
+as satisfying.  If we&#8217;re asked to draw a closed shape like a
+square or a rectangle, it is a good idea to
+complete all the turns and to leave the turtle back where it started, facing the
+same direction as it started in.
+This makes reasoning about the program and composing chunks of code into bigger programs
+easier for us humans!</li>
+<li>We did the same with ```tess```: she drew her triangle, and turned through a full 360 degrees.
+Then we turned her around and moved her aside.  Even the blank line 18
+is a hint about how the programmer&#8217;s *mental chunking* is working:
+in big terms, ```tess```&#8216; movements were chunked as &#8220;draw the triangle&#8221;
+(lines 12-17) and then &#8220;move away from the origin&#8221; (lines 19 and 20).</li>
+<li>One of the key uses for comments is to record our mental chunking, and big ideas.
+They&#8217;re not always explicit in the code.</li>
+<li>And, uh-huh, two turtles may not be enough for a herd. But the important idea is that the
+turtle module gives us a kind of factory that lets us create as many turtles as we
+need. Each instance has its own state and behavior.</li>
+</ul>
+<h2 id="the-for-loop">The <strong>for</strong> loop</h2>
+<p>When we drew the square, it was quite tedious.  We had to explicitly repeat the steps of
+moving and turning four times.  If we were drawing a hexagon, or an octogon,
+or a polygon with 42 sides, it would have been worse.</p>
+<p>So a basic building block of all programs is to be able to repeat some code, over and
+over again.</p>
+<p>Python’s <strong>for</strong> loop solves this for us.   Let’s say we have some friends, and
+we’d like to send them each an email inviting them to our party.  We don’t
+quite know how to send email yet, so for the moment we’ll just print a message for each friend:</p>
+<pre tabindex="0"><code>for f in [&#34;Joe&#34;,&#34;Zoe&#34;,&#34;Brad&#34;,&#34;Angelina&#34;,&#34;Zuki&#34;,&#34;Thandi&#34;,&#34;Paris&#34;]:
+    invite = &#34;Hi &#34; + f + &#34;. Please come to my party on Saturday!&#34;
+    print(invite)
+# more code can follow here ...
+</code></pre><ul class="simple">
+<li>The variable ```f``` in the ```for``` statement at line 1 is called the **loop variable**.
+We could have chosen any other variable name instead.</li>
+<li>Lines 2 and 3 are the **loop body**.  The loop body is always
+indented. The convention is to use 4 spaces of indentation for our loop bodies. The indentation determines exactly what statements are &#8220;in the body of the loop&#8221;.</li>
+<li>On each *iteration* or *pass* of the loop, first a check is done to see if there are
+still more items to be processed.  If there are none left (this is called
+the **terminating condition** of the loop), the loop has finished.
+Program execution continues at the next statement after the loop body, (e.g. in this case
+the next statement below the comment in line 4).</li>
+<li>If there are items still to be processed, the loop variable is updated to refer to the
+next item in the list.  This means, in this case, that the loop body is executed
+here 7 times, and each time ```f``` will refer to a different friend.</li>
+<li>At the end of each execution of the body of the loop, Python returns
+to the ```for``` statement, to see if there are more items to be handled, and to assign the
+next one to ```f```.</li>
+</ul>
+<h2 id="flow-of-execution-of-the-for-loop">Flow of Execution of the for loop</h2>
+<p>As a program executes, the interpreter always keeps track of which statement is
+about to be executed.  We call this the <strong>control flow</strong>, of the <strong>flow of execution</strong>
+of the program.  When humans execute programs, they often use their finger to point
+to each statement in turn.  So we could think of control flow as “Python’s moving finger”.</p>
+<p>Control flow until now has been strictly
+top to bottom, one statement at a time.  The <code>for</code> loop changes this.</p>
+<p>Flowchart of a <strong>for</strong> loop</p>
+<p>Control flow is often easy to visualize and understand if we draw a flowchart.
+This shows the exact steps and logic of how the <code>for</code> statement executes.</p>
+<p><a class="last reference internal image-reference" href="/pythonbook/images/flowchart_for.png"><img alt="/pythonbook/images/flowchart_for.png" src="/pythonbook/images/flowchart_for.png" style="height: 420px;" /></a></p>
+<h2 id="the-loop-simplifies-our-turtle-program">The loop simplifies our turtle program</h2>
+<p>To draw a square we’d like to do the same thing four times — move the turtle, and turn.
+We previously used 8 lines to have <code>alex</code> draw the four sides of a square.
+This does exactly the same, but using just three lines:</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+alex = turtle.Turtle()       # Create alex
+
+for i in [0,1,2,3]:          # Draw the four sides of the square
+    alex.forward(50)
+    alex.left(90)
+
+wn.mainloop()
+</code></pre><p>Some observations:</p>
+<ul class="simple">
+<li>While &#8220;saving some lines of code&#8221; might be convenient, it is not the big deal here.
+What is much more important is that we&#8217;ve found a &#8220;repeating pattern&#8221; of statements,
+and reorganized our program to repeat the pattern.  Finding the chunks and somehow
+getting our programs arranged around those chunks is a vital
+skill in computational thinking.</li>
+<li>The values [0,1,2,3] were provided to make the loop body execute 4 times.
+We could
+have used any four values, but these are the conventional ones to use.  In fact, they are
+so popular that Python gives us special built-in ```range``` objects:</li>
+</ul>
+<pre tabindex="0"><code>for i in range(4):
+    # Executes the body with i = 0, then 1, then 2, then 3
+    print(&#34;i = &#34;+str(i))
+for x in range(10):
+    # Sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print(&#34;x = &#34;+str(x))
+</code></pre><ul class="simple">
+<li>Computer scientists like to count from 0!</li>
+<li>```range``` can deliver a sequence of values to the loop variable in the ```for``` loop.
+They start at 0, and in these cases do not include the 4 or the 10.</li>
+<li>Our little trick earlier to make sure that ```alex``` did the final turn to complete
+360 degrees has paid off: if we had not done that, then we would not have been
+able to use a loop for the fourth side of the square.
+It would have become a &#8220;special case&#8221;,
+different from the other sides.  When possible, we&#8217;d much prefer to make
+our code fit a general pattern, rather than have to create a special case.</li>
+</ul>
+So to repeat something four times, a good Python programmer would do this:
+<pre tabindex="0"><code>for i in range(4):
+    alex.forward(50)
+    alex.left(90)
+</code></pre><p>By now you should be able to see how to change our previous program so that
+<code>tess</code> can also use a <code>for</code> loop to draw her equilateral triangle.</p>
+<p>But now, what would happen if we made the change below? Try to figure out what’s going to happen, then run the code to see if you’re right!</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+alex = turtle.Turtle()       # Create alex
+
+for c in [&#34;yellow&#34;, &#34;red&#34;, &#34;purple&#34;, &#34;blue&#34;]:
+    alex.color(c)
+    alex.forward(50)
+    alex.left(90)
+
+wn.mainloop()
+</code></pre><p>A variable can also be assigned a value that is a list.  So lists can also be used in
+more general situations, not only in the <code>for</code> loop.  The code above could be rewritten like this:</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+alex = turtle.Turtle()       # Create alex
+
+clrs = [&#34;yellow&#34;, &#34;red&#34;, &#34;purple&#34;, &#34;blue&#34;]
+for c in clrs:
+    alex.color(c)
+    alex.forward(50)
+    alex.left(90)
+
+wn.mainloop()
+</code></pre><h2 id="a-few-more-turtle-methods-and-tricks">A few more turtle methods and tricks</h2>
+<p>Turtle methods can use negative angles or distances.  So <code>tess.forward(-100)</code>
+will move <code>tess</code> backwards, and <code>tess.left(-30)</code> turns her to the right.  Additionally,
+because there are 360 degrees in a circle, turning 30 to the left will get <code>tess</code> facing
+in the same direction as turning 330 to the right!  (The on-screen animation will differ,
+though — you will be able to tell if <code>tess</code> is turning clockwise or counter-clockwise!)</p>
+<p>This suggests that we don’t need both a left and a right turn method — we could be
+minimalists, and just have one method.  There is also a <em>backward</em>
+method.  (If you are very nerdy, you might enjoy saying <code>alex.backward(-100)</code> to
+move <code>alex</code> forward!)</p>
+<p>Part of <em>thinking like a computer scientist</em> is to understand more of the structure and rich
+relationships in our field.  So revising a few basic facts about
+geometry and number lines, and spotting the relationships between left, right,
+backward, forward, negative and positive distances or angles values is a good start
+if we’re going to play with turtles.</p>
+<p>A turtle’s pen can be picked up or put down.  This allows us to move a turtle
+to a different place without drawing a line.   The methods are</p>
+<pre tabindex="0"><code>import turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+alex = turtle.Turtle()       # Create alex
+
+alex.penup()
+alex.forward(100)     # This moves alex, but no line is drawn
+alex.pendown()
+
+wn.mainloop()
+
+Every turtle can have its own shape.  The shapes available are ```arrow```, ```blank```, ```circle```, ```classic```, ```square```, ```triangle```, ```turtle```.
+</code></pre><p>import turtle             # Allows us to use turtles
+wn = turtle.Screen()      # Creates a playground for turtles
+alex = turtle.Turtle()    # Create a turtle, assign to alex</p>
+<p>alex.shape(&ldquo;turtle&rdquo;)      # Shape alex to look like a turtle</p>
+<p>alex.forward(50)          # Tell alex to move forward by 50 units
+alex.left(90)             # Tell alex to turn by 90 degrees
+alex.forward(30)          # Complete the second side of a rectangle</p>
+<p>wn.mainloop()             # Wait for user to close window</p>
+<pre tabindex="0"><code>
+We can speed up or slow down the turtle&amp;#8217;s animation speed. (Animation controls how
+quickly the turtle turns and moves forward).  Speed settings can be set
+between 1 (slowest) to 10 (fastest).  But if we set the speed to 0, it has
+a special meaning &amp;#8212; turn off animation and go as fast as possible.
+
+A turtle can &amp;#8220;stamp&amp;#8221; its footprint onto the canvas,
+and this will remain after the turtle has moved somewhere else.
+Stamping works, even when the pen is up.
+
+Let&amp;#8217;s do an example that shows off some of these new features all together:
+</code></pre><p>import turtle
+wn = turtle.Screen()
+wn.bgcolor(&ldquo;lightgreen&rdquo;)
+tess = turtle.Turtle()
+tess.shape(&ldquo;turtle&rdquo;)
+tess.color(&ldquo;blue&rdquo;)</p>
+<p>tess.penup()
+size = 20
+for i in range(30):
+tess.stamp()             # Leave an impression on the canvas
+size = size + 3          # Increase the size on every iteration
+tess.forward(size)       # Move tess along
+tess.right(24)           #  &hellip;  and turn her</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+Be careful now!   How many times was the body of the loop executed?   How many turtle
+images do we see on the screen?  All except one of the shapes we see on the screen here
+are footprints created by ```stamp```.  But the program still only has *one* turtle
+instance &amp;#8212; can you figure out which one here is the real ```tess```?  (Hint: if you&amp;#8217;re not
+sure, write a new line of code after the ```for``` loop to change ```tess```&amp;#8216; color,
+or to put her pen down and draw a line, or to change her shape, etc.)
+
+## A Turtle Bar Chart
+
+Here are even more new tricks for our turtles:
+
+&lt;ul class=&#34;simple&#34;&gt;
+&lt;li&gt;We can get a turtle to display text on the canvas at the turtle&amp;#8217;s current position.  The method to do that is called ```write```:&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>import turtle             # Allows us to use turtles
+wn = turtle.Screen()      # Creates a playground for turtles
+alex = turtle.Turtle()    # Create a turtle, assign to alex</p>
+<p>alex.forward(50)          # Tell alex to move forward by 50 units
+alex.left(90)             # Tell alex to turn by 90 degrees
+alex.forward(30)          # Complete the second side of a rectangle</p>
+<p>alex.write(&ldquo;Hi there!&rdquo;)   # Write a message</p>
+<p>wn.mainloop()             # Wait for user to close window</p>
+<pre tabindex="0"><code>
+&lt;ul class=&#34;simple&#34;&gt;
+&lt;li&gt;We can fill a shape (circle, semicircle, triangle, etc.) with a color.  It is a two-step process.
+First we call the method ```alex.begin_fill()```, then we draw the shape, then we call ```alex.end_fill()```.  Below is an example of this using our square example from earlier.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>import turtle
+wn = turtle.Screen()        # Set up the window and its attributes
+alex = turtle.Turtle()      # Create alex</p>
+<p>alex.begin_fill()           # Start of the region to fill
+for i in range(4):          # Draw the four sides of the square
+alex.forward(50)
+alex.left(90)
+alex.end_fill()             # Fill the region</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+&lt;ul class=&#34;simple&#34;&gt;
+&lt;li&gt;We&amp;#8217;ve previously set the color of our turtle &amp;#8212; we can now also set its fill color, which need not
+be the same as the turtle and the pen color.  We use the ```fillcolor``` method to set the
+turtle&amp;#8217;s fill color:&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>import turtle
+wn = turtle.Screen()        # Set up the window and its attributes
+alex = turtle.Turtle()      # Create alex
+alex.color(&ldquo;blue&rdquo;)          # Set pen color to blue
+alex.fillcolor(&ldquo;red&rdquo;)       # Set fill color to red</p>
+<p>alex.begin_fill()           # Start of the region to fill
+for i in range(4):          # Draw the four sides of the square
+alex.forward(50)
+alex.left(90)
+alex.end_fill()             # Fill the region</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+Ok, so can we get tess to draw a bar chart?  Let us start with some data to be charted,
+
+```xs = [48, 117, 200, 240, 160, 260, 220]```
+
+Corresponding to each data measurement, we&amp;#8217;ll draw a simple rectangle of that height, with a fixed width.  We&amp;#8217;re showing off a new programming concept called a *function* in the example below: we&amp;#8217;re defining the function ```draw_bar``` to draw a bar of our graph. We&amp;#8217;ll generally want to use a function to encode a complicated task that we&amp;#8217;ll want to repeat many times (like drawing a bar in a bar graph). Don&amp;#8217;t worry too much about the syntax of functions right now &amp;#8212; we&amp;#8217;re going to discuss functions in a lot more detail in the next chapter.
+</code></pre><p>import turtle
+wn = turtle.Screen()
+wn.bgcolor(&ldquo;lightgreen&rdquo;)
+tess = turtle.Turtle()
+tess.color(&ldquo;blue&rdquo;)</p>
+<p>def draw_bar(t, height):
+&quot;&quot;&quot; Get turtle t to draw one bar, of height. &quot;&quot;&quot;
+t.left(90)
+t.forward(height)     # Draw up the left side
+t.right(90)
+t.forward(40)         # Width of bar, along the top
+t.right(90)
+t.forward(height)     # And down again!
+t.left(90)            # Put the turtle facing the way we found it.
+t.forward(10)         # Leave small gap after each bar</p>
+<p>xs = [48, 117, 200, 240, 160, 260, 220] # our data
+for v in xs:              # Draw a bar for each number in the data
+draw_bar(tess, v)</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+Ok, not fantasically impressive, but it is a nice start!  The important thing here
+was the mental chunking, or how we broke the problem into smaller pieces. Our chunk
+is to draw one bar, and we wrote a function to do that. Then, for the whole
+chart, we repeatedly called our function.
+
+Next, at the top of each bar, we&amp;#8217;ll print the value of the data.
+We&amp;#8217;ll do this in the body of ```draw_bar```, by adding   ```t.write(&#39;&lt;/span&gt;&amp;nbsp; &lt;span class=&#34;pre&#34;&gt;&#39; + str(height))```
+as the new third line of the body.
+We&amp;#8217;ve put a little space in front of the number, and turned the
+number into a string.  Without this extra space we tend
+to cramp our text awkwardly against the bar to the left.
+The result looks a lot better now:
+</code></pre><p>import turtle
+wn = turtle.Screen()
+wn.bgcolor(&ldquo;lightgreen&rdquo;)
+tess = turtle.Turtle()
+tess.color(&ldquo;blue&rdquo;)</p>
+<p>def draw_bar(t, height):
+&quot;&quot;&quot; Get turtle t to draw one bar, of height. &quot;&quot;&quot;
+t.left(90)
+t.forward(height)     # Draw up the left side
+t.write(&quot;  &quot; + str(height))  # Write the data
+t.right(90)
+t.forward(40)         # Width of bar, along the top
+t.right(90)
+t.forward(height)     # And down again!
+t.left(90)            # Put the turtle facing the way we found it.
+t.forward(10)         # Leave small gap after each bar</p>
+<p>xs = [48, 117, 200, 240, 160, 260, 220] # our data
+for v in xs:              # Draw a bar for each number in the data
+draw_bar(tess, v)</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+And now we&amp;#8217;ll add code to fill each bar.  Our final program now looks like this:
+</code></pre><p>import turtle
+wn = turtle.Screen()
+wn.bgcolor(&ldquo;lightgreen&rdquo;)
+tess = turtle.Turtle()
+tess.color(&ldquo;blue&rdquo;)
+tess.fillcolor(&ldquo;red&rdquo;)</p>
+<p>def draw_bar(t, height):
+&quot;&quot;&quot; Get turtle t to draw one bar, of height. &quot;&quot;&quot;
+t.begin_fill()        # Start of the fill area
+t.left(90)
+t.forward(height)     # Draw up the left side
+t.write(&quot;  &quot; + str(height))  # Write the data
+t.right(90)
+t.forward(40)         # Width of bar, along the top
+t.right(90)
+t.forward(height)     # And down again!
+t.left(90)            # Put the turtle facing the way we found it.
+t.end_fill()          # Fill in the bar
+t.forward(10)         # Leave small gap after each bar</p>
+<p>xs = [48, 117, 200, 240, 160, 260, 220] # our data
+for v in xs:              # Draw a bar for each number in the data
+draw_bar(tess, v)</p>
+<p>wn.mainloop()</p>
+<pre tabindex="0"><code>
+
+Mmm.  Perhaps the bars should not be joined to each other at the bottom.  We&amp;#8217;ll need to pick up the pen while making the gap between the bars.  We&amp;#8217;ll leave that as an exercise for you!
+</code></pre>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/pythonbook/chapter_03/" title="Program flow"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/pythonbook/chapter_03/s02/" title="Conditionals" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/pythonbook/js/clipboard.min.js?1695516739"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1695516739"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1695516739"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1695516739"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1695516739"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1695516739"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1695516739"></script>
+    <script src="/pythonbook/js/learn.js?1695516739"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1695516739"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
