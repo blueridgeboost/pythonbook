@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copyright Notice</title>
-      <link>https://blueridgeboost.com/pythonbook/copyright/copyright/</link>
+      <link>https://blueridgeboost.com/pythonbook/chapter_00/copyright/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blueridgeboost.com/pythonbook/copyright/copyright/</guid>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_00/copyright/</guid>
       <description>Copyright (C) 2023, Blue Ridge Boost LLC.
 Copyright (C) 2014, AoPS Incorporated.
 Copyright (C) Peter Wentworth, Jeffrey Elkner, Allen B. Downey and Chris Meyers.
@@ -21,20 +21,20 @@ Permission is granted to copy, distribute and/or modify this document under the 
     
     <item>
       <title>Foreword</title>
-      <link>https://blueridgeboost.com/pythonbook/copyright/foreword/</link>
+      <link>https://blueridgeboost.com/pythonbook/chapter_00/foreword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blueridgeboost.com/pythonbook/copyright/foreword/</guid>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_00/foreword/</guid>
       <description>By David Beazley
 As an educator, researcher, and book author, I am delighted to see the completion of this book. Python is a fun and extremely easy-to-use programming language that has steadily gained in popularity over the last few years. Developed over ten years ago by Guido van Rossum, Python’s simple syntax and overall feel is largely derived from ABC, a teaching language that was developed in the 1980’s. However, Python was also created to solve real problems and it borrows a wide variety of features from programming languages such as C++, Java, Modula-3, and Scheme.</description>
     </item>
     
     <item>
       <title>Preface</title>
-      <link>https://blueridgeboost.com/pythonbook/copyright/preface/</link>
+      <link>https://blueridgeboost.com/pythonbook/chapter_00/preface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blueridgeboost.com/pythonbook/copyright/preface/</guid>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_00/preface/</guid>
       <description>By Jeffrey Elkner
 This book owes its existence to the collaboration made possible by the Internet and the free software movement. Its three authors—a college professor, a high school teacher, and a professional programmer—never met face to face to work on it, but we have been able to collaborate closely, aided by many other folks who have taken the time and energy to send us their feedback.
 We think this book is a testament to the benefits and future possibilities of this kind of collaboration, the framework for which has been put in place by Richard Stallman and the Free Software Foundation.</description>
@@ -42,16 +42,16 @@ We think this book is a testament to the benefits and future possibilities of th
     
     <item>
       <title>Contributor List</title>
-      <link>https://blueridgeboost.com/pythonbook/copyright/contrib/</link>
+      <link>https://blueridgeboost.com/pythonbook/chapter_00/contrib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blueridgeboost.com/pythonbook/copyright/contrib/</guid>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_00/contrib/</guid>
       <description>To paraphrase the philosophy of the Free Software Foundation, this book is free like free speech, but not necessarily free like free pizza. It came about because of a collaboration that would not have been possible without the GNU Free Documentation License. So we would like to thank the Free Software Foundation for developing this license and, of course, making it available to us.
 We would also like to thank the more than 100 sharp-eyed and thoughtful readers who have sent us suggestions and corrections over the past few years.</description>
     </item>
     
     <item>
-      <title>The Python programming language</title>
+      <title>The Python Programming Language</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_01/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

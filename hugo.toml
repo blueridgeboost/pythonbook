@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)'
 
 # Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+theme = "brb-theme"
 
 disableLiveReload = true
 enableRobotsTXT = true
