@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="description" content="Learn Python at Blue Ridge Boost!">
+<meta name="author" content="Nora Evans and David Evans">
+
+    <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
+
+    <title>More Turtle Tricks - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+
+    
+    <link href="/pythonbook/css/nucleus.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696108304" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696108304" rel="stylesheet">
+    
+    <link href="/pythonbook/css/theme-blue.css?1696108304" rel="stylesheet">
+    
+    
+
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696108304"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/pythonbook/chapter_03/s06/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<p></p>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696108304"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696108304"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
+    
+</script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696108304"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/pythonbook'>
+            <i class='fas fa-home'></i> Home
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_00/" title="Front Matter" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_00/">
+          <b>0. </b>Front Matter
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/copyright/" title="Copyright Notice" class="dd-item ">
+        <a href="/pythonbook/chapter_00/copyright/">
+        Copyright Notice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/foreword/" title="Foreword" class="dd-item ">
+        <a href="/pythonbook/chapter_00/foreword/">
+        Foreword
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/preface/" title="Preface" class="dd-item ">
+        <a href="/pythonbook/chapter_00/preface/">
+        Preface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/contrib/" title="Contributor List" class="dd-item ">
+        <a href="/pythonbook/chapter_00/contrib/">
+        Contributor List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_01/" title="The Way of the Program" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_01/">
+          <b>1. </b>The Way of the Program
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s01/" title="The Python Programming Language" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s01/">
+        The Python Programming Language
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s02/" title="What is a program?" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s02/">
+        What is a program?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s03/" title="What is debugging?" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s03/">
+        What is debugging?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s04/" title="Syntax errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s04/">
+        Syntax errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s05/" title="Runtime errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s05/">
+        Runtime errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s06/" title="Semantic errors" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s06/">
+        Semantic errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s07/" title="Experimental debugging" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s07/">
+        Experimental debugging
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s08/" title="Formal and natural languages" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s08/">
+        Formal and natural languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s09/" title="Comments" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s09/">
+        Comments
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s10/" title="Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s10/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_02/" title="Variables, expressions and statements" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_02/">
+          <b>2. </b>Variables, expressions and statements
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s01/" title="Values and data types" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s01/">
+        Values and data types
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s02/" title="Variables" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s02/">
+        Variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s03/" title="Variable names and keywords" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s03/">
+        Variable names and keywords
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s04/">
+        Statements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s05/">
+        Evaluating expressions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s06/" title="Operators and operands" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s06/">
+        Operators and operands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s07/" title="Type converter functions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s07/">
+        Type converter functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s08/" title="Order of operations" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s08/">
+        Order of operations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s09/" title="Operations on strings" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s09/">
+        Operations on strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s10/" title="Input" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s10/">
+        Input
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s11/" title="Composition" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s11/">
+        Composition
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s12/">
+        The modulus operator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s13/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_03/" title="Program Flow" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/pythonbook/chapter_03/">
+          <b>3. </b>Program Flow
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s01/" title="Hello Turtles!" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s01/">
+        Hello Turtles!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s02/" title="Color" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s02/">
+        Color
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s03/" title="More Turtles" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s03/">
+        More Turtles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s04/" title="Loops" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s04/">
+        Loops
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s05/" title="Loopy Turtles" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s05/">
+        Loopy Turtles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s06/" title="More Turtle Tricks" class="dd-item active">
+        <a href="/pythonbook/chapter_03/s06/">
+        More Turtle Tricks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s07/" title="Drawing a Bar Graph" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s07/">
+        Drawing a Bar Graph
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_04/" title="Conditionals" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_04/">
+          <b>4. </b>Conditionals
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s02/" title="Conditionals" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s02/">
+        Conditionals
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_05/" title="Loops and iterations" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_05/">
+          <b>5. </b>Loops and iterations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s03/" title="Iteration" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s03/">
+        Iteration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s04/" title="Some Tips, Tricks, and Common Errors" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s04/">
+        Some Tips, Tricks, and Common Errors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   More Turtle Tricks
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#no-need-to-be-positive">No Need to Be Positive</a></li>
+        <li><a href="#moving-without-drawing">Moving without Drawing</a></li>
+        <li><a href="#squashing-turtles">Squashing Turtles</a></li>
+        <li><a href="#animation">Animation</a></li>
+        <li><a href="#writing-text">Writing Text</a></li>
+        <li><a href="#filling-shapes">Filling Shapes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              More Turtle Tricks
+            </h1>
+          
+
+        
+
+
+<h3 id="no-need-to-be-positive">No Need to Be Positive</h3>
+<p>Turtle methods can use negative angles or distances.  So <code>shelly.forward(-100)</code>
+will move <code>shelly</code> backwards, and <code>shelly.left(-30)</code> turns her to the right.  Additionally,
+because there are 360 degrees in a circle, turning 30 to the left will get <code>shelly</code> facing
+in the same direction as turning 330 to the right!  The on-screen animation will differ,
+though — you will be able to tell if <code>shelly</code> is turning clockwise or counter-clockwise!</p>
+<p>We don’t need both a left and a right turn method — we could be
+minimalists, and just have one method.  But, it there&rsquo;s no limit on the methods a module can define and its convenient to have both so the turtle library provides both <code>left</code> and <code>right</code> turn methods, as well as <code>forward</code> and <code>backward</code>.  (If you are very adventurous, you might enjoy using <code>shelly.backward(-100)</code> to
+move <code>shelly</code> forward!)</p>
+<p>Part of <em>thinking like a computer scientist</em> is to understand more of the structure and rich
+relationships in our field.  So revising a few basic facts about
+geometry and number lines, and spotting the relationships between left, right,
+backward, forward, negative and positive distances or angles values is a good start.</p>
+<h3 id="moving-without-drawing">Moving without Drawing</h3>
+<p>A turtle’s pen can be picked up or put down.  This allows us to
+move a turtle to a different place without drawing a line.  The
+methods are <code>penup</code> and <code>pendown</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()         <span style="color:#75715e"># Set up the window and its attributes</span>
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()       <span style="color:#75715e"># Create shelly</span>
+
+shelly<span style="color:#f92672">.</span>penup()
+shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)     <span style="color:#75715e"># This moves shelly, but no line is drawn</span>
+shelly<span style="color:#f92672">.</span>pendown()
+
+wn<span style="color:#f92672">.</span>mainloop()
+</code></pre></div><h3 id="squashing-turtles">Squashing Turtles</h3>
+<p>Every turtle can have its own shape.  The shapes available are <code>arrow</code>, <code>blank</code>, <code>circle</code>, <code>classic</code>, <code>square</code>, <code>triangle</code>, <code>turtle</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
+
+shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)      <span style="color:#75715e"># Shape shelly to look like a turtle</span>
+
+shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
+shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
+
+wn<span style="color:#f92672">.</span>mainloop()             <span style="color:#75715e"># Wait for user to close window</span>
+</code></pre></div><h3 id="animation">Animation</h3>
+<p>Part of the fun of drawing with turtles is that we don&rsquo;t see the drawing appear instantly, but see the turtle move to draw. We can speed up or slow down the turtle’s speed for both turning and moving.  Speed settings can be set
+between <code>1</code> (slowest) to <code>10</code> (fastest).  But if we set the speed to <code>0</code>, it has
+a special meaning — turn off animation and go as fast as possible.</p>
+<p>A turtle can “stamp” its footprint onto the canvas,
+and this will remain after the turtle has moved somewhere else.
+Stamping works, even when the pen is up.</p>
+<p>The code below shows some examples using these methods:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()
+wn<span style="color:#f92672">.</span>bgcolor(<span style="color:#e6db74">&#34;lightgreen&#34;</span>)
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
+shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)
+shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)
+
+shelly<span style="color:#f92672">.</span>penup()
+size <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">30</span>):
+    shelly<span style="color:#f92672">.</span>stamp()             <span style="color:#75715e"># Leave an impression on the canvas</span>
+    size <span style="color:#f92672">=</span> size <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>            <span style="color:#75715e"># Increase the size on every iteration</span>
+    shelly<span style="color:#f92672">.</span>forward(size)       <span style="color:#75715e"># Move shelly along</span>
+    shelly<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">24</span>)           <span style="color:#75715e">#  ...  and turn her</span>
+
+wn<span style="color:#f92672">.</span>mainloop()
+</code></pre></div><p>How many times was the body of the loop executed?</p>
+<p>How many turtle images are on the screen?</p>
+<p>All except one of the shapes we see on the screen here are footprints
+created by <code>stamp</code>.  But the program still only has <em>one</em> turtle
+object — can you figure out which one here is the real
+<code>shelly</code>?  (Hint: if you’re not sure, write a new line of
+code after the <code>for</code> loop to change <code>shelly</code>‘ color.)</p>
+<h3 id="writing-text">Writing Text</h3>
+<p>We can get a turtle to display text on the canvas at the turtle’s current position.  The method to do that is called <code>write</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
+
+shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
+shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
+
+shelly<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Hi there!&#34;</span>)   <span style="color:#75715e"># Write a message</span>
+
+wn<span style="color:#f92672">.</span>mainloop()               <span style="color:#75715e"># Wait for user to close window</span>
+</code></pre></div><h3 id="filling-shapes">Filling Shapes</h3>
+<p>We can fill a shape (circle, semicircle, triangle, etc.) with a color.  It is a two-step process.
+First we call the method <code>shelly.begin_fill()</code>, then we draw the shape, then we call <code>shelly.end_fill()</code>.  Below is an example of this using our square example from earlier.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
+
+shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
+    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
+
+wn<span style="color:#f92672">.</span>mainloop()
+</code></pre></div><p>We’ve previously set the color of our turtle — we can now also set its fill color, which need not
+be the same as the turtle and the pen color.  We use the <code>fillcolor</code> method to set the
+turtle’s fill color:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
+
+wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
+shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
+shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)          <span style="color:#75715e"># Set pen color to blue</span>
+shelly<span style="color:#f92672">.</span>fillcolor(<span style="color:#e6db74">&#34;red&#34;</span>)       <span style="color:#75715e"># Set fill color to red</span>
+
+shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
+    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
+
+wn<span style="color:#f92672">.</span>mainloop()
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/pythonbook/chapter_03/s05/" title="Loopy Turtles"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/pythonbook/chapter_03/s07/" title="Drawing a Bar Graph" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/pythonbook/js/clipboard.min.js?1696108304"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696108304"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696108304"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696108304"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696108304"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696108304"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696108304"></script>
+    <script src="/pythonbook/js/learn.js?1696108304"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696108304"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

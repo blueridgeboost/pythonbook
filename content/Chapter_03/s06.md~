@@ -1,0 +1,274 @@
++++
+title = "More Turtle Tricks"
+weight = 307
++++
+
+### No Need to Be Positive
+ 
+Turtle methods can use negative angles or distances.  So ```shelly.forward(-100)```
+will move ```shelly``` backwards, and ```shelly.left(-30)``` turns her to the right.  Additionally,
+because there are 360 degrees in a circle, turning 30 to the left will get ```shelly``` facing
+in the same direction as turning 330 to the right!  The on-screen animation will differ,
+though &#8212; you will be able to tell if ```shelly``` is turning clockwise or counter-clockwise!
+
+We don&#8217;t need both a left and a right turn method &#8212; we could be
+minimalists, and just have one method.  But, it there's no limit on the methods a module can define and its convenient to have both so the turtle library provides both ```left``` and ```right``` turn methods, as well as ```forward``` and ```backward```.  (If you are very adventurous, you might enjoy using ```shelly.backward(-100)``` to
+move ```shelly``` forward!)
+
+Part of *thinking like a computer scientist* is to understand more of the structure and rich
+relationships in our field.  So revising a few basic facts about
+geometry and number lines, and spotting the relationships between left, right,
+backward, forward, negative and positive distances or angles values is a good start.
+
+### Moving without Drawing
+
+A turtle&#8217;s pen can be picked up or put down.  This allows us to
+move a turtle to a different place without drawing a line.  The
+methods are ```penup``` and ```pendown```.
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+wn = turtle.Screen()         # Set up the window and its attributes
+shelly = turtle.Turtle()       # Create shelly
+
+shelly.penup()
+shelly.forward(100)     # This moves shelly, but no line is drawn
+shelly.pendown()
+
+wn.mainloop()
+```
+
+### Squashing Turtles
+
+Every turtle can have its own shape.  The shapes available are ```arrow```, ```blank```, ```circle```, ```classic```, ```square```, ```triangle```, ```turtle```.
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+wn = turtle.Screen()        # Creates a playground for turtles
+shelly = turtle.Turtle()    # Create a turtle, assign to shelly
+
+shelly.shape("turtle")      # Shape shelly to look like a turtle
+
+shelly.forward(50)          # Tell shelly to move forward by 50 units
+shelly.left(90)             # Tell shelly to turn by 90 degrees
+shelly.forward(30)          # Complete the second side of a rectangle
+
+wn.mainloop()             # Wait for user to close window
+```
+
+### Animation
+
+Part of the fun of drawing with turtles is that we don't see the drawing appear instantly, but see the turtle move to draw. We can speed up or slow down the turtle&#8217;s speed for both turning and moving.  Speed settings can be set
+between ```1``` (slowest) to ```10``` (fastest).  But if we set the speed to ```0```, it has
+a special meaning &#8212; turn off animation and go as fast as possible.
+
+A turtle can &#8220;stamp&#8221; its footprint onto the canvas,
+and this will remain after the turtle has moved somewhere else.
+Stamping works, even when the pen is up.
+
+The code below shows some examples using these methods:
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+shelly = turtle.Turtle()
+shelly.shape("turtle")
+shelly.color("blue")
+
+shelly.penup()
+size = 20
+for _ in range(30):
+    shelly.stamp()             # Leave an impression on the canvas
+    size = size + 3            # Increase the size on every iteration
+    shelly.forward(size)       # Move shelly along
+    shelly.right(24)           #  ...  and turn her
+
+wn.mainloop()
+```
+
+How many times was the body of the loop executed?
+
+How many turtle images are on the screen?
+
+All except one of the shapes we see on the screen here are footprints
+created by ```stamp```.  But the program still only has *one* turtle
+object &#8212; can you figure out which one here is the real
+```shelly```?  (Hint: if you&#8217;re not sure, write a new line of
+code after the ```for``` loop to change ```shelly```&#8216; color.)
+
+## A Turtle Bar Chart
+
+We can get a turtle to display text on the canvas at the turtle&#8217;s current position.  The method to do that is called ```write```:
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+wn = turtle.Screen()        # Creates a playground for turtles
+shelly = turtle.Turtle()    # Create a turtle, assign to shelly
+
+shelly.forward(50)          # Tell shelly to move forward by 50 units
+shelly.left(90)             # Tell shelly to turn by 90 degrees
+shelly.forward(30)          # Complete the second side of a rectangle
+
+shelly.write("Hi there!")   # Write a message
+
+wn.mainloop()               # Wait for user to close window
+```
+
+We can fill a shape (circle, semicircle, triangle, etc.) with a color.  It is a two-step process.
+First we call the method ```shelly.begin_fill()```, then we draw the shape, then we call ```shelly.end_fill()```.  Below is an example of this using our square example from earlier.
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+wn = turtle.Screen()          # Set up the window and its attributes
+shelly = turtle.Turtle()      # Create shelly
+
+shelly.begin_fill()           # Start of the region to fill
+for i in range(4):            # Draw the four sides of the square
+    shelly.forward(50)
+    shelly.left(90)
+shelly.end_fill()             # Fill the region
+
+wn.mainloop()
+```
+
+We&#8217;ve previously set the color of our turtle &#8212; we can now also set its fill color, which need not
+be the same as the turtle and the pen color.  We use the ```fillcolor``` method to set the
+turtle&#8217;s fill color:
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+wn = turtle.Screen()          # Set up the window and its attributes
+shelly = turtle.Turtle()      # Create shelly
+shelly.color("blue")          # Set pen color to blue
+shelly.fillcolor("red")       # Set fill color to red
+
+shelly.begin_fill()           # Start of the region to fill
+for i in range(4):            # Draw the four sides of the square
+    shelly.forward(50)
+    shelly.left(90)
+shelly.end_fill()             # Fill the region
+
+wn.mainloop()
+```
+
+Ok, so can we get shelly to draw a bar chart?  Let us start with some data to be charted,
+
+```xs = [48, 117, 200, 240, 160, 260, 220]```
+
+Corresponding to each data measurement, we&#8217;ll draw a rectangle
+of that height, with a fixed width.  We&#8217;re showing off a new
+programming concept called a *function* in the example below:
+we&#8217;re defining the function ```draw_bar``` to draw a bar of our
+graph. We&#8217;ll generally want to use a function to encode a
+complicated task that we&#8217;ll want to repeat many times (like
+drawing a bar in a bar graph). You can probably guess how functions
+work from this code, but we won't explain it here &mdash; we're going to discuss functions in a
+lot more detail in the next chapter.
+
+```
+import ColabTurtlePlus.Turtle as turtle
+
+xs = [48, 117, 200, 240, 160, 260, 220] # our data
+
+def draw_bar(t, h):
+    """ Get turtle t to draw one bar, of height h. """
+    t.left(90)
+    t.forward(h)          # Draw up the left side
+    t.right(90)
+    t.forward(40)         # Width of bar, along the top
+    t.right(90)
+    t.forward(h)	  # And down again!
+    t.left(90)            # Put the turtle facing the way we found it.
+    t.forward(10)         # Leave small gap after each bar
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+shelly = turtle.Turtle()
+shelly.color("blue")
+
+for v in xs:              # Draw a bar for each number in the data
+    draw_bar(shelly, v)
+
+wn.mainloop()
+```
+
+Ok, not fantasically impressive, but it is a nice start!  The important thing here
+was the mental chunking, or how we broke the problem into smaller pieces. Our chunk
+is to draw one bar, and we wrote a function to do that. Then, for the whole
+chart, we repeatedly called our function.
+
+Next, at the top of each bar, we&#8217;ll print the value of the data.
+We&#8217;ll do this in the body of ```draw_bar```, by adding   ```t.write("  " + str(height))```
+as the new third line of the body.
+We&#8217;ve put a little space in front of the number, and turned the
+number into a string.  Without this extra space we tend
+to cramp our text awkwardly against the bar to the left.
+The result looks a lot better now:
+
+```Python
+import ColabTurtlePlus.Turtle as turtle
+
+xs = [48, 117, 200, 240, 160, 260, 220] # our data
+
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.left(90)
+    t.forward(height)     # Draw up the left side
+    t.write("  " + str(height))  # Write the data
+    t.right(90)
+    t.forward(40)         # Width of bar, along the top
+    t.right(90)
+    t.forward(height)     # And down again!
+    t.left(90)            # Put the turtle facing the way we found it.
+    t.forward(10)         # Leave small gap after each bar
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+shelly = turtle.Turtle()
+shelly.color("blue")
+
+for v in xs:              # Draw a bar for each number in the data
+    draw_bar(shelly, v)
+
+wn.mainloop()
+```
+
+And now we&#8217;ll add code to fill each bar.  Our final program now looks like this:
+
+```
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+shelly = turtle.Turtle()
+shelly.color("blue")
+shelly.fillcolor("red")
+
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.begin_fill()        # Start of the fill area
+    t.left(90)
+    t.forward(height)     # Draw up the left side
+    t.write("  " + str(height))  # Write the data
+    t.right(90)
+    t.forward(40)         # Width of bar, along the top
+    t.right(90)
+    t.forward(height)     # And down again!
+    t.left(90)            # Put the turtle facing the way we found it.
+    t.end_fill()          # Fill in the bar
+    t.forward(10)         # Leave small gap after each bar
+
+xs = [48, 117, 200, 240, 160, 260, 220] # our data
+for v in xs:              # Draw a bar for each number in the data
+    draw_bar(shelly, v)
+
+wn.mainloop()
+```
+
+
+Mmm.  Perhaps the bars should not be joined to each other at the bottom.  We&#8217;ll need to pick up the pen while making the gap between the bars.  We&#8217;ll leave that as an exercise for you!

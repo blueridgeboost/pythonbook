@@ -8,10 +8,10 @@ DESTINATION = docs
 
 develop: 
 	sleep 1 && echo "Opening local browser..." &&  open http://localhost:1313/pythonbook &
-	hugo server  --buildDrafts --watch --destination $(DESTINATION)
+	hugo server --config hugo.toml --buildDrafts --watch --destination $(DESTINATION)
 
 html: 
-	hugo  --destination $(DESTINATION)
+	hugo --config hugo.toml --destination $(DESTINATION)
 
 github: html 
 	git add -A :/; git commit -m "Rebuilt site" ; git push

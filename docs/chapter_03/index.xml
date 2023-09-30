@@ -1,67 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Program flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Program Flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
     <link>https://blueridgeboost.com/pythonbook/chapter_03/</link>
-    <description>Recent content in Program flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
+    <description>Recent content in Program Flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_03/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
+    
+	<atom:link href="https://blueridgeboost.com/pythonbook/chapter_03/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>Hello, little turtles!</title>
+      <title>Hello Turtles!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s01/</guid>
-      <description>Our first turtle program Let’s write a couple of lines of Python program to create a new turtle and start drawing a rectangle. (We’ll call the variable that refers to our first turtle alex, but we can choose another name if we follow the naming rules from the previous chapter).
-To use the turtle library in a Collab Jupyter notebook, we start by installing the library.
-You will have to execute this cell every time you restart a new session.</description>
+      <description>Our first turtle program To use the turtle library in a Collab Jupyter notebook, we start by installing the library.
+You will have to execute this cell every time you restart a new session.
+!pip install ColabTurtlePlus With the turtle library, we can draw by moving a virtual turtle around the screen. Let’s write a couple of lines of Python program to create a new turtle and start drawing a rectangle.</description>
     </item>
     
     <item>
-      <title>Colors!</title>
+      <title>Color</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s02/</guid>
-      <description>An object can have various methods — things it can do — and it can also have attributes (sometimes called properties). For example, each turtle has a color attribute. The method invocation alex.color(&amp;quot;red&amp;quot;) will make alex red, and drawing will be red too.
-The color of the turtle, the width of its pen, the position of the turtle within the window, which way it is facing, and so on are all part of its current state.</description>
+      <description>An object can have various methods — things it can do — and it can also have attributes (sometimes called properties). These are like internal variables that can be used to keep track of the state of the object.
+For the Turtle objects, we can&amp;rsquo;t manipulate the internal state directly, but instead can invoke methods on a Turtle object to change its internal state. We&amp;rsquo;ve already seen this with the facing direction in the last part — something must be keeping track of the direction the Turtle object is facing since it moves in a different forward direction after we called shelly.</description>
     </item>
     
     <item>
-      <title>Turtles!</title>
+      <title>More Turtles</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s03/</guid>
-      <description>A bale of turtles Just like we can have many different integers in a program, we can have many turtles. Each of them is called an instance. Each instance has its own attributes and methods — so alex might draw with a thin black pen and be at some position, while tess might be going in her own direction with a thick pink pen.
-import ColabTurtlePlus.Turtle as turtleturtle.clearscreen() turtle.setup(200,200)turtle.</description>
+      <description>A Bale of Turtles Just like we can have many different integers in a program, we can have many Turtle objects. Each of them is called an instance. Methods can be called on each instance to change its state and make it move.
+import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,200) turtle.bgcolor(&amp;#34;lightgreen&amp;#34;) tess = turtle.Turtle() # Create tess and set some attributes tess.color(&amp;#34;hotpink&amp;#34;) tess.pensize(5) alex = turtle.Turtle() # Create alex # Make tess draw an equilateral triangle tess.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_03/s05/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Loops</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
-      <description>&lt;h2 id=&#34;the-for-loop&#34;&gt;The &lt;strong&gt;for&lt;/strong&gt; loop&lt;/h2&gt;
-&lt;p&gt;When we drew the square, it was quite tedious.  We had to explicitly repeat the steps of
-moving and turning four times.  If we were drawing a hexagon, or an octogon,
-or a polygon with 42 sides, it would have been worse.&lt;/p&gt;
-&lt;p&gt;So a basic building block of all programs is to be able to repeat some code, over and
-over again.&lt;/p&gt;
-&lt;p&gt;Python’s &lt;strong&gt;for&lt;/strong&gt; loop solves this for us.   Let’s say we have some friends, and
-we’d like to send them each an email inviting them to our party.  We don’t
-quite know how to send email yet, so for the moment we’ll just print a message for each friend:&lt;/p&gt;</description>
+      <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that&amp;rsquo;s a polygon with 99 sides!), it would have been worse.
+So a basic building block of all programs is to be able to repeat some code, over and over again.
+Python’s for loop does this.</description>
+    </item>
+    
+    <item>
+      <title>Loopy Turtles</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_03/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
+      <description>Condensing our Turtle Program using Loops To draw a square we’d like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
+This does exactly the same, but using just three lines with a for loop:
+import turtle wn = turtle.Screen() # Set up the window and its attributes alex = turtle.</description>
+    </item>
+    
+    <item>
+      <title>More Turtle Tricks</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_03/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s06/</guid>
+      <description>No Need to Be Positive Turtle methods can use negative angles or distances. So shelly.forward(-100) will move shelly backwards, and shelly.left(-30) turns her to the right. Additionally, because there are 360 degrees in a circle, turning 30 to the left will get shelly facing in the same direction as turning 330 to the right! The on-screen animation will differ, though — you will be able to tell if shelly is turning clockwise or counter-clockwise!</description>
+    </item>
+    
+    <item>
+      <title>Drawing a Bar Graph</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_03/s07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s07/</guid>
+      <description>Project: A Turtle Bar Chart Now we&amp;rsquo;re going to put together many of the things we&amp;rsquo;ve learned to write a program that uses a turtle to draw a bar chart.
+Let&amp;rsquo;s start with some data to be charted:
+xs = [48, 117, 200, 240, 160, 260, 220]
+Corresponding to each data measurement, we’ll draw a rectangle of that height, with a fixed width. We’re showing off a new programming concept called a function in the example below: we’re defining the function draw_bar to draw a bar of our graph.</description>
     </item>
     
   </channel>
