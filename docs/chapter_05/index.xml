@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loops and iterations on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <link>https://blueridgeboost.com/pythonbook/chapter_05/</link>
+    <description>Recent content in Loops and iterations on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_05/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iteration</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_05/s03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_05/s03/</guid>
+      <description>Computers are often used to automate repetitive tasks. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly.
+Repeated execution of a set of statements is called iteration. Because iteration is so common, Python provides several language features to make it easier. We’ve already seen the for statement: this the the form of iteration you’ll likely be using most often. But in this chapter we’ve going to look at the while statement: another way to have your program do iteration, useful in slightly different circumstances.</description>
+    </item>
+    
+    <item>
+      <title>Some Tips, Tricks, and Common Errors</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_05/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_05/s04/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

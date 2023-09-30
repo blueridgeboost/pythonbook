@@ -13,37 +13,29 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s01/</guid>
-      <description>There are many modules in Python that provide very powerful features that we can use in our own programs. Some of these can send email, or fetch web pages. The one we’ll look at in this chapter allows us to create turtles and get them to draw shapes and patterns.
-The turtles are fun, but the real purpose of the chapter is to teach ourselves a little more Python, and to develop our theme of computational thinking, or thinking like a computer scientist.</description>
+      <description>Our first turtle program Let’s write a couple of lines of Python program to create a new turtle and start drawing a rectangle. (We’ll call the variable that refers to our first turtle alex, but we can choose another name if we follow the naming rules from the previous chapter).
+To use the turtle library in a Collab Jupyter notebook, we start by installing the library.
+You will have to execute this cell every time you restart a new session.</description>
     </item>
     
     <item>
-      <title>Conditionals</title>
+      <title>Colors!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s02/</guid>
-      <description>Programs get really interesting when we can test conditions and change the program behavior depending on the outcome of the tests. That’s what this chapter is about.
-Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean algebra — some rules for reasoning about and combining these values. This is the basis of all modern computer logic.</description>
+      <description>An object can have various methods — things it can do — and it can also have attributes (sometimes called properties). For example, each turtle has a color attribute. The method invocation alex.color(&amp;quot;red&amp;quot;) will make alex red, and drawing will be red too.
+The color of the turtle, the width of its pen, the position of the turtle within the window, which way it is facing, and so on are all part of its current state.</description>
     </item>
     
     <item>
-      <title>Iteration</title>
+      <title>Turtles!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s03/</guid>
-      <description>Computers are often used to automate repetitive tasks. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly.
-Repeated execution of a set of statements is called iteration. Because iteration is so common, Python provides several language features to make it easier. We’ve already seen the for statement: this the the form of iteration you’ll likely be using most often. But in this chapter we’ve going to look at the while statement: another way to have your program do iteration, useful in slightly different circumstances.</description>
-    </item>
-    
-    <item>
-      <title>Some Tips, Tricks, and Common Errors</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_03/s04/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
-      <description></description>
+      <description>A bale of turtles Just like we can have many different integers in a program, we can have many turtles. Each of them is called an instance. Each instance has its own attributes and methods — so alex might draw with a thin black pen and be at some position, while tess might be going in her own direction with a thick pink pen.
+import ColabTurtlePlus.Turtle as turtleturtle.clearscreen() turtle.setup(200,200)turtle.</description>
     </item>
     
     <item>
@@ -53,6 +45,23 @@ Repeated execution of a set of statements is called iteration. Because iteration
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_03/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
+      <description>&lt;h2 id=&#34;the-for-loop&#34;&gt;The &lt;strong&gt;for&lt;/strong&gt; loop&lt;/h2&gt;
+&lt;p&gt;When we drew the square, it was quite tedious.  We had to explicitly repeat the steps of
+moving and turning four times.  If we were drawing a hexagon, or an octogon,
+or a polygon with 42 sides, it would have been worse.&lt;/p&gt;
+&lt;p&gt;So a basic building block of all programs is to be able to repeat some code, over and
+over again.&lt;/p&gt;
+&lt;p&gt;Python’s &lt;strong&gt;for&lt;/strong&gt; loop solves this for us.   Let’s say we have some friends, and
+we’d like to send them each an email inviting them to our party.  We don’t
+quite know how to send email yet, so for the moment we’ll just print a message for each friend:&lt;/p&gt;</description>
     </item>
     
   </channel>
