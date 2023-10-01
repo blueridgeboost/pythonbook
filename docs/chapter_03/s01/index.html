@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Hello Turtles! - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1138,25 +1138,25 @@
 <p>To use the turtle library in a Collab Jupyter notebook, we start by
 installing the library.</p>
 <p><strong>You will have to execute this cell every time you restart a new session.</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#960050;background-color:#1e0010">!</span>pip install ColabTurtlePlus
-</code></pre></div><p>With the turtle library, we can draw by moving a virtual turtle around
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">!</span>pip install ColabTurtlePlus
+</span></span></code></pre></div><p>With the turtle library, we can draw by moving a virtual turtle around
 the screen.  Let’s write a couple of lines of Python program to
 create a new turtle and start drawing a rectangle. (We’ll call
 the variable that refers to our first turtle <code>shelly</code>, but you can
 choose any name you want so long as it follows the Python variable
 naming rules from the previous chapter).</p>
 <p>Here is a first program we will analyze together:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle	  <span style="color:#75715e"># Imports the turtle library</span>
-
-turtle<span style="color:#f92672">.</span>clearscreen()                      <span style="color:#75715e"># Remove drawings from previous runs.</span>
-turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">100</span>)                    <span style="color:#75715e"># Sets the dimensions of the viewing window.</span>
-
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()                  <span style="color:#75715e"># Create a turtle, assign to shelly</span>
-
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)                        <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
-shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)                           <span style="color:#75715e"># Tell shelly to turn left by 90 degrees</span>
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)                        <span style="color:#75715e"># Complete the second side of a rectangle</span>
-</code></pre></div><p>Here are a couple of things we will need to understand about this program. (Do not worry if you do not understand them all now— we will cover them in more detail as we work through the book.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle	  <span style="color:#75715e"># Imports the turtle library</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>clearscreen()                      <span style="color:#75715e"># Remove drawings from previous runs.</span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">100</span>)                    <span style="color:#75715e"># Sets the dimensions of the viewing window.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()                  <span style="color:#75715e"># Create a turtle, assign to shelly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)                        <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)                           <span style="color:#75715e"># Tell shelly to turn left by 90 degrees</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)                        <span style="color:#75715e"># Complete the second side of a rectangle</span>
+</span></span></code></pre></div><p>Here are a couple of things we will need to understand about this program. (Do not worry if you do not understand them all now— we will cover them in more detail as we work through the book.)</p>
 <p>The first line, <code>import ColabTurtlePlus.Turtle as turtle</code>,
 tells Python to load a module (we also this a <em>library</em>) named <code>ColabTurtlePlus.Turtle</code> that will be used in this notebook with the name <code>turtle</code>.</p>
 <p>The turtle library defines a new type, <code>Turtle</code> that has operations like <code>forward()</code> for moving the a turtle.  The dot
@@ -1166,10 +1166,10 @@ module name, with a lowercase <em>t</em>, is different from the type <code>Turtl
 <p>The next line clears the screen to remove drawings from previous runs with <code>turtle.clearscreen()</code> and set the dimensions to a size that is big enough for the drawing with <code>turtle.setup(200,100)</code>.</p>
 <p>Then, <code>shelly = turtle.Turtle()</code> creates a new turtle and assigns it to the variable <code>shelly</code>.</p>
 <p>Now we are ready to draw using the turtle:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)    <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
-shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)       <span style="color:#75715e"># Tell shelly to turn left by 90 degrees</span>
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)    <span style="color:#75715e"># Complete the second side of a rectangle</span>
-</code></pre></div><p>These lines instruct the Turtle <strong>object</strong> that the <code>shelly</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)    <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)       <span style="color:#75715e"># Tell shelly to turn left by 90 degrees</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)    <span style="color:#75715e"># Complete the second side of a rectangle</span>
+</span></span></code></pre></div><p>These lines instruct the Turtle <strong>object</strong> that the <code>shelly</code>
 variable references to move, and to turn. We do this by <strong>invoking</strong>,
 or calling, <strong>methods</strong> of that Turtle object. Methods are functions defined by the turtle library that can be called on Turtle objects. Here, the <code>forward</code> method takes a parameter that gives the distance, and the Turtle object will move that distance in the direction it is pointing. The <code>left</code> method causes the Turtle object to turn so it is now facing a new direction.</p>
 <p>Running the program produces the output below.</p>
@@ -1924,16 +1924,16 @@ or calling, <strong>methods</strong> of that Turtle object. Methods are function
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

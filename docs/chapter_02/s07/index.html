@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Type converter functions - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1137,9 +1137,9 @@ convert their arguments into types <code>int</code>, <code>float</code> and <cod
 it into an int. For floating point numbers, it <em>discards</em> the decimal portion
 of the number — a process we call <em>truncation towards zero</em> on
 the number line.  Let us see this in action:</p>
-<pre><code>&gt;&gt;&gt; int(3.14)
+<pre tabindex="0"><code>&gt;&gt;&gt; int(3.14)
 3
-&gt;&gt;&gt; int(3.9999)             # This doesn't round to the closest int!
+&gt;&gt;&gt; int(3.9999)             # This doesn&#39;t round to the closest int!
 3
 &gt;&gt;&gt; int(3.0)
 3
@@ -1147,27 +1147,27 @@ the number line.  Let us see this in action:</p>
 -3
 &gt;&gt;&gt; int(minutes / 60)
 10
-&gt;&gt;&gt; int(&quot;2345&quot;)             # Parse a string to produce an int
+&gt;&gt;&gt; int(&#34;2345&#34;)             # Parse a string to produce an int
 2345
 &gt;&gt;&gt; int(17)                 # It even works if arg is already an int
 17
-&gt;&gt;&gt; int(&quot;23 bottles&quot;)
+&gt;&gt;&gt; int(&#34;23 bottles&#34;)
 </code></pre><p>This last case doesn’t look like a number — what do we expect?</p>
-<pre><code>Traceback (most recent call last):
-      File &quot;&amp;lt;pyshell#4&gt;&quot;, line 1, in &amp;lt;module&gt;
-        int(&quot;23 bottles&quot;)
-ValueError: invalid literal for int() with base 10: '23 bottles'
+<pre tabindex="0"><code>Traceback (most recent call last):
+      File &#34;&amp;lt;pyshell#4&gt;&#34;, line 1, in &amp;lt;module&gt;
+        int(&#34;23 bottles&#34;)
+ValueError: invalid literal for int() with base 10: &#39;23 bottles&#39;
 </code></pre><p>The type converter <code>float</code> can turn an integer, a float, or a syntactically legal
 string into a float:</p>
-<pre><code>&gt;&gt;&gt; float(17)
+<pre tabindex="0"><code>&gt;&gt;&gt; float(17)
 17.0
-&gt;&gt;&gt; float(&quot;123.45&quot;)
+&gt;&gt;&gt; float(&#34;123.45&#34;)
 123.45
 </code></pre><p>The type converter <code>str</code> turns its argument into a string:</p>
-<pre><code>&gt;&gt;&gt; str(17)
-'17'
+<pre tabindex="0"><code>&gt;&gt;&gt; str(17)
+&#39;17&#39;
 &gt;&gt;&gt; str(123.45)
-'123.45'
+&#39;123.45&#39;
 </code></pre>
 
 <footer class="footline">
@@ -1921,16 +1921,16 @@ string into a float:</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

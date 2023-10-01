@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Variables - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1133,7 +1133,7 @@
 <p>One of the most powerful features of a programming language is the ability to
 manipulate <strong>variables</strong>. A variable is a name that refers to a value.</p>
 <p>The <strong>assignment statement</strong> gives a value to a variable:</p>
-<pre><code>&gt;&gt;&gt; message = &quot;What's up, Doc?&quot;
+<pre tabindex="0"><code>&gt;&gt;&gt; message = &#34;What&#39;s up, Doc?&#34;
 &gt;&gt;&gt; n = 17
 &gt;&gt;&gt; pi = 3.14159
 </code></pre><p>This example makes three assignments. The first assigns the string value <code>&quot;What's up, Doc?&quot;</code> to a variable named <code>message</code>. The second gives the integer
@@ -1143,8 +1143,8 @@ a variable called <code>pi</code>.</p>
 the token <code>==</code>.  The assignment statement assigns a <em>name</em>, on the
 left-hand side of the operator, to a <em>value</em>, on the right-hand side.
 This is why you will get an error if you enter:</p>
-<pre><code>&gt;&gt;&gt; 17 = n
-SyntaxError: can't assign to literal
+<pre tabindex="0"><code>&gt;&gt;&gt; 17 = n
+SyntaxError: can&#39;t assign to literal
 </code></pre><p>Tip. When reading or writing code, say to yourself “n is assigned 17”
 or “n gets the value 17”.  Don’t say “n equals 17”.</p>
 <p>A common way to represent variables on paper is to write the name with an arrow
@@ -1152,11 +1152,11 @@ pointing to the variable’s value. This kind of figure is called a <strong>stat
 snapshot</strong> because it shows what state each of the variables is in at a particular
 instant in time.  (Think of it as the variable’s state of mind).
 This diagram shows the result of executing the assignment statements:</p>
-<p><img alt="State snapshot" src="/pythonbook/images/state.png" /></p>
+<img alt="State snapshot" src="/pythonbook/images/state.png" />
 <p>If you ask the interpreter to evaluate a variable, it will produce the value that is currently
 linked to the variable:</p>
-<pre><code>&gt;&gt;&gt; message
-'What's up, Doc?'
+<pre tabindex="0"><code>&gt;&gt;&gt; message
+&#39;What&#39;s up, Doc?&#39;
 &gt;&gt;&gt; n
 17
 &gt;&gt;&gt; pi
@@ -1166,12 +1166,12 @@ But variables are <em>variable</em>. This means they can change over time, just 
 You can assign a value to a variable, and later assign a different value to the same variable.
 (<em>This is different from math. In math, if you give <code>x</code> the value 3, it
 cannot change to link to a different value half-way through your calculations!</em>)</p>
-<pre><code>&gt;&gt;&gt; day = &quot;Thursday&quot;
+<pre tabindex="0"><code>&gt;&gt;&gt; day = &#34;Thursday&#34;
 &gt;&gt;&gt; day
-'Thursday'
-&gt;&gt;&gt; day = &quot;Friday&quot;
+&#39;Thursday&#39;
+&gt;&gt;&gt; day = &#34;Friday&#34;
 &gt;&gt;&gt; day
-'Friday'
+&#39;Friday&#39;
 &gt;&gt;&gt; day = 21
 &gt;&gt;&gt; day
 21
@@ -1932,16 +1932,16 @@ and then arranging to update or change the variable when you miss another call.<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Drawing a Bar Graph - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1152,71 +1152,71 @@ complicated task that we’ll want to repeat many times (like
 drawing a bar in a bar graph). You can probably guess how functions
 work from this code, but we won&rsquo;t explain it here — we&rsquo;re going to discuss functions in a
 lot more detail in the next chapter.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_bar</span>(t, h):
-    <span style="color:#e6db74">&#34;&#34;&#34; Get turtle t to draw one bar, of height h. &#34;&#34;&#34;</span>
-    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># Draw up the left side</span>
-    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">40</span>)         <span style="color:#75715e"># Width of bar, along the top</span>
-    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># ...and down again!</span>
-
-    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)            <span style="color:#75715e"># Put the turtle facing the way we found it.</span>
-    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">10</span>)         <span style="color:#75715e"># Leave small gap after each bar</span>
-</code></pre></div><p>This function draws one bar, taking a Turtle object and height as its input.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_bar</span>(t, h):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34; Get turtle t to draw one bar, of height h. &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># Draw up the left side</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">40</span>)         <span style="color:#75715e"># Width of bar, along the top</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># ...and down again!</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)            <span style="color:#75715e"># Put the turtle facing the way we found it.</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">10</span>)         <span style="color:#75715e"># Leave small gap after each bar</span>
+</span></span></code></pre></div><p>This function draws one bar, taking a Turtle object and height as its input.</p>
 <p>To draw bar for all of the data, we loop through the data drawing each bar:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> xs:              
-    draw_bar(shelly, v)
-</code></pre></div><p>The important thing here was the mental chunking, or how we broke the
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> xs:              
+</span></span><span style="display:flex;"><span>    draw_bar(shelly, v)
+</span></span></code></pre></div><p>The important thing here was the mental chunking, or how we broke the
 problem into smaller pieces. Our chunk is to draw one bar, and we
 wrote a function to do that. Then, for the whole chart, we repeatedly
 called our function.</p>
 <p>Here&rsquo;s our full first version of the graphing program:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-xs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">48</span>, <span style="color:#ae81ff">117</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">240</span>, <span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">260</span>, <span style="color:#ae81ff">220</span>] <span style="color:#75715e"># our data</span>
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_bar</span>(t, h):
-    <span style="color:#e6db74">&#34;&#34;&#34; Get turtle t to draw one bar, of height h. &#34;&#34;&#34;</span>
-    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># Draw up the left side</span>
-    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">40</span>)         <span style="color:#75715e"># Width of bar, along the top</span>
-    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
-    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># And down again!</span>
-
-    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)            <span style="color:#75715e"># Put the turtle facing the way we found it.</span>
-    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">10</span>)         <span style="color:#75715e"># Leave small gap after each bar</span>
-
-turtle<span style="color:#f92672">.</span>clearscreen()  
-turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>)
-turtle<span style="color:#f92672">.</span>bgcolor(<span style="color:#e6db74">&#34;lightgreen&#34;</span>)
-
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
-shelly<span style="color:#f92672">.</span>penup()
-shelly<span style="color:#f92672">.</span>goto(<span style="color:#f92672">-</span><span style="color:#ae81ff">190</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">190</span>)
-shelly<span style="color:#f92672">.</span>pendown()
-shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)
-shelly<span style="color:#f92672">.</span>fillcolor(<span style="color:#e6db74">&#34;darkblue&#34;</span>)
-
-<span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> xs:             
-    draw_bar(shelly, v)
-</code></pre></div><p>Note that we used a new <code>goto</code> method to move the turtle to the bottom left of the canvas before starting to draw the bar graph. Try running the code without the <code>goto</code> to see what happens.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">48</span>, <span style="color:#ae81ff">117</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">240</span>, <span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">260</span>, <span style="color:#ae81ff">220</span>] <span style="color:#75715e"># our data</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_bar</span>(t, h):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34; Get turtle t to draw one bar, of height h. &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># Draw up the left side</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">40</span>)         <span style="color:#75715e"># Width of bar, along the top</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(h)          <span style="color:#75715e"># And down again!</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)            <span style="color:#75715e"># Put the turtle facing the way we found it.</span>
+</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">10</span>)         <span style="color:#75715e"># Leave small gap after each bar</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>clearscreen()  
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>)
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>bgcolor(<span style="color:#e6db74">&#34;lightgreen&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>penup()
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>goto(<span style="color:#f92672">-</span><span style="color:#ae81ff">190</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">190</span>)
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>pendown()
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>fillcolor(<span style="color:#e6db74">&#34;darkblue&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> xs:             
+</span></span><span style="display:flex;"><span>    draw_bar(shelly, v)
+</span></span></code></pre></div><p>Note that we used a new <code>goto</code> method to move the turtle to the bottom left of the canvas before starting to draw the bar graph. Try running the code without the <code>goto</code> to see what happens.</p>
 <h3 id="improving-the-bar-graph">Improving the Bar Graph</h3>
 <p>The nice thing about defining a function <code>draw_bar</code> to draw each
 bar, is that if we want to improve the bars we can just change this
 function and all of the bars will improve!</p>
 <p>We&rsquo;ll modify it to print out the value of the data as the bar is drawn, and to fill in the bar with color.</p>
-<pre><code>import ColabTurtlePlus.Turtle as turtle
+<pre tabindex="0"><code>import ColabTurtlePlus.Turtle as turtle
 
 xs = [48, 117, 200, 240, 160, 260, 220] # our data
 
 def draw_bar(t, h):
-    &quot;&quot;&quot; Get turtle t to draw one bar, of height h. &quot;&quot;&quot;
+    &#34;&#34;&#34; Get turtle t to draw one bar, of height h. &#34;&#34;&#34;
     t.begin_fill()                # Start of the fill area
     t.left(90)
     t.forward(h)                  # Draw up the left side
-    t.write(&quot;  &quot; + str(h))        # Write the data
+    t.write(&#34;  &#34; + str(h))        # Write the data
     t.right(90)
     t.forward(40)                 # Width of bar, along the top
     t.right(90)
@@ -1227,14 +1227,14 @@ def draw_bar(t, h):
 
 turtle.clearscreen()  
 turtle.setup(400, 400)
-turtle.bgcolor(&quot;lightgreen&quot;)
+turtle.bgcolor(&#34;lightgreen&#34;)
 
 shelly = turtle.Turtle()
 shelly.penup()
 shelly.goto(-190, -190)
 shelly.pendown()
-shelly.color(&quot;blue&quot;)
-shelly.fillcolor(&quot;darkblue&quot;)
+shelly.color(&#34;blue&#34;)
+shelly.fillcolor(&#34;darkblue&#34;)
 
 for v in xs:              # Draw a bar for each number in the data
     draw_bar(shelly, v)
@@ -2006,16 +2006,16 @@ work for any number of bars?</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159168"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159168"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159168"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159168"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159168"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159168"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159168"></script>
+    <script src="/pythonbook/js/learn.js?1696159168"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159168"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

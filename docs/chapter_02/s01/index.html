@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Values and data types - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1142,46 +1142,46 @@ enclosed in quotation marks.</p>
 called <strong>type</strong> which can tell you, as in the example below. (Anytime we show you an
 example with lines that start with <code>&gt;&gt;&gt;</code>, these are examples that you can try in
 the IDLE shell.)</p>
-<pre><code>&gt;&gt;&gt; type(&quot;Hello, World!&quot;)
-&lt;class 'str'&gt;
+<pre tabindex="0"><code>&gt;&gt;&gt; type(&#34;Hello, World!&#34;)
+&lt;class &#39;str&#39;&gt;
 &gt;&gt;&gt; type(17)
-&lt;class 'int'&gt;
+&lt;class &#39;int&#39;&gt;
 </code></pre><p>Not surprisingly, strings belong to the class <strong>str</strong> and integers belong to the
 class <strong>int</strong>. Less obviously, numbers with a decimal point belong to a class
 called <strong>float</strong>, because these numbers are represented in a format called
 <em>floating-point</em>.  At this stage, you can treat the words <em>class</em> and <em>type</em>
 interchangeably.</p>
-<pre><code>&gt;&gt;&gt; type(3.2)
-&lt;class 'float'&gt;
+<pre tabindex="0"><code>&gt;&gt;&gt; type(3.2)
+&lt;class &#39;float&#39;&gt;
 </code></pre><p>What about values like <code>&quot;17&quot;</code> and <code>&quot;3.2&quot;</code>? They look like numbers, but they
 are in quotation marks like strings.</p>
-<pre><code>&gt;&gt;&gt; type(&quot;17&quot;)
-&lt;class &quot;str&quot;&gt;
-&gt;&gt;&gt; type(&quot;;3.2&quot;;)
-&lt;class &quot;str&quot;&gt;
+<pre tabindex="0"><code>&gt;&gt;&gt; type(&#34;17&#34;)
+&lt;class &#34;str&#34;&gt;
+&gt;&gt;&gt; type(&#34;;3.2&#34;;)
+&lt;class &#34;str&#34;&gt;
 </code></pre><p>They’re strings!</p>
 <p>Strings in Python can be enclosed in either single quotes (<code>'</code>) or double quotes
 (<code>&quot;</code>), or three of each (<code>'''</code> or <code>&quot;&quot;&quot;</code>)</p></p>
-<pre><code>&gt;&gt;&gt; type('This is a string.')
-&lt;class &quot;str&quot;&gt;
-&gt;&gt;&gt; type(&quot;And so is this.&quot;)
-&lt;class &quot;str&quot;&gt;
-&gt;&gt;&gt; type('''and this.''')
-&lt;class &quot;str&quot;&gt;
-&gt;&gt;&gt; type(&quot;&quot;&quot;and even this...&quot;&quot;&quot;)
-&lt;class &quot;str&quot;&gt;
+<pre tabindex="0"><code>&gt;&gt;&gt; type(&#39;This is a string.&#39;)
+&lt;class &#34;str&#34;&gt;
+&gt;&gt;&gt; type(&#34;And so is this.&#34;)
+&lt;class &#34;str&#34;&gt;
+&gt;&gt;&gt; type(&#39;&#39;&#39;and this.&#39;&#39;&#39;)
+&lt;class &#34;str&#34;&gt;
+&gt;&gt;&gt; type(&#34;&#34;&#34;and even this...&#34;&#34;&#34;)
+&lt;class &#34;str&#34;&gt;
 </code></pre><p>Double quoted strings can contain single quotes inside them, as in
 <code>&quot;Bruce's beard&quot;</code>, and single quoted strings can have double quotes
 inside them, as in <code>'The knights who say &quot;Ni!&quot;'</code>.
 Strings enclosed with three occurrences of either quote symbol are
 called triple quoted strings.  They can
 contain either single or double quotes:</p>
-<pre><code>&gt;&gt;&gt; print(&quot;&quot;&quot;&quot;Oh no&quot;, she exclaimed, &quot;Ben's bike is broken!&quot;&quot;&quot;&quot;)
-&quot;Oh no&quot;, she exclaimed, &quot;Ben's bike is broken!&quot;
+<pre tabindex="0"><code>&gt;&gt;&gt; print(&#34;&#34;&#34;&#34;Oh no&#34;, she exclaimed, &#34;Ben&#39;s bike is broken!&#34;&#34;&#34;&#34;)
+&#34;Oh no&#34;, she exclaimed, &#34;Ben&#39;s bike is broken!&#34;
 </code></pre><p>Triple quoted strings can even span multiple lines:</p>
-<pre><code>&gt;&gt;&gt; message = &quot;&quot;&quot;This message will
+<pre tabindex="0"><code>&gt;&gt;&gt; message = &#34;&#34;&#34;This message will
 ... span several
-... lines.&quot;&quot;&quot;
+... lines.&#34;&#34;&#34;
 &gt;&gt;&gt; print(message)
 This message will
 span several
@@ -1192,17 +1192,17 @@ once it has parsed the text of your program or command, the way it stores the
 value is identical in all cases, and the surrounding quotes are not part of
 the value. But when the interpreter wants to display a string, it has to
 decide which quotes to use to make it look like a string.</p>
-<pre><code>&gt;&gt;&gt; &quot;This is a string.&quot;
-&quot;This is a string.&quot;
-&gt;&gt;&gt; &quot;&quot;&quot;And so is this.&quot;&quot;&quot;
-&quot;And so is this.&quot;
+<pre tabindex="0"><code>&gt;&gt;&gt; &#34;This is a string.&#34;
+&#34;This is a string.&#34;
+&gt;&gt;&gt; &#34;&#34;&#34;And so is this.&#34;&#34;&#34;
+&#34;And so is this.&#34;
 </code></pre><p>So the Python language designers usually chose to surround their strings
 by single quotes.  What do think would happen if the string already
 contained single quotes?</p>
 <p>When you type a large integer, you might be tempted to use commas between
 groups of three digits, as in <code>42,000</code>. This is not a legal integer in
 Python, but it does mean something else, which is legal:</p>
-<pre><code>&gt;&gt;&gt; 42000
+<pre tabindex="0"><code>&gt;&gt;&gt; 42000
 42000
 &gt;&gt;&gt; 42,000
 (42, 0)
@@ -1962,16 +1962,16 @@ mean something quite different from what you intended.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

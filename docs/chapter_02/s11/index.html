@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Composition - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1141,22 +1141,22 @@ asks the user to input a value for the radius of a circle, and then
 computes the area of the circle from the formula</p>
 <p>Area = pi * r^2</p>
 <p>Firstly, we’ll do the four steps one at a time:</p>
-<pre><code>response = input(&quot;What is your radius? &quot;)
+<pre tabindex="0"><code>response = input(&#34;What is your radius? &#34;)
 r = float(response)
 area = 3.14159 * r**2
-print(&quot;The area is &quot; + str(area))
+print(&#34;The area is &#34; + str(area))
 </code></pre><p>Notice that we have to convert the value of the variable <code>area</code> to a string before we can print it. If we don’t, we get an error:</p>
-<pre><code>response = input(&quot;What is your radius? &quot;)
+<pre tabindex="0"><code>response = input(&#34;What is your radius? &#34;)
 r = float(response)
 area = 3.14159 * r**2
-print(&quot;The area is &quot; + area)
+print(&#34;The area is &#34; + area)
 </code></pre><p>We get a runtime error in the above program because Python doesn’t know how to “add” a string and a float. We need to convert the float to a string before we can add (that is, concatenate) it to the string <code>&quot;The area is &quot;</code>.</p>
 <p>Now let’s compose the first two lines into a single line of code, and compose the
 second two lines into another line of code.</p>
-<pre><code>r = float( input(&quot;What is your radius? &quot;) )
-print(&quot;The area is &quot; + str(3.14159 * r**2))
+<pre tabindex="0"><code>r = float( input(&#34;What is your radius? &#34;) )
+print(&#34;The area is &#34; + str(3.14159 * r**2))
 </code></pre><p>If we really wanted to be tricky, we could write it all in one statement:</p>
-<pre><code>print(&quot;The area is &quot; + str(3.14159 * float(input(&quot;What is your radius? &quot;))**2))
+<pre tabindex="0"><code>print(&#34;The area is &#34; + str(3.14159 * float(input(&#34;What is your radius? &#34;))**2))
 </code></pre><p>Such compact code may not be most understandable for humans, but it does
 illustrate how we can compose bigger chunks from our building blocks.</p>
 <p>If you’re ever in doubt about whether to compose code or fragment it into smaller steps,
@@ -1915,16 +1915,16 @@ be the first case above, with four separate steps.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

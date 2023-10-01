@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Iteration - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1156,7 +1156,7 @@ program do iteration, useful in slightly different circumstances.</p>
 <p>As we have mentioned previously, it is legal to make more than one assignment to the
 same variable. A new assignment makes an existing variable refer to a new value
 (and stop referring to the old value).</p>
-<pre><code>airtime_remaining = 15
+<pre tabindex="0"><code>airtime_remaining = 15
 print(airtime_remaining)
 airtime_remaining = 7
 print(airtime_remaining)
@@ -1174,11 +1174,11 @@ is legal and <code>7 =  a</code> is not.</p>
 <p>In Python, an assignment statement can make
 two variables equal, but because further assignments can change either of them,
 they don’t have to stay that way:</p>
-<pre><code>a = 5
+<pre tabindex="0"><code>a = 5
 b = a    # After executing this line, a and b are now equal
-print(&quot;a=&quot;+str(a)+&quot; b=&quot;+str(b))
+print(&#34;a=&#34;+str(a)+&#34; b=&#34;+str(b))
 a = 3    # After executing this line, a and b are no longer equal
-print(&quot;a=&quot;+str(a)+&quot; b=&quot;+str(b))
+print(&#34;a=&#34;+str(a)+&#34; b=&#34;+str(b))
 </code></pre><p>Line 4 changes the value of <code>a</code> but does not change the value of
 <code>b</code>, so they are no longer equal. Some
 people also think that <em>variable</em> was an unfortunate word to choose, and instead
@@ -1193,7 +1193,7 @@ to the new value.</p>
 <p>One of the most common forms of assignment is an update, where the new
 value of the variable depends on its old value.   Deduct 40 cents from
 my airtime balance, or add one run to the scoreboard.</p>
-<pre><code>n = 5
+<pre tabindex="0"><code>n = 5
 n = 3 * n + 1
 print(n)
 </code></pre><p>Line 2 means <em>get the current value of n, multiply it by three and add
@@ -1201,14 +1201,14 @@ one, and assign the answer to n, thus making n refer to the value</em>.
 So after executing the two lines above, <code>n</code> will point/refer to the
 integer 16.</p>
 <p>If you try to get the value of a variable that has never been assigned to, you’ll get an error:</p>
-<pre><code>&gt;&gt;&gt; w = x + 1
+<pre tabindex="0"><code>&gt;&gt;&gt; w = x + 1
 Traceback (most recent call last):
-  File &quot;&amp;lt;pyshell#0&gt;&quot;, line 1, in &amp;lt;module&gt;
+  File &#34;&amp;lt;pyshell#0&gt;&#34;, line 1, in &amp;lt;module&gt;
     w=x+1
 NameError: name &amp;#39;x&amp;#39; is not defined
 </code></pre><p>Before you can update a variable, you have to <strong>initialize</strong> it to some starting value,
 usually with a simple assignment:</p>
-<pre><code>runs_scored = 0
+<pre tabindex="0"><code>runs_scored = 0
 ...
 runs_scored = runs_scored + 1
 </code></pre><p>This sort of assignment — updating a variable by adding 1 to it — is very common.
@@ -1219,8 +1219,8 @@ as incrementing it by 1.</p>
 <p>Recall that the <code>for</code> loop processes each item in a list.  Each item in
 turn is (re-)assigned to the loop variable, and the body of the loop is executed.
 We saw this example in an earlier chapter:</p>
-<pre><code>for f in [&quot;Joe&quot;, &quot;Zoe&quot;, &quot;Brad&quot;, &quot;Angelina&quot;, &quot;Zuki&quot;, &quot;Thandi&quot;, &quot;Paris&quot;]:
-    invitation = &quot;Hi &quot; + f + &quot;.  Please come to my party on Saturday!&quot;
+<pre tabindex="0"><code>for f in [&#34;Joe&#34;, &#34;Zoe&#34;, &#34;Brad&#34;, &#34;Angelina&#34;, &#34;Zuki&#34;, &#34;Thandi&#34;, &#34;Paris&#34;]:
+    invitation = &#34;Hi &#34; + f + &#34;.  Please come to my party on Saturday!&#34;
     print(invitation)&lt;/textarea&gt;
 </code></pre><p>Running through all the items in a list is called <strong>traversing</strong> the list,
 or <strong>traversal</strong>.</p>
@@ -1232,8 +1232,8 @@ precisely why we have variables in a program: so we’ll need some variable
 to remember the “running total”.  It should be initialized with a value of zero,
 and then we need to traverse the items in the list.  For each item, we’ll want
 to update the running total by adding the next number to it.</p>
-<pre><code>def mysum(xs):
-    &quot;&quot;&quot; Sum all the numbers in the list xs, and return the total. &quot;&quot;&quot;
+<pre tabindex="0"><code>def mysum(xs):
+    &#34;&#34;&#34; Sum all the numbers in the list xs, and return the total. &#34;&#34;&#34;
     running_total = 0
     for x in xs:
        running_total = running_total + x
@@ -1247,8 +1247,8 @@ print(mysum([ ])) # should be 0
 print(mysum(range(11))) # should be 0+1+2+...+10 = 55&lt;/textarea&gt;
 </code></pre><h2 id="the-while-statement">The <code>while</code> statement</h2>
 <p>Here is a fragment of code that demonstrates the use of the <code>while</code> statement:</p>
-<pre><code>def sum_to(n):
-    &quot;&quot;&quot; Return the sum of 1+2+3+...+n &quot;&quot;&quot;
+<pre tabindex="0"><code>def sum_to(n):
+    &#34;&#34;&#34; Return the sum of 1+2+3+...+n &#34;&#34;&#34;
     ss  = 0
     v = 1
     while v &lt;= n:
@@ -1288,8 +1288,8 @@ you — the programmer — than the equivalent <code>for</code> loop.  When usin
 loop one has to manage the loop variable yourself: give it an initial value, test
 for completion, and then make sure you change something in the body so that the loop
 terminates.  By comparison, here is an equivalent function that uses <code>for</code> instead:</p>
-<pre><code>def sum_to(n):
-    &quot;&quot;&quot; Return the sum of 1+2+3+...+n &quot;&quot;&quot;
+<pre tabindex="0"><code>def sum_to(n):
+    &#34;&#34;&#34; Return the sum of 1+2+3+...+n &#34;&#34;&#34;
     ss  = 0
     for v in range(n+1):
         ss = ss + v
@@ -1312,17 +1312,17 @@ the next term of the sequence from <code>n</code>, either by halving <code>n</co
 (whenever <code>n</code> is even), or else by multiplying it by three and adding 1 (whenever <code>n</code> is odd).  The sequence
 terminates when <code>n</code> reaches 1.</p>
 <p>This Python function captures that algorithm:</p>
-<pre><code>def seq_3n_plus_1(n):
-    &quot;&quot;&quot; Print the 3n+1 sequence from n,
+<pre tabindex="0"><code>def seq_3n_plus_1(n):
+    &#34;&#34;&#34; Print the 3n+1 sequence from n,
         terminating when it reaches 1.
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     while n != 1:
-        print(n, end=&quot;, &quot;)
+        print(n, end=&#34;, &#34;)
         if n % 2 == 0:        # n is even
             n = n // 2
         else:                 # n is odd
             n = n * 3 + 1
-    print(n, end=&quot;.\n&quot;)
+    print(n, end=&#34;.\n&#34;)
 
 seq_3n_plus_1(3)
 seq_3n_plus_1(19)
@@ -1905,17 +1905,17 @@ them somewhere else, you will probably make the program harder to read.</p>
 <h2 id="the-break-statement">The <code>break</code> statement</h2>
 <p>The <strong>break</strong> statement is used to immediately leave the body of its loop.  The next
 statement to be executed is the first one after the body:</p>
-<pre><code>for i in [12, 16, 17, 24, 29]:
+<pre tabindex="0"><code>for i in [12, 16, 17, 24, 29]:
     if i % 2 == 1:  # If the number is odd
         break        #  ... immediately exit the loop
     print(i)
-print(&quot;done&quot;)
+print(&#34;done&#34;)
 </code></pre><p>The pre-test loop — standard loop behavior</p>
 <p><code>for</code> and <code>while</code> loops do their tests at the start, before executing
 any part of the body.   They’re called <strong>pre-test</strong> loops, because the test
 happens before (pre) the body.
 <code>break</code> and <code>return</code> are our tools for adapting this standard behavior.</p>
-<p><img alt="/pythonbook/images/pre_test_loop.png" class="last" src="/pythonbook/images/pre_test_loop.png" /></p>
+<img alt="/pythonbook/images/pre_test_loop.png" class="last" src="/pythonbook/images/pre_test_loop.png" />
 <h2 id="other-flavors-of-loops">Other flavors of loops&lt;</h2>
 <p>Sometimes we’d like to have the <strong>middle-test</strong> loop with the exit test in the middle
 of the body, rather than at the beginning or at the end.  Or a <strong>post-test</strong> loop that
@@ -1927,14 +1927,14 @@ To indicate that there are no more inputs, the user enters a special value, ofte
 the value -1, or the empty string.  This needs a middle-exit loop pattern:
 input the next number, then test whether to exit, or else process the number:</p>
 <p>The middle-test loop flowchart</p>
-<p><img alt="/pythonbook/images/mid_test_loop.png" class="last" src="/pythonbook/images/mid_test_loop.png" /></p>
-<pre><code>total = 0
+<img alt="/pythonbook/images/mid_test_loop.png" class="last" src="/pythonbook/images/mid_test_loop.png" />
+<pre tabindex="0"><code>total = 0
 while True:
-    response = input(&quot;Enter the next number. (Leave blank to end)&quot;)
-    if response == &quot;&quot;:
+    response = input(&#34;Enter the next number. (Leave blank to end)&#34;)
+    if response == &#34;&#34;:
         break
     total += int(response)
-print(&quot;The total of the numbers you entered is &quot;+str(total))
+print(&#34;The total of the numbers you entered is &#34;+str(total))
 </code></pre><p>Convince yourself that this fits the middle-exit loop flowchart: line 3
 does some useful work, lines 4 and 5 can exit the loop, and if they don’t
 line 6 does more useful work before the next iteration starts.</p>
@@ -1951,12 +1951,12 @@ be sure that the loop body always executes at least once (because the first test
 only happens at the end of the execution of the first loop body).
 This is useful, for example, if we want to play an interactive game against
 the user — we always want to play at least one game:</p>
-<pre><code>while True:
+<pre tabindex="0"><code>while True:
     play_the_game_once()
-    response = input(&quot;Play again? (yes or no)&quot;)
-    if response != &quot;yes&quot;:
+    response = input(&#34;Play again? (yes or no)&#34;)
+    if response != &#34;yes&#34;:
         break
-print(&quot;Goodbye!&quot;)
+print(&#34;Goodbye!&#34;)
 </code></pre><p>Hint: Think about where you want the exit test to happen</p>
 <p>Once you’ve recognized that you need a loop to repeat something, think
 about its terminating condition — when will I want to stop iterating?
@@ -1971,11 +1971,11 @@ no more data to process, or the user doesn’t want to play our game anymore.</p
 <p>This is a control flow statement that causes the program to immediately skip the
 processing of the rest of the body of the loop, <em>for the current iteration</em>.  But
 the loop still carries on running for its remaining iterations:</p>
-<pre><code>for i in [12, 16, 17, 24, 29, 30]:
+<pre tabindex="0"><code>for i in [12, 16, 17, 24, 29, 30]:
     if i % 2 == 1:      # If the number is odd
-        continue         # Don't process it
+        continue         # Don&#39;t process it
     print(i)
-print(&quot;done&quot;)
+print(&#34;done&#34;)
 </code></pre><h2 id="functions">Functions</h2>
 <p>A few times now, we have mentioned all the things functions are good for. By
 now, you might be wondering what exactly those things are.  Here are some of
@@ -2744,16 +2744,16 @@ and debug one, you can reuse it.</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159167"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159167"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159167"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159167"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159167"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159167"></script>
+    <script src="/pythonbook/js/learn.js?1696159167"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159167"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

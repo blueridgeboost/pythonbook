@@ -6,11 +6,7 @@
     <description>Recent content in The Way of the Program on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
-    
-	<atom:link href="https://blueridgeboost.com/pythonbook/chapter_01/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_01/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Programming Language</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_01/s01/</link>
@@ -29,7 +25,7 @@ As you might infer from the name high-level language, there are also low-level l
       <guid>https://blueridgeboost.com/pythonbook/chapter_01/s02/</guid>
       <description>A program is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the roots of a polynomial, but it can also be a symbolic computation, such as searching and replacing text in a document.
 The details look different in different languages, but a few basic instructions appear in just about every language:
- input.</description>
+input. Get data from the keyboard, a file, or some other device.</description>
     </item>
     
     <item>

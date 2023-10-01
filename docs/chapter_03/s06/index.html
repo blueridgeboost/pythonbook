@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>More Turtle Tricks - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1696110956" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1696159167" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1696159167" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1696110956" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1696159167" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696110956"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1696159167"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696110956"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1696159167"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1696159167"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1696110956"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1696159167"></script>
 
     
   </div>
@@ -1160,30 +1160,30 @@ backward, forward, negative and positive distances or angles values is a good st
 <p>A turtle’s pen can be picked up or put down.  This allows us to
 move a turtle to a different place without drawing a line.  The
 methods are <code>penup</code> and <code>pendown</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()         <span style="color:#75715e"># Set up the window and its attributes</span>
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()       <span style="color:#75715e"># Create shelly</span>
-
-shelly<span style="color:#f92672">.</span>penup()
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)     <span style="color:#75715e"># This moves shelly, but no line is drawn</span>
-shelly<span style="color:#f92672">.</span>pendown()
-
-wn<span style="color:#f92672">.</span>mainloop()
-</code></pre></div><h3 id="squashing-turtles">Squashing Turtles</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()         <span style="color:#75715e"># Set up the window and its attributes</span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()       <span style="color:#75715e"># Create shelly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>penup()
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">100</span>)     <span style="color:#75715e"># This moves shelly, but no line is drawn</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>pendown()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><h3 id="squashing-turtles">Squashing Turtles</h3>
 <p>Every turtle can have its own shape.  The shapes available are <code>arrow</code>, <code>blank</code>, <code>circle</code>, <code>classic</code>, <code>square</code>, <code>triangle</code>, <code>turtle</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
-
-shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)      <span style="color:#75715e"># Shape shelly to look like a turtle</span>
-
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
-shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
-
-wn<span style="color:#f92672">.</span>mainloop()             <span style="color:#75715e"># Wait for user to close window</span>
-</code></pre></div><h3 id="animation">Animation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)      <span style="color:#75715e"># Shape shelly to look like a turtle</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()             <span style="color:#75715e"># Wait for user to close window</span>
+</span></span></code></pre></div><h3 id="animation">Animation</h3>
 <p>Part of the fun of drawing with turtles is that we don&rsquo;t see the drawing appear instantly, but see the turtle move to draw. We can speed up or slow down the turtle’s speed for both turning and moving.  Speed settings can be set
 between <code>1</code> (slowest) to <code>10</code> (fastest).  But if we set the speed to <code>0</code>, it has
 a special meaning — turn off animation and go as fast as possible.</p>
@@ -1191,24 +1191,24 @@ a special meaning — turn off animation and go as fast as possible.</p>
 and this will remain after the turtle has moved somewhere else.
 Stamping works, even when the pen is up.</p>
 <p>The code below shows some examples using these methods:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()
-wn<span style="color:#f92672">.</span>bgcolor(<span style="color:#e6db74">&#34;lightgreen&#34;</span>)
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
-shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)
-shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)
-
-shelly<span style="color:#f92672">.</span>penup()
-size <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">30</span>):
-    shelly<span style="color:#f92672">.</span>stamp()             <span style="color:#75715e"># Leave an impression on the canvas</span>
-    size <span style="color:#f92672">=</span> size <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>            <span style="color:#75715e"># Increase the size on every iteration</span>
-    shelly<span style="color:#f92672">.</span>forward(size)       <span style="color:#75715e"># Move shelly along</span>
-    shelly<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">24</span>)           <span style="color:#75715e">#  ...  and turn her</span>
-
-wn<span style="color:#f92672">.</span>mainloop()
-</code></pre></div><p>How many times was the body of the loop executed?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>bgcolor(<span style="color:#e6db74">&#34;lightgreen&#34;</span>)
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>shape(<span style="color:#e6db74">&#34;turtle&#34;</span>)
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>penup()
+</span></span><span style="display:flex;"><span>size <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">30</span>):
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>stamp()             <span style="color:#75715e"># Leave an impression on the canvas</span>
+</span></span><span style="display:flex;"><span>    size <span style="color:#f92672">=</span> size <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>            <span style="color:#75715e"># Increase the size on every iteration</span>
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>forward(size)       <span style="color:#75715e"># Move shelly along</span>
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">24</span>)           <span style="color:#75715e">#  ...  and turn her</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>How many times was the body of the loop executed?</p>
 <p>How many turtle images are on the screen?</p>
 <p>All except one of the shapes we see on the screen here are footprints
 created by <code>stamp</code>.  But the program still only has <em>one</em> turtle
@@ -1217,51 +1217,51 @@ object — can you figure out which one here is the real
 code after the <code>for</code> loop to change <code>shelly</code>‘ color.)</p>
 <h3 id="writing-text">Writing Text</h3>
 <p>We can get a turtle to display text on the canvas at the turtle’s current position.  The method to do that is called <code>write</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
-
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
-shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
-shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
-
-shelly<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Hi there!&#34;</span>)   <span style="color:#75715e"># Write a message</span>
-
-wn<span style="color:#f92672">.</span>mainloop()               <span style="color:#75715e"># Wait for user to close window</span>
-</code></pre></div><h3 id="filling-shapes">Filling Shapes</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()        <span style="color:#75715e"># Creates a playground for turtles</span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()    <span style="color:#75715e"># Create a turtle, assign to shelly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)          <span style="color:#75715e"># Tell shelly to move forward by 50 units</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)             <span style="color:#75715e"># Tell shelly to turn by 90 degrees</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">30</span>)          <span style="color:#75715e"># Complete the second side of a rectangle</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Hi there!&#34;</span>)   <span style="color:#75715e"># Write a message</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()               <span style="color:#75715e"># Wait for user to close window</span>
+</span></span></code></pre></div><h3 id="filling-shapes">Filling Shapes</h3>
 <p>We can fill a shape (circle, semicircle, triangle, etc.) with a color.  It is a two-step process.
 First we call the method <code>shelly.begin_fill()</code>, then we draw the shape, then we call <code>shelly.end_fill()</code>.  Below is an example of this using our square example from earlier.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
-
-shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
-    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
-    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
-shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
-
-wn<span style="color:#f92672">.</span>mainloop()
-</code></pre></div><p>We’ve previously set the color of our turtle — we can now also set its fill color, which need not
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>We’ve previously set the color of our turtle — we can now also set its fill color, which need not
 be the same as the turtle and the pen color.  We use the <code>fillcolor</code> method to set the
 turtle’s fill color:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#f92672">as</span> turtle
-
-wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
-shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
-shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)          <span style="color:#75715e"># Set pen color to blue</span>
-shelly<span style="color:#f92672">.</span>fillcolor(<span style="color:#e6db74">&#34;red&#34;</span>)       <span style="color:#75715e"># Set fill color to red</span>
-
-shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
-    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
-    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
-shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
-
-wn<span style="color:#f92672">.</span>mainloop()
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> ColabTurtlePlus.Turtle <span style="color:#66d9ef">as</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Screen()          <span style="color:#75715e"># Set up the window and its attributes</span>
+</span></span><span style="display:flex;"><span>shelly <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()      <span style="color:#75715e"># Create shelly</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>color(<span style="color:#e6db74">&#34;blue&#34;</span>)          <span style="color:#75715e"># Set pen color to blue</span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>fillcolor(<span style="color:#e6db74">&#34;red&#34;</span>)       <span style="color:#75715e"># Set fill color to red</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>begin_fill()           <span style="color:#75715e"># Start of the region to fill</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):            <span style="color:#75715e"># Draw the four sides of the square</span>
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    shelly<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>shelly<span style="color:#f92672">.</span>end_fill()             <span style="color:#75715e"># Fill the region</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wn<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div>
 
 <footer class="footline">
 	
@@ -2014,16 +2014,16 @@ wn<span style="color:#f92672">.</span>mainloop()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696110956"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696110956"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1696110956"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1696110956"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1696110956"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1696159168"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1696159168"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1696159168"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1696159168"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1696159168"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1696159168"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696110956"></script>
-    <script src="/pythonbook/js/learn.js?1696110956"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1696110956"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1696159168"></script>
+    <script src="/pythonbook/js/learn.js?1696159168"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1696159168"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
