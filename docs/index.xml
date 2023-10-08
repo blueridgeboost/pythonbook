@@ -306,16 +306,6 @@ For the Turtle objects, we can&amp;rsquo;t manipulate the internal state directl
     </item>
     
     <item>
-      <title>Conditionals</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_04/s02/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s02/</guid>
-      <description>Programs get really interesting when we can test conditions and change the program behavior depending on the outcome of the tests. That’s what this chapter is about.
-Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean algebra — some rules for reasoning about and combining these values. This is the basis of all modern computer logic.</description>
-    </item>
-    
-    <item>
       <title>Iteration</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -350,7 +340,7 @@ import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,20
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
-      <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that&amp;rsquo;s a polygon with 99 sides!), it would have been worse.
+      <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that is a polygon with 99 sides!), it would have been worse.
 So a basic building block of all programs is to be able to repeat some code, over and over again.
 Python’s for loop does this.</description>
     </item>
@@ -361,9 +351,9 @@ Python’s for loop does this.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
-      <description>Condensing our Turtle Program using Loops To draw a square we’d like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
+      <description>Condensing our Turtle Program using Loops To draw a square we would like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
 This does exactly the same, but using just three lines with a for loop:
-import turtle wn = turtle.Screen() # Set up the window and its attributes alex = turtle.</description>
+import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,200) for i in [0, 1, 2, 3]: # Draw the four sides of the square alex.</description>
     </item>
     
     <item>
@@ -384,7 +374,89 @@ import turtle wn = turtle.Screen() # Set up the window and its attributes alex =
       <description>Project: A Turtle Bar Chart Now we&amp;rsquo;re going to put together many of the things we&amp;rsquo;ve learned to write a program that uses a turtle to draw a bar chart.
 Let&amp;rsquo;s start with some data to be charted:
 xs = [48, 117, 200, 240, 160, 260, 220]
-Corresponding to each data measurement, we’ll draw a rectangle of that height, with a fixed width. We’re showing off a new programming concept called a function in the example below: we’re defining the function draw_bar to draw a bar of our graph.</description>
+Corresponding to each data measurement, we will draw a rectangle of that height, with a fixed width. We are showing off a new programming concept called a function in the example below: we are defining the function draw_bar to draw a bar of our graph.</description>
+    </item>
+    
+    <item>
+      <title>Boolean values and expressions!</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s01/</guid>
+      <description>Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean Algebra — some rules for reasoning about and combining these values. This is the basis of all modern computer logic.
+In Python, the two Boolean values are True and False, and the Python type is bool. Remember, to find the type of a constant or variable use the function type.</description>
+    </item>
+    
+    <item>
+      <title>Logical Operators</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s02/</guid>
+      <description>Logical operators There are three logical operators, and, or, and not, that allow us to build more complex Boolean expressions from simpler Boolean expressions. The semantics (meaning) of these operators is similar to their meaning in English. For example, x &amp;gt; 0 and x &amp;lt; 10 produces True only if x is greater than 0 and at the same time, x is less than 10.
+n % 2 == 0 or n % 3 == 0 is True if either of the conditions is True, that is, if the number n is divisible by 2 or it is divisible by 3.</description>
+    </item>
+    
+    <item>
+      <title>Truth Tables</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s04/</guid>
+      <description>Truth Tables A truth table is a small table that allows us to list all the possible inputs, and to give the results for the logical operators. Because the and and or operators each have two operands, there are only four rows in a truth table that describes the semantics of and.
+aba and bFalseFalseFalseFalseTrueFalseTrueFalseFalseTrueTrueTrueIn a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
+    </item>
+    
+    <item>
+      <title>Conditional Execution</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s05/</guid>
+      <description>Conditional execution In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:
+x = 8if x % 2 == 0:print(str(x)+&amp;#34; is even.&amp;#34;)print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;)else:print(str(x)+&amp;#34; is odd.&amp;#34;)print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; +&amp;#34;always gives an odd result?</description>
+    </item>
+    
+    <item>
+      <title>Return</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s06/</guid>
+      <description>The return statement The return statement, with or without a value, depending on whether the function is fruitful or void, allows us to terminate the execution of a function before (or when) we reach the end. One reason to use an early return is if we detect an error condition:
+def print_square_root(x):if x &amp;lt;= 0:print(&amp;#34;Positive numbers only, please.&amp;#34;)returnresult = x**0.5print(&amp;#34;The square root of &amp;#34;+str(x)+&amp;#34; is &amp;#34;+str(result))print_square_root(16)print_square_root(-4) The function print_square_root has a parameter named x.</description>
+    </item>
+    
+    <item>
+      <title>Logical opposites</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s07/</guid>
+      <description>Logical opposites Each of the six relational operators has a logical opposite: for example, suppose we can get a driver’s licence when our age is greater or equal to 16, we can not get the driver’s licence when we are less than 16.
+Notice that the opposite of &amp;gt;= is &amp;lt;.
+operatorlogical opposite==!=!===&lt;&gt;=&lt;=&gt;&gt;&lt;=&gt;=&lt;Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
+    </item>
+    
+    <item>
+      <title>Type conversion</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s08/</guid>
+      <description>Type conversion We’ve had a first look at this in an earlier chapter. Seeing it again won’t hurt!
+Many Python types come with a built-in function that attempts to convert values of another type into its own type. The int function, for example, takes any value and converts it to an integer, if possible, or complains otherwise:
+&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;32&amp;#34;)32&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;Hello&amp;#34;)Traceback (most recent call last):File &amp;#34;&amp;lt;pyshell#6&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt;int(&amp;#34;hello&amp;#34;)ValueError: invalid literal for int() with base 10: &amp;amp;#39;hello&amp;amp;#39; int can also convert floating-point values to integers, but remember that it truncates the fractional part:</description>
+    </item>
+    
+    <item>
+      <title>Boolean functions</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_04/s09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_04/s09/</guid>
+      <description>Boolean functions Functions can return Boolean values, which is often convenient for hiding complicated tests inside functions. For example:
+def is_divisible(x, y):&amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisible by y &amp;#34;&amp;#34;&amp;#34;if x % y == 0:return Trueelse:return Falseprint(is_divisible(10,5)) # should print Trueprint(is_divisible(10,7)) # should print False It is common to give Boolean functions names that sound like yes/no questions. is_divisible returns either True or False to indicate whether the x is or is not divisible by y.</description>
     </item>
     
   </channel>

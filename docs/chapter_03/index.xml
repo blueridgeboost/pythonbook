@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Program Flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Draw with turtles on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
     <link>https://blueridgeboost.com/pythonbook/chapter_03/</link>
-    <description>Recent content in Program Flow on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
+    <description>Recent content in Draw with turtles on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_03/index.xml" rel="self" type="application/rss+xml" />
@@ -44,7 +44,7 @@ import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,20
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
-      <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that&amp;rsquo;s a polygon with 99 sides!), it would have been worse.
+      <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that is a polygon with 99 sides!), it would have been worse.
 So a basic building block of all programs is to be able to repeat some code, over and over again.
 Python’s for loop does this.</description>
     </item>
@@ -55,9 +55,9 @@ Python’s for loop does this.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
-      <description>Condensing our Turtle Program using Loops To draw a square we’d like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
+      <description>Condensing our Turtle Program using Loops To draw a square we would like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
 This does exactly the same, but using just three lines with a for loop:
-import turtle wn = turtle.Screen() # Set up the window and its attributes alex = turtle.</description>
+import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,200) for i in [0, 1, 2, 3]: # Draw the four sides of the square alex.</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@ import turtle wn = turtle.Screen() # Set up the window and its attributes alex =
       <description>Project: A Turtle Bar Chart Now we&amp;rsquo;re going to put together many of the things we&amp;rsquo;ve learned to write a program that uses a turtle to draw a bar chart.
 Let&amp;rsquo;s start with some data to be charted:
 xs = [48, 117, 200, 240, 160, 260, 220]
-Corresponding to each data measurement, we’ll draw a rectangle of that height, with a fixed width. We’re showing off a new programming concept called a function in the example below: we’re defining the function draw_bar to draw a bar of our graph.</description>
+Corresponding to each data measurement, we will draw a rectangle of that height, with a fixed width. We are showing off a new programming concept called a function in the example below: we are defining the function draw_bar to draw a bar of our graph.</description>
     </item>
     
   </channel>
