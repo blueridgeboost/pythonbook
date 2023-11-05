@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
 
-    <title>Draw with turtles - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Updating variables - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
     <link href="/pythonbook/css/nucleus.css?1699188069" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/pythonbook/chapter_03/">
+  <body class="" data-url="/pythonbook/chapter_05/s02/">
     <nav id="sidebar" class="">
 
 
@@ -761,7 +761,7 @@
     
     <li data-nav-id="/pythonbook/chapter_03/" title="Draw with turtles" class="dd-item
         
-        active
+        
         
         ">
       <a href="/pythonbook/chapter_03/">
@@ -1143,7 +1143,7 @@
   
     
     <li data-nav-id="/pythonbook/chapter_05/" title="Loops and iterations" class="dd-item
-        
+        parent
         
         
         ">
@@ -1190,7 +1190,7 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_05/s02/" title="Updating variables" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_05/s02/" title="Updating variables" class="dd-item active">
         <a href="/pythonbook/chapter_05/s02/">
         Updating variables
         
@@ -1347,13 +1347,22 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Draw with turtles
+                   Updating variables
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
@@ -1362,33 +1371,52 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Updating variables
+            </h1>
           
 
         
 
 
+<p>When an assignment statement is executed, the right-hand side expression (i.e. the
+expression that comes after the assignment token) is evaluated first.  This produces a value.
+Then the assignment is made, so that the variable on the left-hand side now refers
+to the new value.</p>
+<p>One of the most common forms of assignment is an update, where the new
+value of the variable depends on its old value.   Deduct 40 cents from
+my airtime balance, or add one run to the scoreboard.</p>
+<pre tabindex="0"><code>n = 5
+n = 3 * n + 1
+print(n)
+</code></pre><p>Line 2 means <em>get the current value of n, multiply it by three and add
+one, and assign the answer to n, thus making n refer to the value</em>.
+So after executing the two lines above, <code>n</code> will point/refer to the
+integer 16.</p>
+<p>If you try to get the value of a variable that has never been assigned to, you’ll get an error:</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; w = x + 1
+Traceback (most recent call last):
+  File &#34;&amp;lt;pyshell#0&gt;&#34;, line 1, in &amp;lt;module&gt;
+    w=x+1
+NameError: name &amp;#39;x&amp;#39; is not defined
+</code></pre><p>Before you can update a variable, you have to <strong>initialize</strong> it to some starting value,
+usually with a simple assignment:</p>
+<pre tabindex="0"><code>runs_scored = 0
+...
+runs_scored = runs_scored + 1
+</code></pre><p>This sort of assignment — updating a variable by adding 1 to it — is very common.
+It is called an <strong>increment</strong> of the variable; subtracting 1 is called a <strong>decrement</strong>.
+Sometimes programmers also talk about <em>bumping</em> a variable, which means the same
+as incrementing it by 1.</p>
 
-	<h3 id="using-libraries">Using Libraries</h3>
-<p>There are many <em>modules</em> in Python that provide very powerful features that we
-can use in our own programs.  Some of these can send email, or fetch web pages.
-The one use at in this chapter allows us to create turtles and use them
-to draw shapes and patterns.</p>
-<p>The turtles are fun, but the real purpose of the chapter is to teach ourselves
-a little more Python, and to develop our abilities to <em>think like computer scientists</em>. Most of the Python covered here will be explored in more depth later.</p>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1903,7 +1931,6 @@ a little more Python, and to develop our abilities to <em>think like computer sc
             
                 
                     
-                    
                 
                 
 
@@ -1911,153 +1938,6 @@ a little more Python, and to develop our abilities to <em>think like computer sc
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2223,6 +2103,158 @@ a little more Python, and to develop our abilities to <em>think like computer sc
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2311,10 +2343,10 @@ a little more Python, and to develop our abilities to <em>think like computer sc
 	 
 	 
 		
-			<a class="nav nav-prev" href="/pythonbook/chapter_02/s13/" title="Exercises"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/pythonbook/chapter_05/s01/" title="Assignment"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_03/s01/" title="Hello Turtles!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_05/s03/" title="The for loop revisited" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2346,3 +2378,4 @@ a little more Python, and to develop our abilities to <em>think like computer sc
 
   </body>
 </html>
+

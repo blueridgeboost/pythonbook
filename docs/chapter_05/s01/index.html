@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
 
-    <title>Draw with turtles - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Assignment - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
     <link href="/pythonbook/css/nucleus.css?1699188069" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/pythonbook/chapter_03/">
+  <body class="" data-url="/pythonbook/chapter_05/s01/">
     <nav id="sidebar" class="">
 
 
@@ -761,7 +761,7 @@
     
     <li data-nav-id="/pythonbook/chapter_03/" title="Draw with turtles" class="dd-item
         
-        active
+        
         
         ">
       <a href="/pythonbook/chapter_03/">
@@ -1143,7 +1143,7 @@
   
     
     <li data-nav-id="/pythonbook/chapter_05/" title="Loops and iterations" class="dd-item
-        
+        parent
         
         
         ">
@@ -1169,7 +1169,7 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_05/s01/" title="Assignment" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_05/s01/" title="Assignment" class="dd-item active">
         <a href="/pythonbook/chapter_05/s01/">
         Assignment
         
@@ -1347,13 +1347,22 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Draw with turtles
+                   Assignment
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
@@ -1362,33 +1371,55 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Assignment
+            </h1>
           
 
         
 
 
+<p>As we have mentioned previously, it is legal to make more than one assignment to the
+same variable. A new assignment makes an existing variable refer to a new value
+(and stop referring to the old value).</p>
+<pre tabindex="0"><code>airtime_remaining = 15
+print(airtime_remaining)
+airtime_remaining = 7
+print(airtime_remaining)
+</code></pre><p>The first time <code>airtime_remaining</code> is
+printed, its value is 15, and the second time, its value is 7.</p>
+<p>It is especially important to distinguish between an
+assignment statement and a Boolean expression that tests for equality.
+Because Python uses the equal token (<code>=</code>) for assignment,
+it is tempting to interpret a statement like
+<code>a = b</code> as a Boolean test.  Unlike mathematics, it is not!  Remember that the Python token
+for the equality operator is <code>==</code>.</p>
+<p>Note too that an equality test is symmetric, but assignment is not. For example,
+if <code>a == 7</code> then <code>7 == a</code>. But in Python, the statement <code>a = 7</code>
+is legal and <code>7 =  a</code> is not.</p>
+<p>In Python, an assignment statement can make
+two variables equal, but because further assignments can change either of them,
+they don’t have to stay that way:</p>
+<pre tabindex="0"><code>a = 5
+b = a    # After executing this line, a and b are now equal
+print(&#34;a=&#34;+str(a)+&#34; b=&#34;+str(b))
+a = 3    # After executing this line, a and b are no longer equal
+print(&#34;a=&#34;+str(a)+&#34; b=&#34;+str(b))
+</code></pre><p>Line 4 changes the value of <code>a</code> but does not change the value of
+<code>b</code>, so they are no longer equal. Some
+people also think that <em>variable</em> was an unfortunate word to choose, and instead
+we should have called them <em>assignables</em>.  Python chooses to
+follow common terminology and token usage, also found in languages like C, C++, Java, and C#,
+so we use the tokens <code>=</code> for assignment, <code>==</code> for equality, and we talk of <em>variables</em>.</p>
 
-	<h3 id="using-libraries">Using Libraries</h3>
-<p>There are many <em>modules</em> in Python that provide very powerful features that we
-can use in our own programs.  Some of these can send email, or fetch web pages.
-The one use at in this chapter allows us to create turtles and use them
-to draw shapes and patterns.</p>
-<p>The turtles are fun, but the real purpose of the chapter is to teach ourselves
-a little more Python, and to develop our abilities to <em>think like computer scientists</em>. Most of the Python covered here will be explored in more depth later.</p>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1903,7 +1934,6 @@ a little more Python, and to develop our abilities to <em>think like computer sc
             
                 
                     
-                    
                 
                 
 
@@ -1911,153 +1941,6 @@ a little more Python, and to develop our abilities to <em>think like computer sc
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2207,6 +2090,155 @@ a little more Python, and to develop our abilities to <em>think like computer sc
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2311,10 +2343,10 @@ a little more Python, and to develop our abilities to <em>think like computer sc
 	 
 	 
 		
-			<a class="nav nav-prev" href="/pythonbook/chapter_02/s13/" title="Exercises"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/pythonbook/chapter_05/" title="Loops and iterations"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_03/s01/" title="Hello Turtles!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_05/s02/" title="Updating variables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2346,3 +2378,4 @@ a little more Python, and to develop our abilities to <em>think like computer sc
 
   </body>
 </html>
+
