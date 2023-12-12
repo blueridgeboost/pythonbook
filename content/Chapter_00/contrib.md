@@ -15,10 +15,10 @@ who have sent us suggestions and corrections over the past few years. In the
 spirit of free software, we decided to express our gratitude in the form of a
 contributor list.  Unfortunately, this list is not complete, but we are doing
 our best to keep it up to date. It was also getting too large to include
-everyone who sends in a typo or two. You have our gratitude, and you have the
+everyone who sent in a typo or two. You have our gratitude, and you have the
 personal satisfaction of making a book you found useful better for you and
 everyone else who uses it. New additions to the list for the 2nd edition will
-be those who have made on-going contributions.
+be those who have made ongoing contributions.
 
 If you have a chance to look through the list, you should realize that each
 person here has spared you and all subsequent readers from the confusion of a

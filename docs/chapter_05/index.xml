@@ -14,7 +14,7 @@
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s01/</guid>
       <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
-airtime_remaining = 15print(airtime_remaining)airtime_remaining = 7print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
+airtime_remaining = 15 print(airtime_remaining) airtime_remaining = 7 print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
 It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
     </item>
     
@@ -35,7 +35,7 @@ One of the most common forms of assignment is an update, where the new value of 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s03/</guid>
       <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:
-for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]:invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34;print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
+for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]: invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34; print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s04/</guid>
       <description>Here is a fragment of code that demonstrates the use of the while statement:
-def sum_to(n):&amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34;ss = 0v = 1while v &amp;lt;= n:ss = ss + vv = v + 1return ss# For your test suiteprint(sum_to(4))print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
+def sum_to(n): &amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34; ss = 0 v = 1 while v &amp;lt;= n: ss = ss + v v = v + 1 return ss # For your test suite print(sum_to(4)) print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ The rule for creating the sequence is to start from some given n, and to generat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s07/</guid>
-      <description>6.6. ¶To write effective computer programs, and to build a good conceptualmodel of program execution, a programmer needs to develop the abilityto **trace** the execution of a computer program. Tracing involves becoming thecomputer and following the flow of execution through a sample program run,recording the state of all variables and any output the program generates aftereach instruction is executed.To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
+      <description>6.6. ¶ To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to **trace** the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed. To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
     </item>
     
   </channel>

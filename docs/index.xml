@@ -170,7 +170,7 @@ These values are classified into different classes, or data types: 5 is an integ
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s02/</guid>
       <description>One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
 The assignment statement gives a value to a variable:
-&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34;&amp;gt;&amp;gt;&amp;gt; n = 17&amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
+&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34; &amp;gt;&amp;gt;&amp;gt; n = 17 &amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
     </item>
     
     <item>
@@ -200,7 +200,7 @@ When you type a statement on the command line, Python executes it. Statements do
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s05/</guid>
       <description>An expression is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter evaluates it and displays the result:
-&amp;gt;&amp;gt;&amp;gt; 1 + 12&amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;)5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
+&amp;gt;&amp;gt;&amp;gt; 1 + 1 2 &amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;) 5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
     </item>
     
     <item>
@@ -231,7 +231,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s08/</guid>
       <description>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS (which some people remember as “Please Excuse My Dear Aunt Sally”) is a useful way to remember the order of operations:
-**P**arentheses have the highest precedence and can be used to force anexpression to evaluate in the order you want.</description>
+**P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.</description>
     </item>
     
     <item>
@@ -241,7 +241,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s09/</guid>
       <description>In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that message has type string):
-&amp;gt;&amp;gt;&amp;gt; message - 1 # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error&amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
+&amp;gt;&amp;gt;&amp;gt; message - 1 # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error &amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
     </item>
     
     <item>
@@ -251,7 +251,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s10/</guid>
       <description>There is a built-in function in Python for getting input from the user:
-n = input(&amp;#34;Please enter your name: &amp;#34;)print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
+n = input(&amp;#34;Please enter your name: &amp;#34;) print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
     </item>
     
     <item>
@@ -272,7 +272,7 @@ For example, we know how to get the user to enter some input, we know how to con
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s12/</guid>
       <description>The modulus operator works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (%). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
-&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator&amp;gt;&amp;gt;&amp;gt; print(q)2&amp;gt;&amp;gt;&amp;gt; r = 7 % 3&amp;gt;&amp;gt;&amp;gt; print(r)1 So 7 divided by 3 is 2 with a remainder of 1.</description>
+&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator &amp;gt;&amp;gt;&amp;gt; print(q) 2 &amp;gt;&amp;gt;&amp;gt; r = 7 % 3 &amp;gt;&amp;gt;&amp;gt; print(r) 1 So 7 divided by 3 is 2 with a remainder of 1.</description>
     </item>
     
     <item>
@@ -385,7 +385,7 @@ n % 2 == 0 or n % 3 == 0 is True if either of the conditions is True, that is, i
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s04/</guid>
       <description>Truth Tables A truth table is a small table that allows us to list all the possible inputs, and to give the results for the logical operators. Because the and and or operators each have two operands, there are only four rows in a truth table that describes the semantics of and.
-aba and bFalseFalseFalseFalseTrueFalseTrueFalseFalseTrueTrueTrueIn a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
+a b a and b False False False False True False True False False True True True In a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
     </item>
     
     <item>
@@ -395,7 +395,7 @@ aba and bFalseFalseFalseFalseTrueFalseTrueFalseFalseTrueTrueTrueI
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s05/</guid>
       <description>Conditional execution In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:
-x = 8if x % 2 == 0:print(str(x)+&amp;#34; is even.&amp;#34;)print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;)else:print(str(x)+&amp;#34; is odd.&amp;#34;)print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; +&amp;#34;always gives an odd result?</description>
+x = 8 if x % 2 == 0: print(str(x)+&amp;#34; is even.&amp;#34;) print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;) else: print(str(x)+&amp;#34; is odd.&amp;#34;) print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; + &amp;#34;always gives an odd result?</description>
     </item>
     
     <item>
@@ -405,7 +405,7 @@ x = 8if x % 2 == 0:print(str(x)+&amp;#34; is even.&amp;#34;)print(&amp;#34;Di
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s06/</guid>
       <description>The return statement The return statement, with or without a value, depending on whether the function is fruitful or void, allows us to terminate the execution of a function before (or when) we reach the end. One reason to use an early return is if we detect an error condition:
-def print_square_root(x):if x &amp;lt;= 0:print(&amp;#34;Positive numbers only, please.&amp;#34;)returnresult = x**0.5print(&amp;#34;The square root of &amp;#34;+str(x)+&amp;#34; is &amp;#34;+str(result))print_square_root(16)print_square_root(-4) The function print_square_root has a parameter named x.</description>
+def print_square_root(x): if x &amp;lt;= 0: print(&amp;#34;Positive numbers only, please.&amp;#34;) return result = x**0.5 print(&amp;#34;The square root of &amp;#34;+str(x)+&amp;#34; is &amp;#34;+str(result)) print_square_root(16) print_square_root(-4) The function print_square_root has a parameter named x.</description>
     </item>
     
     <item>
@@ -416,7 +416,7 @@ def print_square_root(x):if x &amp;lt;= 0:print(&amp;#34;Positive numbers only
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s07/</guid>
       <description>Logical opposites Each of the six relational operators has a logical opposite: for example, suppose we can get a driver’s licence when our age is greater or equal to 16, we can not get the driver’s licence when we are less than 16.
 Notice that the opposite of &amp;gt;= is &amp;lt;.
-operatorlogical opposite==!=!===&lt;&gt;=&lt;=&gt;&gt;&lt;=&gt;=&lt;Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
+operator logical opposite == != != == &lt; &gt;= &lt;= &gt; &gt; &lt;= &gt;= &lt; Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
     </item>
     
     <item>
@@ -427,7 +427,7 @@ operatorlogical opposite==!=!===&lt;&gt;=&lt;=&gt;&gt;&lt;=&gt;=&lt
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s08/</guid>
       <description>Type conversion We’ve had a first look at this in an earlier chapter. Seeing it again won’t hurt!
 Many Python types come with a built-in function that attempts to convert values of another type into its own type. The int function, for example, takes any value and converts it to an integer, if possible, or complains otherwise:
-&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;32&amp;#34;)32&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;Hello&amp;#34;)Traceback (most recent call last):File &amp;#34;&amp;lt;pyshell#6&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt;int(&amp;#34;hello&amp;#34;)ValueError: invalid literal for int() with base 10: &amp;amp;#39;hello&amp;amp;#39; int can also convert floating-point values to integers, but remember that it truncates the fractional part:</description>
+&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;32&amp;#34;) 32 &amp;gt;&amp;gt;&amp;gt; int(&amp;#34;Hello&amp;#34;) Traceback (most recent call last): File &amp;#34;&amp;lt;pyshell#6&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt; int(&amp;#34;hello&amp;#34;) ValueError: invalid literal for int() with base 10: &amp;amp;#39;hello&amp;amp;#39; int can also convert floating-point values to integers, but remember that it truncates the fractional part:</description>
     </item>
     
     <item>
@@ -437,7 +437,7 @@ Many Python types come with a built-in function that attempts to convert values 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s09/</guid>
       <description>Boolean functions Functions can return Boolean values, which is often convenient for hiding complicated tests inside functions. For example:
-def is_divisible(x, y):&amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisible by y &amp;#34;&amp;#34;&amp;#34;if x % y == 0:return Trueelse:return Falseprint(is_divisible(10,5)) # should print Trueprint(is_divisible(10,7)) # should print False It is common to give Boolean functions names that sound like yes/no questions. is_divisible returns either True or False to indicate whether the x is or is not divisible by y.</description>
+def is_divisible(x, y): &amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisible by y &amp;#34;&amp;#34;&amp;#34; if x % y == 0: return True else: return False print(is_divisible(10,5)) # should print True print(is_divisible(10,7)) # should print False It is common to give Boolean functions names that sound like yes/no questions. is_divisible returns either True or False to indicate whether the x is or is not divisible by y.</description>
     </item>
     
     <item>
@@ -447,7 +447,7 @@ def is_divisible(x, y):&amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisib
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s01/</guid>
       <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
-airtime_remaining = 15print(airtime_remaining)airtime_remaining = 7print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
+airtime_remaining = 15 print(airtime_remaining) airtime_remaining = 7 print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
 It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
     </item>
     
@@ -468,7 +468,7 @@ One of the most common forms of assignment is an update, where the new value of 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s03/</guid>
       <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:
-for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]:invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34;print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
+for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]: invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34; print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
     </item>
     
     <item>
@@ -478,7 +478,7 @@ for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s04/</guid>
       <description>Here is a fragment of code that demonstrates the use of the while statement:
-def sum_to(n):&amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34;ss = 0v = 1while v &amp;lt;= n:ss = ss + vv = v + 1return ss# For your test suiteprint(sum_to(4))print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
+def sum_to(n): &amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34; ss = 0 v = 1 while v &amp;lt;= n: ss = ss + v v = v + 1 return ss # For your test suite print(sum_to(4)) print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
     </item>
     
     <item>
@@ -506,7 +506,7 @@ The rule for creating the sequence is to start from some given n, and to generat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s07/</guid>
-      <description>6.6. ¶To write effective computer programs, and to build a good conceptualmodel of program execution, a programmer needs to develop the abilityto **trace** the execution of a computer program. Tracing involves becoming thecomputer and following the flow of execution through a sample program run,recording the state of all variables and any output the program generates aftereach instruction is executed.To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
+      <description>6.6. ¶ To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to **trace** the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed. To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
     </item>
     
   </channel>

@@ -25,7 +25,7 @@ These values are classified into different classes, or data types: 5 is an integ
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s02/</guid>
       <description>One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
 The assignment statement gives a value to a variable:
-&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34;&amp;gt;&amp;gt;&amp;gt; n = 17&amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
+&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34; &amp;gt;&amp;gt;&amp;gt; n = 17 &amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ When you type a statement on the command line, Python executes it. Statements do
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s05/</guid>
       <description>An expression is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter evaluates it and displays the result:
-&amp;gt;&amp;gt;&amp;gt; 1 + 12&amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;)5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
+&amp;gt;&amp;gt;&amp;gt; 1 + 1 2 &amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;) 5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
     </item>
     
     <item>
@@ -86,7 +86,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s08/</guid>
       <description>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS (which some people remember as “Please Excuse My Dear Aunt Sally”) is a useful way to remember the order of operations:
-**P**arentheses have the highest precedence and can be used to force anexpression to evaluate in the order you want.</description>
+**P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.</description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s09/</guid>
       <description>In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that message has type string):
-&amp;gt;&amp;gt;&amp;gt; message - 1 # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error&amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
+&amp;gt;&amp;gt;&amp;gt; message - 1 # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error &amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@ The int function can take a floating point number or a string, and turn it into 
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s10/</guid>
       <description>There is a built-in function in Python for getting input from the user:
-n = input(&amp;#34;Please enter your name: &amp;#34;)print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
+n = input(&amp;#34;Please enter your name: &amp;#34;) print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@ For example, we know how to get the user to enter some input, we know how to con
       
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s12/</guid>
       <description>The modulus operator works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (%). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
-&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator&amp;gt;&amp;gt;&amp;gt; print(q)2&amp;gt;&amp;gt;&amp;gt; r = 7 % 3&amp;gt;&amp;gt;&amp;gt; print(r)1 So 7 divided by 3 is 2 with a remainder of 1.</description>
+&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator &amp;gt;&amp;gt;&amp;gt; print(q) 2 &amp;gt;&amp;gt;&amp;gt; r = 7 % 3 &amp;gt;&amp;gt;&amp;gt; print(r) 1 So 7 divided by 3 is 2 with a remainder of 1.</description>
     </item>
     
     <item>
