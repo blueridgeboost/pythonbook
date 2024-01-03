@@ -6,508 +6,346 @@
     <description>Recent content on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
+    <atom:link href="https://blueridgeboost.com/pythonbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copyright Notice</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_00/copyright/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_00/copyright/</guid>
       <description>Copyright (C) 2023, Blue Ridge Boost LLC.
 Copyright (C) 2014, AoPS Incorporated.
 Copyright (C) Peter Wentworth, Jeffrey Elkner, Allen B. Downey and Chris Meyers.
 Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with Invariant Sections being Foreword, Foreword-AoPS Edition, Preface, and Contributor List, no Front-Cover Texts, and no Back-Cover Texts.</description>
     </item>
-    
     <item>
       <title>Foreword</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_00/foreword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_00/foreword/</guid>
       <description>By David Beazley
 As an educator, researcher, and book author, I am delighted to see the completion of this book. Python is a fun and extremely easy-to-use programming language that has steadily gained in popularity over the last few years. Developed over ten years ago by Guido van Rossum, Python’s simple syntax and overall feel is largely derived from ABC, a teaching language that was developed in the 1980’s. However, Python was also created to solve real problems and it borrows a wide variety of features from programming languages such as C++, Java, Modula-3, and Scheme.</description>
     </item>
-    
     <item>
       <title>Preface</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_00/preface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_00/preface/</guid>
       <description>By Jeffrey Elkner
 This book owes its existence to the collaboration made possible by the Internet and the free software movement. Its three authors—a college professor, a high school teacher, and a professional programmer—never met face to face to work on it, but we have been able to collaborate closely, aided by many other folks who have taken the time and energy to send us their feedback.
 We think this book is a testament to the benefits and future possibilities of this kind of collaboration, the framework for which has been put in place by Richard Stallman and the Free Software Foundation.</description>
     </item>
-    
     <item>
       <title>Contributor List</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_00/contrib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_00/contrib/</guid>
       <description>To paraphrase the philosophy of the Free Software Foundation, this book is free like free speech, but not necessarily free like free pizza. It came about because of a collaboration that would not have been possible without the GNU Free Documentation License. So we would like to thank the Free Software Foundation for developing this license and, of course, making it available to us.
 We would also like to thank the more than 100 sharp-eyed and thoughtful readers who have sent us suggestions and corrections over the past few years.</description>
     </item>
-    
     <item>
-      <title>The Python Programming Language</title>
+      <title>Formal and natural languages</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_01/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_01/s01/</guid>
-      <description>The programming language you will be learning is Python. Python is an example of a high-level language; other high-level languages you might have heard of are C++, PHP, Pascal, C#, and Java.
-As you might infer from the name high-level language, there are also low-level languages, sometimes referred to as machine languages or assembly languages. Loosely speaking, computers can only execute programs written in low-level languages. Thus, programs written in a high-level language have to be translated into something more suitable before they can run.</description>
+      <description>As noted in the introduction, this course teaches you how to think like a computer scientist. A crucial aspect of a computer scientist&amp;rsquo;s job is to communicate solutions to people and machines. We use two languages to communicate.
+Natural and Formal Languages Natural languages are the languages that people speak, such as English, Spanish, and French. They were not designed by people (although people try to impose some order on them); they evolved naturally.</description>
     </item>
-    
     <item>
-      <title>What is a program?</title>
+      <title>Programs</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_01/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_01/s02/</guid>
       <description>A program is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the roots of a polynomial, but it can also be a symbolic computation, such as searching and replacing text in a document.
 The details look different in different languages, but a few basic instructions appear in just about every language:
 input. Get data from the keyboard, a file, or some other device.</description>
     </item>
-    
-    <item>
-      <title>What is debugging?</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s03/</guid>
-      <description>Programming is a complex process, and because it is done by human beings, it often leads to errors. Programming errors are called bugs and the process of tracking them down and correcting them is called debugging. Use of the term bug to describe small engineering difficulties dates back to at least 1889, when Thomas Edison had a bug with his phonograph.
-Three kinds of errors can occur in a program: syntax errors, runtime errors, and semantic errors.</description>
-    </item>
-    
-    <item>
-      <title>Syntax errors</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s04/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s04/</guid>
-      <description>Python can only execute a program if the program is syntactically correct; otherwise, the process fails and returns an error message. Syntax refers to the structure of a program and the rules about that structure. For example, in English, a sentence must begin with a capital letter and end with a period. this sentence contains a syntax error. So does this one
-For most humans, a few syntax errors are not a significant problem, which is why we can read the above sentences and still figure out what they mean.</description>
-    </item>
-    
-    <item>
-      <title>Runtime errors</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s05/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s05/</guid>
-      <description>The second type of error is a runtime error, so called because the error does not appear until you run the program. These errors are also called exceptions because they usually indicate that something exceptional (and bad) has happened.
-Runtime errors are rare in the simple programs you will see in the first few chapters, so it might be a while before you encounter one.</description>
-    </item>
-    
-    <item>
-      <title>Semantic errors</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s06/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s06/</guid>
-      <description>The third type of error is the semantic error. If there is a semantic error in your program, it will run successfully, in the sense that the computer will not generate any error messages, but it will not do the right thing. It will do something else. Specifically, it will do what you told it to do.
-The problem is that the program you wrote is not the program you wanted to write.</description>
-    </item>
-    
-    <item>
-      <title>Experimental debugging</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s07/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s07/</guid>
-      <description>One of the most important skills you will acquire is debugging. Although it can be frustrating, debugging is one of the most intellectually rich, challenging, and interesting parts of programming.
-In some ways, debugging is like detective work. You are confronted with clues, and you have to infer the processes and events that led to the results you see.
-Debugging is also like an experimental science. Once you have an idea what is going wrong, you modify your program and try again.</description>
-    </item>
-    
-    <item>
-      <title>Formal and natural languages</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s08/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s08/</guid>
-      <description>Natural languages are the languages that people speak, such as English, Spanish, and French. They were not designed by people (although people try to impose some order on them); they evolved naturally.
-Formal languages are languages that are designed by people for specific applications. For example, the notation that mathematicians use is a formal language that is particularly good at denoting relationships among numbers and symbols. Chemists use a formal language to represent the chemical structure of molecules.</description>
-    </item>
-    
-    <item>
-      <title>Comments</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s09/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s09/</guid>
-      <description>As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
-For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing.
-A comment in a computer program is text that is intended only for the human reader — it is completely ignored by the interpreter.</description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://blueridgeboost.com/pythonbook/chapter_01/s10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blueridgeboost.com/pythonbook/chapter_01/s10/</guid>
-      <description>Work in the jupyter notebook!</description>
-    </item>
-    
     <item>
       <title>Values and data types</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s01/</guid>
       <description>A value is one of the fundamental things — like a letter or a number — that a program manipulates. Some of the values we have seen so far are 5 (the result when we added 2+3), and Hello World!.
 These values are classified into different classes, or data types: 5 is an integer, and &amp;quot;Hello, World!&amp;quot; is a string, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.</description>
     </item>
-    
     <item>
       <title>Variables</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s02/</guid>
       <description>One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
 The assignment statement gives a value to a variable:
-&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34; &amp;gt;&amp;gt;&amp;gt; n = 17 &amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
+&amp;gt;&amp;gt;&amp;gt; message = &amp;#34;What&amp;#39;s up, Doc?&amp;#34;&amp;gt;&amp;gt;&amp;gt; n = 17&amp;gt;&amp;gt;&amp;gt; pi = 3.14159 This example makes three assignments. The first assigns the string value &amp;quot;What&#39;s up, Doc?&amp;quot; to a variable named message. The second gives the integer 17 to n, and the third assigns the floating-point number 3.</description>
     </item>
-    
     <item>
       <title>Variable names and keywords</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s03/</guid>
       <description>Variable names can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. Bruce and bruce are different variables.
 The underscore character (_) can appear in a name. It is often used in names with multiple words, such as my_name or price_of_tea_in_china.</description>
     </item>
-    
     <item>
       <title>Statements</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s04/</guid>
       <description>A statement is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far. Some other kinds of statements that we’ll see shortly are while statements, for statements, if statements, and import statements. (There are other kinds too!)
 When you type a statement on the command line, Python executes it. Statements don’t produce any result.</description>
     </item>
-    
     <item>
       <title>Evaluating expressions</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s05/</guid>
       <description>An expression is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter evaluates it and displays the result:
-&amp;gt;&amp;gt;&amp;gt; 1 + 1 2 &amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;) 5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
+&amp;gt;&amp;gt;&amp;gt; 1 + 12&amp;gt;&amp;gt;&amp;gt; len(&amp;#34;hello&amp;#34;)5 In this example len is a built-in Python function that returns the number of characters in a string. We’ve previously seen the print and the type functions, so this is our third example of a function!</description>
     </item>
-    
     <item>
       <title>Operators and operands</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s06/</guid>
       <description>Operators are special tokens that represent computations like addition, multiplication and division. The values the operator uses are called operands.
 The following are all legal Python expressions whose meaning is more or less clear:
 20+32 hour-1 hour*60+minute minute/60 5**2 (5+9)*(15-7) The tokens +, -, and *, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk (*) is the token for multiplication, and ** is the token for exponentiation.</description>
     </item>
-    
     <item>
       <title>Type converter functions</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s07/</guid>
       <description>Here we’ll look at three more Python functions, int, float and str, which will (attempt to) convert their arguments into types int, float and str respectively. We call these type converter functions.
 The int function can take a floating point number or a string, and turn it into an int. For floating point numbers, it discards the decimal portion of the number — a process we call truncation towards zero on the number line.</description>
     </item>
-    
     <item>
       <title>Order of operations</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s08/</guid>
       <description>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS (which some people remember as “Please Excuse My Dear Aunt Sally”) is a useful way to remember the order of operations:
-**P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.</description>
+**P**arentheses have the highest precedence and can be used to force anexpression to evaluate in the order you want.</description>
     </item>
-    
     <item>
       <title>Operations on strings</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s09/</guid>
       <description>In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that message has type string):
-&amp;gt;&amp;gt;&amp;gt; message - 1 # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error &amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error &amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
+&amp;gt;&amp;gt;&amp;gt; message - 1 # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;Hello&amp;#34; / 123 # Error&amp;gt;&amp;gt;&amp;gt; message * &amp;#34;Hello&amp;#34; # Error&amp;gt;&amp;gt;&amp;gt; &amp;#34;15&amp;#34; + 2 # Error Interestingly, the + operator does work with strings, but for strings, the + operator represents concatenation, not addition. Concatenation means joining the two operands by linking them end-to-end.</description>
     </item>
-    
     <item>
       <title>Input</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s10/</guid>
       <description>There is a built-in function in Python for getting input from the user:
-n = input(&amp;#34;Please enter your name: &amp;#34;) print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
+n = input(&amp;#34;Please enter your name: &amp;#34;)print(&amp;#34;Hi, &amp;#34; + n) When you run this script, the program pauses to receive user input. (In this ebook, the program will pop up a separate window to receive your input. In IDLE, the input prompt will appear in the shell window.) The user of the program can enter the name, and when this happens the text that has been entered is assigned to the variable n.</description>
     </item>
-    
     <item>
       <title>Composition</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s11/</guid>
       <description>So far, we have looked at the elements of a program — variables, expressions, statements, and function calls — in isolation, without talking about how to combine them.
 One of the most useful features of programming languages is their ability to take small building blocks and compose them into larger chunks.
 For example, we know how to get the user to enter some input, we know how to convert the string we get into a float, we know how to write a complex expression, and we know how to print values.</description>
     </item>
-    
     <item>
       <title>The modulus operator</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s12/</guid>
       <description>The modulus operator works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (%). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
-&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator &amp;gt;&amp;gt;&amp;gt; print(q) 2 &amp;gt;&amp;gt;&amp;gt; r = 7 % 3 &amp;gt;&amp;gt;&amp;gt; print(r) 1 So 7 divided by 3 is 2 with a remainder of 1.</description>
+&amp;gt;&amp;gt;&amp;gt; q = 7 // 3 # This is integer division operator&amp;gt;&amp;gt;&amp;gt; print(q)2&amp;gt;&amp;gt;&amp;gt; r = 7 % 3&amp;gt;&amp;gt;&amp;gt; print(r)1 So 7 divided by 3 is 2 with a remainder of 1.</description>
     </item>
-    
     <item>
       <title>Exercises</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_02/s13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_02/s13/</guid>
       <description>Work in the jupyter notebook!</description>
     </item>
-    
     <item>
       <title>Hello Turtles!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s01/</guid>
       <description>Our first turtle program To use the turtle library in a Collab Jupyter notebook, we start by installing the library.
 You will have to execute this cell every time you restart a new session.
 !pip install ColabTurtlePlus With the turtle library, we can draw by moving a virtual turtle around the screen. Let’s write a couple of lines of Python program to create a new turtle and start drawing a rectangle.</description>
     </item>
-    
     <item>
       <title>Color</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s02/</guid>
       <description>An object can have various methods — things it can do — and it can also have attributes (sometimes called properties). These are like internal variables that can be used to keep track of the state of the object.
 For the Turtle objects, we can&amp;rsquo;t manipulate the internal state directly, but instead can invoke methods on a Turtle object to change its internal state. We&amp;rsquo;ve already seen this with the facing direction in the last part — something must be keeping track of the direction the Turtle object is facing since it moves in a different forward direction after we called shelly.</description>
     </item>
-    
     <item>
       <title>More Turtles</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s03/</guid>
       <description>A Bale of Turtles Just like we can have many different integers in a program, we can have many Turtle objects. Each of them is called an instance. Methods can be called on each instance to change its state and make it move.
 import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,200) turtle.bgcolor(&amp;#34;lightgreen&amp;#34;) tess = turtle.Turtle() # Create tess and set some attributes tess.color(&amp;#34;hotpink&amp;#34;) tess.pensize(5) alex = turtle.Turtle() # Create alex # Make tess draw an equilateral triangle tess.</description>
     </item>
-    
     <item>
       <title>Loops</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s04/</guid>
       <description>The for Loop When we drew the square, it was quite tedious. We had to explicitly repeat the steps of moving and turning four times. If we were drawing a hexagon, an octogon, or a enneacontaenneagon (that is a polygon with 99 sides!), it would have been worse.
 So a basic building block of all programs is to be able to repeat some code, over and over again.
 Python’s for loop does this.</description>
     </item>
-    
     <item>
       <title>Loopy Turtles</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s05/</guid>
       <description>Condensing our Turtle Program using Loops To draw a square we would like to do the same thing four times — move the turtle, and turn left 90 degrees. We previously used 8 lines to have alex draw the four sides of a square.
 This does exactly the same, but using just three lines with a for loop:
 import ColabTurtlePlus.Turtle as turtle turtle.clearscreen() turtle.setup(200,200) for i in [0, 1, 2, 3]: # Draw the four sides of the square alex.</description>
     </item>
-    
     <item>
       <title>More Turtle Tricks</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s06/</guid>
       <description>No Need to Be Positive Turtle methods can use negative angles or distances. So shelly.forward(-100) will move shelly backwards, and shelly.left(-30) turns her to the right. Additionally, because there are 360 degrees in a circle, turning 30 to the left will get shelly facing in the same direction as turning 330 to the right! The on-screen animation will differ, though — you will be able to tell if shelly is turning clockwise or counter-clockwise!</description>
     </item>
-    
     <item>
       <title>Drawing a Bar Graph</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_03/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_03/s07/</guid>
       <description>Project: A Turtle Bar Chart Now we&amp;rsquo;re going to put together many of the things we&amp;rsquo;ve learned to write a program that uses a turtle to draw a bar chart.
 Let&amp;rsquo;s start with some data to be charted:
 xs = [48, 117, 200, 240, 160, 260, 220]
 Corresponding to each data measurement, we will draw a rectangle of that height, with a fixed width. We are showing off a new programming concept called a function in the example below: we are defining the function draw_bar to draw a bar of our graph.</description>
     </item>
-    
     <item>
       <title>Boolean values and expressions!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s01/</guid>
       <description>Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean Algebra — some rules for reasoning about and combining these values. This is the basis of all modern computer logic.
 In Python, the two Boolean values are True and False, and the Python type is bool. Remember, to find the type of a constant or variable use the function type.</description>
     </item>
-    
     <item>
       <title>Logical Operators</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s02/</guid>
       <description>Logical operators There are three logical operators, and, or, and not, that allow us to build more complex Boolean expressions from simpler Boolean expressions. The semantics (meaning) of these operators is similar to their meaning in English. For example, x &amp;gt; 0 and x &amp;lt; 10 produces True only if x is greater than 0 and at the same time, x is less than 10.
 n % 2 == 0 or n % 3 == 0 is True if either of the conditions is True, that is, if the number n is divisible by 2 or it is divisible by 3.</description>
     </item>
-    
     <item>
       <title>Truth Tables</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s04/</guid>
       <description>Truth Tables A truth table is a small table that allows us to list all the possible inputs, and to give the results for the logical operators. Because the and and or operators each have two operands, there are only four rows in a truth table that describes the semantics of and.
-a b a and b False False False False True False True False False True True True In a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
+aba and bFalseFalseFalseFalseTrueFalseTrueFalseFalseTrueTrueTrueIn a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
     </item>
-    
     <item>
       <title>Conditional Execution</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s05/</guid>
       <description>Conditional execution In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:
-x = 8 if x % 2 == 0: print(str(x)+&amp;#34; is even.&amp;#34;) print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;) else: print(str(x)+&amp;#34; is odd.&amp;#34;) print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; + &amp;#34;always gives an odd result?</description>
+x = 8if x % 2 == 0:print(str(x)+&amp;#34; is even.&amp;#34;)print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;)else:print(str(x)+&amp;#34; is odd.&amp;#34;)print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; +&amp;#34;always gives an odd result?</description>
     </item>
-    
     <item>
       <title>Return</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s06/</guid>
       <description>The return statement The return statement, with or without a value, depending on whether the function is fruitful or void, allows us to terminate the execution of a function before (or when) we reach the end. One reason to use an early return is if we detect an error condition:
-def print_square_root(x): if x &amp;lt;= 0: print(&amp;#34;Positive numbers only, please.&amp;#34;) return result = x**0.5 print(&amp;#34;The square root of &amp;#34;+str(x)+&amp;#34; is &amp;#34;+str(result)) print_square_root(16) print_square_root(-4) The function print_square_root has a parameter named x.</description>
+def print_square_root(x):if x &amp;lt;= 0:print(&amp;#34;Positive numbers only, please.&amp;#34;)returnresult = x**0.5print(&amp;#34;The square root of &amp;#34;+str(x)+&amp;#34; is &amp;#34;+str(result))print_square_root(16)print_square_root(-4) The function print_square_root has a parameter named x.</description>
     </item>
-    
     <item>
       <title>Logical opposites</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s07/</guid>
       <description>Logical opposites Each of the six relational operators has a logical opposite: for example, suppose we can get a driver’s licence when our age is greater or equal to 16, we can not get the driver’s licence when we are less than 16.
 Notice that the opposite of &amp;gt;= is &amp;lt;.
-operator logical opposite == != != == &lt; &gt;= &lt;= &gt; &gt; &lt;= &gt;= &lt; Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
+operatorlogical opposite==!=!===&lt;&gt;=&lt;=&gt;&gt;&lt;=&gt;=&lt;Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
     </item>
-    
     <item>
       <title>Type conversion</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s08/</guid>
       <description>Type conversion We’ve had a first look at this in an earlier chapter. Seeing it again won’t hurt!
 Many Python types come with a built-in function that attempts to convert values of another type into its own type. The int function, for example, takes any value and converts it to an integer, if possible, or complains otherwise:
-&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;32&amp;#34;) 32 &amp;gt;&amp;gt;&amp;gt; int(&amp;#34;Hello&amp;#34;) Traceback (most recent call last): File &amp;#34;&amp;lt;pyshell#6&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt; int(&amp;#34;hello&amp;#34;) ValueError: invalid literal for int() with base 10: &amp;amp;#39;hello&amp;amp;#39; int can also convert floating-point values to integers, but remember that it truncates the fractional part:</description>
+&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;32&amp;#34;)32&amp;gt;&amp;gt;&amp;gt; int(&amp;#34;Hello&amp;#34;)Traceback (most recent call last):File &amp;#34;&amp;lt;pyshell#6&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt;int(&amp;#34;hello&amp;#34;)ValueError: invalid literal for int() with base 10: &amp;amp;#39;hello&amp;amp;#39; int can also convert floating-point values to integers, but remember that it truncates the fractional part:</description>
     </item>
-    
     <item>
       <title>Boolean functions</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s09/</guid>
       <description>Boolean functions Functions can return Boolean values, which is often convenient for hiding complicated tests inside functions. For example:
-def is_divisible(x, y): &amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisible by y &amp;#34;&amp;#34;&amp;#34; if x % y == 0: return True else: return False print(is_divisible(10,5)) # should print True print(is_divisible(10,7)) # should print False It is common to give Boolean functions names that sound like yes/no questions. is_divisible returns either True or False to indicate whether the x is or is not divisible by y.</description>
+def is_divisible(x, y):&amp;#34;&amp;#34;&amp;#34; Test if x is exactly divisible by y &amp;#34;&amp;#34;&amp;#34;if x % y == 0:return Trueelse:return Falseprint(is_divisible(10,5)) # should print Trueprint(is_divisible(10,7)) # should print False It is common to give Boolean functions names that sound like yes/no questions. is_divisible returns either True or False to indicate whether the x is or is not divisible by y.</description>
     </item>
-    
     <item>
       <title>Assignment</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s01/</guid>
       <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
-airtime_remaining = 15 print(airtime_remaining) airtime_remaining = 7 print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
+airtime_remaining = 15print(airtime_remaining)airtime_remaining = 7print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
 It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
     </item>
-    
     <item>
       <title>Updating variables</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s02/</guid>
       <description>When an assignment statement is executed, the right-hand side expression (i.e. the expression that comes after the assignment token) is evaluated first. This produces a value. Then the assignment is made, so that the variable on the left-hand side now refers to the new value.
 One of the most common forms of assignment is an update, where the new value of the variable depends on its old value. Deduct 40 cents from my airtime balance, or add one run to the scoreboard.</description>
     </item>
-    
     <item>
       <title>The for loop revisited</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s03/</guid>
       <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:
-for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]: invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34; print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
+for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]:invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34;print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
     </item>
-    
     <item>
       <title>The while statement</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s04/</guid>
       <description>Here is a fragment of code that demonstrates the use of the while statement:
-def sum_to(n): &amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34; ss = 0 v = 1 while v &amp;lt;= n: ss = ss + v v = v + 1 return ss # For your test suite print(sum_to(4)) print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
+def sum_to(n):&amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34;ss = 0v = 1while v &amp;lt;= n:ss = ss + vv = v + 1return ss# For your test suiteprint(sum_to(4))print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
     </item>
-    
     <item>
       <title>The Collatz 3n &#43; 1 sequence</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s05/</guid>
       <description>Let’s look at a simple sequence that has fascinated mathematicians for many years. They still cannot answer even quite simple questions about this.
 The rule for creating the sequence is to start from some given n, and to generate the next term of the sequence from n, either by halving n (whenever n is even), or else by multiplying it by three and adding 1 (whenever n is odd). The sequence terminates when n reaches 1.</description>
     </item>
-    
     <item>
       <title>Choosing between for and while</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s06/</guid>
       <description>Use a for loop if you know, before you start looping, the maximum number of times that you’ll need to execute the body. For example, if you’re traversing a list of elements, you know that the maximum number of loop iterations you can possibly need is “all the elements in the list”. Or if you need to print the 12 times table, we know right away how many times the loop will need to run.</description>
     </item>
-    
     <item>
       <title>Tracing a program</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s07/</guid>
-      <description>6.6. ¶ To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to **trace** the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed. To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
+      <description>6.6. ¶To write effective computer programs, and to build a good conceptualmodel of program execution, a programmer needs to develop the abilityto **trace** the execution of a computer program. Tracing involves becoming thecomputer and following the flow of execution through a sample program run,recording the state of all variables and any output the program generates aftereach instruction is executed.To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
     </item>
-    
   </channel>
 </rss>
