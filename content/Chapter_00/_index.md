@@ -13,4 +13,4 @@ Learning with Python 3_](https://artofproblemsolving.com/assets/pythonbook/) by 
 B. Downey and Chris Meyers.
 
 It was adapted and developed for [Blue Ridge
-Boost](https://blueridgeboost.com/) by <a href="https://ananoraevans.org/">Nora Evans</a> and <a href="https://www.cs.virginia.edu/~evans/">David Evans</a>.
+Boost](https://blueridgeboost.com/) by Nora Evans and David Evans.
