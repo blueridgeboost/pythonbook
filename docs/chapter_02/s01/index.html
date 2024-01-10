@@ -12,22 +12,22 @@
     <title>Values and data types - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1704857768" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1704857768" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704301134"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704857768"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704301134"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704857768"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704857768"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1704857768"></script>
 
     
   </div>
@@ -374,27 +374,6 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s04/">
-        Statements
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
         <a href="/pythonbook/chapter_02/s05/">
         Evaluating expressions
@@ -542,29 +521,8 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="Exercises" class="dd-item ">
         <a href="/pythonbook/chapter_02/s12/">
-        The modulus operator
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s13/">
         Exercises
         
         </a>
@@ -1214,27 +1172,32 @@
         
 
 
-<p>A <strong>value</strong> is one of the fundamental things — like a letter or a number — that a program manipulates.
+<p>A <strong>value</strong> is a piece of concrete data like a letter or a number that a program manipulates.
 Some of the values we have seen so far are <code>5</code> (the
-result when we added <code>2+3</code>), and <code>Hello World!</code>.</p>
-<p>These values are classified into different <strong>classes</strong>, or <strong>data types</strong>: <code>5</code>
-is an <em>integer</em>, and <code>&quot;Hello, World!&quot;</code> is a <em>string</em>,
-so-called because it contains a string of
-letters. You (and the interpreter) can identify strings because they are
+result when we added <code>2+3</code>), and <code>&quot;Hello World!&quot;</code>.</p>
+<p>The values are stored in the computer&rsquo;s memory as sequences of zeros and ones.
+To distinguish a series of zeros and ones that represent the integer <code>5</code> from the
+letter <code>c</code>, a high-level language associates to each value a <strong>data type</strong>, which
+includes all the possible values of the type and the operations allowed on that type.</p>
+<p>In your math classes, you learned about types of numbers including whole numbers, counting
+numbers, integers, rationals (fractions) and reals. The allowed values for integers are
+<code>..., -2, -1, 0, 1, 2,...</code>. You learned that you can add and subtract integers and
+the result will be an integer, but there are pairs of integers that when divided
+the result is not an integer. Integers are the data type. Possible values are some
+mathematical integers (with limits because the computer does not have infinite memory), and
+operations addition, subtraction, and multiplication.</p>
+<p>The type of <code>&quot;Hello, World!&quot;</code> is <em>str</em> (short for string). String values are
 enclosed in quotation marks.</p>
-<p>If you are not sure what class a value falls into, Python has a function
-called <strong>type</strong> which can tell you, as in the example below. (Anytime we show you an
-example with lines that start with <code>&gt;&gt;&gt;</code>, these are examples that you can try in
-the IDLE shell.)</p>
+<p>If you are unsure of the type of a value, use the Python function
+called <code>type</code> to find it as shown below.</p>
 <pre tabindex="0"><code>&gt;&gt;&gt; type(&#34;Hello, World!&#34;)
 &lt;class &#39;str&#39;&gt;
 &gt;&gt;&gt; type(17)
 &lt;class &#39;int&#39;&gt;
-</code></pre><p>Not surprisingly, strings belong to the class <strong>str</strong> and integers belong to the
-class <strong>int</strong>. Less obviously, numbers with a decimal point belong to a class
+</code></pre><p>Not surprisingly, strings belong to the type <strong>str</strong> and integers belong to the
+type <strong>int</strong>. Less obviously, numbers with a decimal point belong to a type
 called <strong>float</strong>, because these numbers are represented in a format called
-<em>floating-point</em>.  At this stage, you can treat the words <em>class</em> and <em>type</em>
-interchangeably.</p>
+<em>floating-point</em>.</p>
 <pre tabindex="0"><code>&gt;&gt;&gt; type(3.2)
 &lt;class &#39;float&#39;&gt;
 </code></pre><p>What about values like <code>&quot;17&quot;</code> and <code>&quot;3.2&quot;</code>? They look like numbers, but they
@@ -1243,7 +1206,7 @@ are in quotation marks like strings.</p>
 &lt;class &#34;str&#34;&gt;
 &gt;&gt;&gt; type(&#34;;3.2&#34;;)
 &lt;class &#34;str&#34;&gt;
-</code></pre><p>They’re strings!</p>
+</code></pre><p>They are strings!</p>
 <p>Strings in Python can be enclosed in either single quotes (<code>'</code>) or double quotes
 (<code>&quot;</code>), or three of each (<code>'''</code> or <code>&quot;&quot;&quot;</code>)</p></p>
 <pre tabindex="0"><code>&gt;&gt;&gt; type(&#39;This is a string.&#39;)
@@ -1257,8 +1220,7 @@ are in quotation marks like strings.</p>
 </code></pre><p>Double quoted strings can contain single quotes inside them, as in
 <code>&quot;Bruce's beard&quot;</code>, and single quoted strings can have double quotes
 inside them, as in <code>'The knights who say &quot;Ni!&quot;'</code>.
-Strings enclosed with three occurrences of either quote symbol are
-called triple quoted strings.  They can
+Strings enclosed with three occurrences of either quote symbol are called triple-quoted strings.  They can
 contain either single or double quotes:</p>
 <pre tabindex="0"><code>&gt;&gt;&gt; print(&#34;&#34;&#34;&#34;Oh no&#34;, she exclaimed, &#34;Ben&#39;s bike is broken!&#34;&#34;&#34;&#34;)
 &#34;Oh no&#34;, she exclaimed, &#34;Ben&#39;s bike is broken!&#34;
@@ -1270,7 +1232,7 @@ contain either single or double quotes:</p>
 This message will
 span several
 lines.
-</code></pre><p>Python doesn’t care whether you use single or double quotes or
+</code></pre><p>Python does not differentiate between the use of single or double quotes or
 the three-of-a-kind quotes to surround your strings:
 once it has parsed the text of your program or command, the way it stores the
 value is identical in all cases, and the surrounding quotes are not part of
@@ -1280,8 +1242,7 @@ decide which quotes to use to make it look like a string.</p>
 &#34;This is a string.&#34;
 &gt;&gt;&gt; &#34;&#34;&#34;And so is this.&#34;&#34;&#34;
 &#34;And so is this.&#34;
-</code></pre><p>So the Python language designers usually chose to surround their strings
-by single quotes.  What do think would happen if the string already
+</code></pre><p>The Python language designers usually chose to surround their strings with single quotes.  What do think would happen if the string already
 contained single quotes?</p>
 <p>When you type a large integer, you might be tempted to use commas between
 groups of three digits, as in <code>42,000</code>. This is not a legal integer in
@@ -1290,8 +1251,8 @@ Python, but it does mean something else, which is legal:</p>
 42000
 &gt;&gt;&gt; 42,000
 (42, 0)
-</code></pre><p>Well, that’s not what we expected at all! Because of the comma, Python chose to
-treat this as a <em>pair</em> of values.  We’ll come back to learn about pairs later.
+</code></pre><p>Well, that is not what we expected at all! Because of the comma, Python treats the value as a <em>pair</em>.<br>
+We will learn about pairs later.
 But, for the moment, remember not to put commas or spaces in your integers, no matter
 how big they are. Also revisit what we said in the previous chapter: formal languages are
 strict, the notation is concise, and even the smallest change might
@@ -1497,38 +1458,6 @@ mean something quite different from what you intended.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2110,16 +2039,16 @@ mean something quite different from what you intended.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704301134"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1704301134"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1704301134"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1704301134"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704857768"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1704857768"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1704857768"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1704857768"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704301134"></script>
-    <script src="/pythonbook/js/learn.js?1704301134"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1704301134"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704857768"></script>
+    <script src="/pythonbook/js/learn.js?1704857768"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1704857768"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

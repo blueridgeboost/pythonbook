@@ -9,25 +9,25 @@
 
     <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
 
-    <title>The modulus operator - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Exercises - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1704857768" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1704857768" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704301134"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704857768"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704301134"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704857768"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704857768"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1704857768"></script>
 
     
   </div>
@@ -374,27 +374,6 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s04/">
-        Statements
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
         <a href="/pythonbook/chapter_02/s05/">
         Evaluating expressions
@@ -542,29 +521,8 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item active">
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="Exercises" class="dd-item active">
         <a href="/pythonbook/chapter_02/s12/">
-        The modulus operator
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s13/">
         Exercises
         
         </a>
@@ -1184,7 +1142,7 @@
                   <span class="links">
                  
                  
-                   The modulus operator
+                   Exercises
                  
                   </span>
                 </div>
@@ -1207,48 +1165,77 @@
           
             <h1>
               
-              The modulus operator
+              Exercises
             </h1>
           
 
         
 
 
-<p>The <strong>modulus operator</strong> works on integers (and integer expressions) and gives
-the remainder when the first number is divided by the second. In Python, the
-modulus operator is a percent sign (<code>%</code>). The syntax is the same as for other
-operators. It has the same precedence as the multiplication operator.</p>
-<pre tabindex="0"><code>&gt;&gt;&gt; q = 7 // 3     # This is integer division operator
-&gt;&gt;&gt; print(q)
-2
-&gt;&gt;&gt; r  = 7 % 3
-&gt;&gt;&gt; print(r)
-1
-</code></pre><p>So 7 divided by 3 is 2 with a remainder of 1.</p>
-<p>The modulus operator turns out to be surprisingly useful. For example, you can
-check whether one number is divisible by another—if <code>x&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;y</code> is zero, then
-<code>x</code> is divisible by <code>y</code>.</p>
-<p>Also, you can extract the right-most digit or digits from a number.  For
-example, <code>x&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;10</code> yields the right-most digit of <code>x</code> (in base 10).
-Similarly <code>x&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;100</code> yields the last two digits.</p>
-<p>It is also extremely useful for doing conversions, say from seconds,
-to hours, minutes and seconds. So let’s write a program to ask the user to enter
-some seconds, and we’ll convert them into hours, minutes, and remaining seconds.</p>
-<pre tabindex="0"><code># ask user for the total number of seconds
-totalSecs = int(input(&#34;How many seconds, in total?&#34;))
+<p>Use the Python Interpreter to answer the questions.</p>
+<p><strong>Question 1</strong>. Take the sentence: <em>Every cloud has a silver lining.</em></p>
+<p>Store each word in a separate variable, then print out the sentence on <em>one</em> line using six print statements.</p>
+<p>Note: You will have to add a second argument to change the end from new line to empty string.</p>
+<p><code>print(&quot;Hello, world!&quot;, end=&quot;&quot;)</code></p>
+<p><strong>Question 2.</strong> Write a <em>single</em> string containing two sentences. Use the
+escape character <code>'\n'</code> to separate the sentences.</p>
+<p>Print the string. What do you observe?</p>
+<p><strong>Question 3</strong>. What type do you think the following expressions have?
+<code>1.0 + 1</code>
+<code>'3.14'</code>
+<code>4//2</code>
+Use the Python interpreter to check your answers.</p>
+<p><strong>Question 4.</strong> Define a variable <code>x</code> and initialize it to the value of the expression <code>6 * 1 - 2</code>.</p>
+<p>Add parenthesis to the expression <code>6 * 1 - 2</code> to change its value from <code>4</code> to <code>-6</code>. Initialize a variable <code>y</code> with the new expression.</p>
+<p>Print both variables.</p>
+<p><strong>Question 5.</strong> If we run the code below, the Python interpreter reports an error. Explain the error in your own words.</p>
+<pre tabindex="0"><code>z + 4
+print(z)
+</code></pre><p><strong>Question 6</strong>. Fix the error so that the output of the program is <code>8</code>.</p>
+<pre tabindex="0"><code># Fix the error
+z + 4
+print(z)
+</code></pre><p><strong>Question 7</strong>. Use the <code>*</code> to print the word <em>blah</em> ten times.</p>
+<p><strong>Question 8</strong>. Would you rather have a penny that doubles each day for a month or one million dollars?</p>
+<p>Write a Python program to solve the riddle.</p>
+<p>Note: use the exponential operator <code>**</code>.</p>
+<p><strong>Question 9.</strong> If your grandparents deposited $100 the day you are born in an account earning 5% per year interest compounded quarterly.</p>
+<figure><img src="https://latex.codecogs.com/svg.image?A=P%281&amp;plus;%5cfrac%7br%7d%7bn%7d%29%5e%7bnt%7d"/>
+</figure>
 
-# compute hours, minutes, seconds
-hours = totalSecs // 3600
-secsStillRemaining = totalSecs % 3600
-minutes =  secsStillRemaining // 60
-secsFinallyRemaining = secsStillRemaining  % 60
-
-# print the result
-print(&#34;Hrs=&#34; + str(hours) + &#34; Mins=&#34; + str(minutes) +
-        &#34; Secs=&#34; + str(secsFinallyRemaining))
-</code></pre><p>We see a neat little trick in the above program: the <code>print</code> statement in line 11
-extends over into line 12. This is OK—when the program runs, Python will figure out that the statement on line 11 hasn’t finished yet and continues onto line 12. It’s usually a good idea to indent your second line a bit so that’s it’s clear to a human that the previous line hasn’t finished yet.</p>
-<p>We also see how comments make a long program easier for a human to read. Get in the habit of writing comments as part of your programs!</p>
+<p>where</p>
+<ul>
+<li><code>P</code> is the initial investment</li>
+<li><code>r</code> is the yearly interest rate</li>
+<li><code>n</code> is the number of times the interest is compounded per year</li>
+<li><code>t</code> is the number of years.</li>
+</ul>
+<p><em>Hints.</em></p>
+<ol>
+<li>
+<p>Create a variable for each quantity given in the problem: <code>P</code>, <code>r</code>, <code>n</code>.</p>
+</li>
+<li>
+<p>Define a variable that holds your current age.</p>
+</li>
+<li>
+<p>Use the variables above to initialize a new variable with how much money you would have had in your account on your last birthday.</p>
+</li>
+<li>
+<p>Print the last variable.</p>
+</li>
+</ol>
+<p><strong>Question 10</strong>. Evaluate mentally the following numerical expressions. Record your answers below.</p>
+<p><code>5 % 2</code></p>
+<p><code>9 % 5</code></p>
+<p><code>15 % 12</code></p>
+<p><code>12 % 15</code></p>
+<p><code>6 % 6</code></p>
+<p><code>0 % 7</code></p>
+<p><code>7 % 0</code></p>
+<p><strong>Question 11</strong>. Use the Python interpreter to check your results.</p>
+<p><strong>Question 12</strong>. What happened with the last example? Why? If you were able to correctly anticipate the computer’s response in all but the last one, it is time to move on. If not, take time now to make up examples of your own. Explore the modulus operator until you are confident you understand how it works.</p>
+<p><strong>Question 13</strong>. Write a Python program that calculates the time 1000 hours from now.</p>
 
 
 <footer class="footline">
@@ -1594,41 +1581,6 @@ extends over into line 12. This is OK—when the program runs, Python will figur
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1648,6 +1600,9 @@ extends over into line 12. This is OK—when the program runs, Python will figur
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2056,7 +2011,7 @@ extends over into line 12. This is OK—when the program runs, Python will figur
 			<a class="nav nav-prev" href="/pythonbook/chapter_02/s11/" title="Composition"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_02/s13/" title="Exercises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_03/" title="Draw with turtles" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2066,16 +2021,16 @@ extends over into line 12. This is OK—when the program runs, Python will figur
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704301134"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1704301134"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1704301134"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1704301134"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704857768"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1704857768"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1704857768"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1704857768"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704301134"></script>
-    <script src="/pythonbook/js/learn.js?1704301134"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1704301134"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704857768"></script>
+    <script src="/pythonbook/js/learn.js?1704857768"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1704857768"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

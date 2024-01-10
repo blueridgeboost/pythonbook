@@ -12,22 +12,22 @@
     <title>Operators and operands - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1704857768" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1704857768" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704301134"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704857768"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704301134"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704857768"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704857768"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1704857768"></script>
 
     
   </div>
@@ -374,27 +374,6 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s04/">
-        Statements
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
         <a href="/pythonbook/chapter_02/s05/">
         Evaluating expressions
@@ -542,29 +521,8 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="Exercises" class="dd-item ">
         <a href="/pythonbook/chapter_02/s12/">
-        The modulus operator
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s13/">
         Exercises
         
         </a>
@@ -1235,11 +1193,11 @@ expect.</p>
 &gt;&gt;&gt; hours = minutes / 60
 &gt;&gt;&gt; hours
 10.75
-</code></pre><p>Oops! In Python 3, the division operator <code>/</code> always yields a floating point result.
+</code></pre><p>In Python 3, the division operator <code>/</code> always yields a floating point result.
 What we might have wanted to know was how many <em>whole</em> hours there are, and how many minutes remain.
 Python gives us two different flavors of the division operator.
 The second, called <strong>floor division</strong> uses the token <cite>//</cite>.
-Its result is always a whole number — and if it has to adjust the number it always
+Its result is always a whole number and if it has to adjust the number it always
 moves it to the left on the number line.  So <code>6 // 4</code> yields <code>1</code>, but <code>-6 // 4</code> might surprise you!</p>
 <pre tabindex="0"><code>&gt;&gt;&gt; 7 / 4
 1.75
@@ -1249,10 +1207,39 @@ moves it to the left on the number line.  So <code>6 // 4</code> yields <code>1<
 &gt;&gt;&gt; hours = minutes // 60
 &gt;&gt;&gt; hours
 10
-</code></pre><p>Take care that you choose the correct flavor of the division operator.  If you’re
-working with expressions where you need floating point values, use the division operator
-that does the division accurately.</p>
+</code></pre><p>The <strong>modulus operator</strong> works on integers (and integer expressions) and gives
+the remainder when the first number is divided by the second. In Python, the
+modulus operator is a percent sign (<code>%</code>). The syntax is the same as for other
+operators. It has the same precedence as the multiplication operator.</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; q = 7 // 3     # This is integer division operator
+&gt;&gt;&gt; print(q)
+2
+&gt;&gt;&gt; r  = 7 % 3
+&gt;&gt;&gt; print(r)
+1
+</code></pre><p>So 7 divided by 3 is 2 with a remainder of 1.</p>
+<p>The modulus operator turns out to be surprisingly useful. For example, you can
+check whether one number is divisible by another. If <code>x % y</code> is zero, then
+<code>x</code> is divisible by <code>y</code>.</p>
+<p>Also, you can extract the right-most digit or digits from a number.  For
+example, <code>x % 10</code> yields the right-most digit of <code>x</code> (in base 10).
+Similarly <code>x % 100</code> yields the last two digits.</p>
+<p>It is also extremely useful for doing conversions, say from seconds
+to hours, minutes and seconds. Here is a program that asks the user to enter
+some seconds, and it converts them into hours, minutes, and remaining seconds.</p>
+<pre tabindex="0"><code># ask user for the total number of seconds
+totalSecs = int(input(&#34;How many seconds, in total?&#34;))
 
+# compute hours, minutes, seconds
+hours = totalSecs // 3600
+secsStillRemaining = totalSecs % 3600
+minutes =  secsStillRemaining // 60
+secsFinallyRemaining = secsStillRemaining  % 60
+
+# print the result
+print(&#34;Hrs=&#34; + str(hours) + &#34; Mins=&#34; + str(minutes) +
+        &#34; Secs=&#34; + str(secsFinallyRemaining))
+</code></pre>
 
 <footer class="footline">
 	
@@ -1501,22 +1488,6 @@ that does the division accurately.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1536,22 +1507,6 @@ that does the division accurately.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2069,16 +2024,16 @@ that does the division accurately.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704301134"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1704301134"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1704301134"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1704301134"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704857768"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1704857768"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1704857768"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1704857768"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704301134"></script>
-    <script src="/pythonbook/js/learn.js?1704301134"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1704301134"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704857768"></script>
+    <script src="/pythonbook/js/learn.js?1704857768"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1704857768"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

@@ -12,22 +12,22 @@
     <title>Composition - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1704301134" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1704857768" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1704857768" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1704301134" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1704857768" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704301134"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1704857768"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704301134"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1704857768"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1704857768"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1704301134"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1704857768"></script>
 
     
   </div>
@@ -374,27 +374,6 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s04/" title="Statements" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s04/">
-        Statements
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
         <a href="/pythonbook/chapter_02/s05/">
         Evaluating expressions
@@ -542,29 +521,8 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_02/s12/" title="The modulus operator" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="Exercises" class="dd-item ">
         <a href="/pythonbook/chapter_02/s12/">
-        The modulus operator
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/pythonbook/chapter_02/s13/" title="Exercises" class="dd-item ">
-        <a href="/pythonbook/chapter_02/s13/">
         Exercises
         
         </a>
@@ -1214,38 +1172,34 @@
         
 
 
-<p>So far, we have looked at the elements of a program — variables, expressions,
-statements, and function calls — in isolation, without talking about how to combine them.</p>
+<p>So far, we have looked at the elements of a program: variables, expressions,
+statements, and function calls, in isolation, without talking about how to combine them.</p>
 <p>One of the most useful features of programming languages is their ability to
 take small building blocks and <strong>compose</strong> them into larger chunks.</p>
 <p>For example, we know how to get the user to enter some input, we know how to
 convert the string we get into a float, we know how to write a complex expression, and
-we know how to print values. Let’s put these together in a small four-step program that
+we know how to print values. Let&rsquo;s put these together in a small four-step program that
 asks the user to input a value for the radius of a circle, and then
 computes the area of the circle from the formula</p>
 <p>Area = pi * r^2</p>
-<p>Firstly, we’ll do the four steps one at a time:</p>
 <pre tabindex="0"><code>response = input(&#34;What is your radius? &#34;)
 r = float(response)
 area = 3.14159 * r**2
 print(&#34;The area is &#34; + str(area))
-</code></pre><p>Notice that we have to convert the value of the variable <code>area</code> to a string before we can print it. If we don’t, we get an error:</p>
+</code></pre><p>Notice that we have to convert the value of the variable <code>area</code> to a string before we can print it. If we do not, we get an error:</p>
 <pre tabindex="0"><code>response = input(&#34;What is your radius? &#34;)
 r = float(response)
 area = 3.14159 * r**2
 print(&#34;The area is &#34; + area)
-</code></pre><p>We get a runtime error in the above program because Python doesn’t know how to “add” a string and a float. We need to convert the float to a string before we can add (that is, concatenate) it to the string <code>&quot;The area is &quot;</code>.</p>
-<p>Now let’s compose the first two lines into a single line of code, and compose the
-second two lines into another line of code.</p>
+</code></pre><p>We get a runtime error in the above program because Python does not know how to <em>add</em> a string and a float. We need to convert the float to a string before we can add (that is, concatenate) it to the string <code>&quot;The area is &quot;</code>.</p>
+<p>Typically, experienced programmers compose the first two lines into a single line of code.</p>
 <pre tabindex="0"><code>r = float( input(&#34;What is your radius? &#34;) )
-print(&#34;The area is &#34; + str(3.14159 * r**2))
-</code></pre><p>If we really wanted to be tricky, we could write it all in one statement:</p>
+area = 3.14159 * r**2
+print(&#34;The area is &#34; + area)
+</code></pre><p>Combining all statements into a single one is possible, but not a good idea.</p>
 <pre tabindex="0"><code>print(&#34;The area is &#34; + str(3.14159 * float(input(&#34;What is your radius? &#34;))**2))
 </code></pre><p>Such compact code may not be most understandable for humans, but it does
 illustrate how we can compose bigger chunks from our building blocks.</p>
-<p>If you’re ever in doubt about whether to compose code or fragment it into smaller steps,
-try to make it as simple as you can for the human to follow.  My choice would
-be the first case above, with four separate steps.</p>
 
 
 <footer class="footline">
@@ -1575,22 +1529,6 @@ be the first case above, with four separate steps.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1610,22 +1548,6 @@ be the first case above, with four separate steps.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2053,7 +1975,7 @@ be the first case above, with four separate steps.</p>
 			<a class="nav nav-prev" href="/pythonbook/chapter_02/s10/" title="Input"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_02/s12/" title="The modulus operator" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_02/s12/" title="Exercises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2063,16 +1985,16 @@ be the first case above, with four separate steps.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704301134"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704301134"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1704301134"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1704301134"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1704301134"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1704857768"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1704857768"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1704857768"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1704857768"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1704857768"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704301134"></script>
-    <script src="/pythonbook/js/learn.js?1704301134"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1704301134"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1704857768"></script>
+    <script src="/pythonbook/js/learn.js?1704857768"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1704857768"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
