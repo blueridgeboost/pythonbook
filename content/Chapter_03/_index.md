@@ -8,6 +8,8 @@ pre = "<b>3. </b>"
 
 ### Using Libraries
 
+In CHapter 2, you learned the 
+
 There are many *modules* in Python that provide very powerful features that we
 can use in our own programs.  Some of these can send email, or fetch web pages.
 The one use at in this chapter allows us to create turtles and use them
