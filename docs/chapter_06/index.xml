@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loops and iterations on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <link>https://blueridgeboost.com/pythonbook/chapter_06/</link>
+    <description>Recent content in Loops and iterations on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate><atom:link href="https://blueridgeboost.com/pythonbook/chapter_06/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s01/</guid>
+      <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
+airtime_remaining = 15 print(airtime_remaining) airtime_remaining = 7 print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
+It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
+    </item>
+    
+    <item>
+      <title>Updating variables</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s02/</guid>
+      <description>When an assignment statement is executed, the right-hand side expression (i.e. the expression that comes after the assignment token) is evaluated first. This produces a value. Then the assignment is made, so that the variable on the left-hand side now refers to the new value.
+One of the most common forms of assignment is an update, where the new value of the variable depends on its old value. Deduct 40 cents from my airtime balance, or add one run to the scoreboard.</description>
+    </item>
+    
+    <item>
+      <title>The for loop revisited</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s03/</guid>
+      <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:
+for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]: invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34; print(invitation)&amp;lt;/textarea&amp;gt; Running through all the items in a list is called traversing the list, or traversal.</description>
+    </item>
+    
+    <item>
+      <title>The while statement</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s04/</guid>
+      <description>Here is a fragment of code that demonstrates the use of the while statement:
+def sum_to(n): &amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34; ss = 0 v = 1 while v &amp;lt;= n: ss = ss + v v = v + 1 return ss # For your test suite print(sum_to(4)) print(sum_to(1000))&amp;lt;/textarea&amp;gt; You can almost read the while statement as if it were English. It means, while v is less than or equal to n, continue executing the body of the loop.</description>
+    </item>
+    
+    <item>
+      <title>The Collatz 3n &#43; 1 sequence</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s05/</guid>
+      <description>Let’s look at a simple sequence that has fascinated mathematicians for many years. They still cannot answer even quite simple questions about this.
+The rule for creating the sequence is to start from some given n, and to generate the next term of the sequence from n, either by halving n (whenever n is even), or else by multiplying it by three and adding 1 (whenever n is odd). The sequence terminates when n reaches 1.</description>
+    </item>
+    
+    <item>
+      <title>Choosing between for and while</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s06/</guid>
+      <description>Use a for loop if you know, before you start looping, the maximum number of times that you’ll need to execute the body. For example, if you’re traversing a list of elements, you know that the maximum number of loop iterations you can possibly need is “all the elements in the list”. Or if you need to print the 12 times table, we know right away how many times the loop will need to run.</description>
+    </item>
+    
+    <item>
+      <title>Tracing a program</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s07/</guid>
+      <description>6.6. ¶ To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to **trace** the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed. To understand this process, let’s trace the call to seq3np1(3) from the previous section.</description>
+    </item>
+    
+  </channel>
+</rss>

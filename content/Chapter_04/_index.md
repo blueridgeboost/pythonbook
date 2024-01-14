@@ -7,8 +7,7 @@ pre = "<b>4. </b>"
 +++
 
 ### Conditionals
-
-Programs get really interesting when we can test conditions and change the
+Programs get interesting when we can test conditions and change the
 program behavior depending on the outcome of the tests.  That is what this
 chapter is about.
 

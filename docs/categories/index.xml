@@ -5,7 +5,6 @@
     <link>https://blueridgeboost.com/pythonbook/categories/</link>
     <description>Recent content in Categories on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://blueridgeboost.com/pythonbook/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://blueridgeboost.com/pythonbook/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

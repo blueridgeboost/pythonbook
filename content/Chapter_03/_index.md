@@ -8,12 +8,14 @@ pre = "<b>3. </b>"
 
 ### Using Libraries
 
-In CHapter 2, you learned the 
+In Chapter 2, you learned a few data types that are part of the Python language. 
+With these types and other language constructs, programmers can build their own 
+datatypes and share them with other language users. These data types are 
+packaged in libraries and the logical unit that contains the code is called a 
+*modules*.
 
-There are many *modules* in Python that provide very powerful features that we
-can use in our own programs.  Some of these can send email, or fetch web pages.
-The one use at in this chapter allows us to create turtles and use them
-to draw shapes and patterns.
+In this chapter, you will learn how to use the ```turtle``` module to create turtles and use them
+to draw shapes and patterns. This chapter is also a brief overview of several important coding concepts
+that will be explored in depth in later chapters.
 
-The turtles are fun, but the real purpose of the chapter is to teach ourselves
-a little more Python, and to develop our abilities to *think like computer scientists*. Most of the Python covered here will be explored in more depth later.
+[The Python documentation](https://docs.python.org/3/library/turtle.html) contains an exhaustive description of the library.
