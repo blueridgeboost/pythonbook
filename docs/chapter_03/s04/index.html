@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Hugo 0.120.4">
     <meta name="description" content="Learn Python at Blue Ridge Boost!">
 <meta name="author" content="Nora Evans and David Evans">
 
@@ -12,22 +12,22 @@
     <title>Loops - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
-    <link href="/pythonbook/css/nucleus.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/fontawesome-all.min.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/hybrid.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/featherlight.min.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/perfect-scrollbar.min.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/auto-complete.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/theme.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/tabs.css?1705191876" rel="stylesheet">
-    <link href="/pythonbook/css/hugo-theme.css?1705191876" rel="stylesheet">
+    <link href="/pythonbook/css/nucleus.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1705442858" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1705442858" rel="stylesheet">
     
-    <link href="/pythonbook/css/theme-blue.css?1705191876" rel="stylesheet">
+    <link href="/pythonbook/css/theme-blue.css?1705442858" rel="stylesheet">
     
     
 
-    <script src="/pythonbook/js/jquery-3.3.1.min.js?1705191876"></script>
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1705442858"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1705191876"></script>
-<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1705191876"></script>
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1705442858"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1705442858"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
     
 </script>
-<script type="text/javascript" src="/pythonbook/js/search.js?1705191876"></script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1705442858"></script>
 
     
   </div>
@@ -660,27 +660,6 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_03/s05/" title="Loopy Turtles" class="dd-item ">
-        <a href="/pythonbook/chapter_03/s05/">
-        Loopy Turtles
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/pythonbook/chapter_03/s06/" title="More Turtle Tricks" class="dd-item ">
         <a href="/pythonbook/chapter_03/s06/">
         More Turtle Tricks
@@ -1090,6 +1069,7 @@
   <ul>
     <li><a href="#the-for-loop">The <strong>for</strong> Loop</a></li>
     <li><a href="#execution-of-a-for-loop">Execution of a <strong>for</strong> Loop</a></li>
+    <li><a href="#condensing-our-turtle-program-using-loops">Condensing our Turtle Program using Loops</a></li>
   </ul>
 </nav>
     </div>
@@ -1151,6 +1131,92 @@ top to bottom, one statement at a time.  The <code>for</code> loop changes this.
 <p>Control flow is often easy to visualize and understand if we draw a flowchart.
 This shows the exact steps and logic of how the <code>for</code> statement executes.</p>
 <p><a class="last reference internal image-reference" href="/pythonbook/images/flowchart_for.png"><img alt="/pythonbook/images/flowchart_for.png" src="/pythonbook/images/flowchart_for.png" style="height: 420px;" /></a></p>
+<h2 id="condensing-our-turtle-program-using-loops">Condensing our Turtle Program using Loops</h2>
+<p>To draw a square we would like to do the same thing four times: move the turtle, and turn left 90 degrees.<br>
+We previously used eight lines to have <code>alex</code> draw the four sides of a square.</p>
+<p>The program below does the same, but using just three lines with a <strong>for</strong> loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>clearscreen() 
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alex <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle() 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]:       <span style="color:#75715e"># Draw the four sides of the square</span>
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>Some observations:</p>
+<ul>
+<li>
+<p>While “saving some lines of code” might be convenient, it is not the big deal here.
+What is much more important is that we’ve found a “repeating pattern” of statements,
+and reorganized our program to repeat the pattern.  Finding the chunks and somehow
+getting our programs arranged around those chunks is a vital
+skill in computational thinking.</p>
+</li>
+<li>
+<p>The values <code>[0, 1, 2, 3]</code> were provided to make the loop body execute 4 times.
+We could
+have used any four values, but these are the conventional ones to use. In fact, getting a list of numbers in order is so useful that Python provides a built-in way to do this using <code>range</code>:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Executes the body with i = 0, then 1, then 2, then 3</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i = &#34;</span> <span style="color:#f92672">+</span> str(i))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sets i to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i = &#34;</span> <span style="color:#f92672">+</span> str(i))
+</span></span></code></pre></div><ul>
+<li>
+<p>Computer scientists like to count from 0 — this is why <code>range(n)</code> goes through the numbers from <code>0</code> up to <code>n - 1</code>.</p>
+</li>
+<li>
+<p>Our little trick earlier to make sure that <code>alex</code> did the final turn to complete
+360 degrees has paid off: if we had not done that, then we would not have been
+able to use a loop for the fourth side of the square.
+It would have become a “special case”,
+different from the other sides.  When possible, we’d much prefer to make
+our code fit a general pattern, rather than have to create a special case.
+So to repeat something four times, a Python programmer would do this:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):	<span style="color:#75715e"># here, we use _ instead of i since we don&#39;t actually need the value</span>
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span></code></pre></div><p>By now you should be able to see how to change our previous program so that
+<code>tess</code> can also use a <code>for</code> loop to draw her equilateral triangle.</p>
+<p>But now, what would happen if we made the change below? Try to figure out what is going to happen, then run the code to see if you are right!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>clearscreen() 
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alex <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()       <span style="color:#75715e"># Create alex</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#34;yellow&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, <span style="color:#e6db74">&#34;purple&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>]:
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>color(c)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>A variable can also be assigned a value that is a list.  So lists can also be used in
+more general situations, not only in the <code>for</code> loop.  The code above could be rewritten like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> turtle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>clearscreen() 
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alex <span style="color:#f92672">=</span> turtle<span style="color:#f92672">.</span>Turtle()       <span style="color:#75715e"># Create alex</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>clrs <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;yellow&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, <span style="color:#e6db74">&#34;purple&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> clrs:
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>color(c)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>forward(<span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>    alex<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">90</span>)
+</span></span><span style="display:flex;"><span>turtle<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>** Exercise 4.** Change the code above to draw a hexagon.</p>
 
 
 <footer class="footline">
@@ -1623,22 +1689,6 @@ This shows the exact steps and logic of how the <code>for</code> statement execu
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1878,7 +1928,7 @@ This shows the exact steps and logic of how the <code>for</code> statement execu
 			<a class="nav nav-prev" href="/pythonbook/chapter_03/s03/" title="More Turtles"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_03/s05/" title="Loopy Turtles" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_03/s06/" title="More Turtle Tricks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1888,16 +1938,16 @@ This shows the exact steps and logic of how the <code>for</code> statement execu
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/pythonbook/js/clipboard.min.js?1705191876"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.min.js?1705191876"></script>
-    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1705191876"></script>
-    <script src="/pythonbook/js/jquery.sticky.js?1705191876"></script>
-    <script src="/pythonbook/js/featherlight.min.js?1705191876"></script>
-    <script src="/pythonbook/js/highlight.pack.js?1705191876"></script>
+    <script src="/pythonbook/js/clipboard.min.js?1705442858"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1705442858"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1705442858"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1705442858"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1705442858"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1705442858"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1705191876"></script>
-    <script src="/pythonbook/js/learn.js?1705191876"></script>
-    <script src="/pythonbook/js/hugo-learn.js?1705191876"></script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1705442858"></script>
+    <script src="/pythonbook/js/learn.js?1705442858"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1705442858"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
