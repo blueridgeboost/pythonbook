@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
 
-    <title>Logical Operators - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <title>Extra Practice - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
 
     
     <link href="/pythonbook/css/nucleus.css?1706057685" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/pythonbook/chapter_04/s02/">
+  <body class="" data-url="/pythonbook/chapter_04/s08/">
     <nav id="sidebar" class="">
 
 
@@ -757,7 +757,7 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_04/s02/" title="Logical Operators" class="dd-item active">
+      <li data-nav-id="/pythonbook/chapter_04/s02/" title="Logical Operators" class="dd-item ">
         <a href="/pythonbook/chapter_04/s02/">
         Logical Operators
         
@@ -841,7 +841,7 @@
  
   
     
-      <li data-nav-id="/pythonbook/chapter_04/s08/" title="Extra Practice" class="dd-item ">
+      <li data-nav-id="/pythonbook/chapter_04/s08/" title="Extra Practice" class="dd-item active">
         <a href="/pythonbook/chapter_04/s08/">
         Extra Practice
         
@@ -1079,18 +1079,14 @@
                   <span class="links">
                  
                  
-                   Logical Operators
+                   Extra Practice
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#logical-operators">Logical operators</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1106,39 +1102,37 @@
           
             <h1>
               
-              Logical Operators
+              Extra Practice
             </h1>
           
 
         
 
 
-<h2 id="logical-operators">Logical operators</h2>
-<p>There are three <strong>logical operators</strong>,  <code>and</code>, <code>or</code>, and <code>not</code>,
-that allow us to build more complex
-Boolean expressions from simpler Boolean expressions. The
-semantics (meaning) of these operators is similar to their meaning in English.
-For example, <code>x &gt; 0 and x &lt; 10</code> evaluates to <code>True</code> only if <code>x</code> is greater than 0 <em>and</em>
-at the same time, x is less than 10.</p>
-<p><code>n % 2 == 0 or n % 3 == 0</code> is <code>True</code> if <em>either</em> of the conditions is <code>True</code>,
-that is if the number <code>n</code> is divisible by 2 <em>or</em> it is divisible by 3.  What do
-you think happens if <code>n</code> is divisible by both 2 and by 3 at the same time?
-Will the expression yield <code>True</code> or <code>False</code>?  Let&rsquo;s try it:</p>
-<pre tabindex="0"><code>n = 6
-print(n % 2 == 0 or n % 3 == 0)
-</code></pre><p>Finally, the <code>not</code> operator negates a Boolean value. For example, <code>not (3 &gt; 5)</code>
-is <code>True</code> because the expression <code>3&gt;5</code> evaluates to <code>False</code>.</p>
-<p>The expression on the left of the <code>or</code> operator is evaluated first: if the result is <code>True</code>,
-Python does not (and need not) evaluate the expression on the right. This is called <em>short-circuit evaluation</em>.
-Similarly, for the <code>and</code> operator, if the expression on the left yields <code>False</code>, Python does not
-evaluate the expression on the right.   In this way, there are no unnecessary evaluations.</p>
-<p><strong>Exercise 7.</strong></p>
-<p>Predict the value of the expressions below, and then check your answers using the Python Interpreter.</p>
-<p>a. <code>(3==6) and (4&lt;7)</code></p>
-<p>b. <code>(2&lt;3) and (3&lt;7)</code></p>
-<p>c. <code>(3==6) or (4&lt;7)</code></p>
-<p>d. <code>(2&lt;3) or (3&lt;7)</code></p>
-<p>e. <code>not (3&lt;7)</code></p>
+<p><strong>Exercise 14.</strong> A bunny leaves the forest and starts to run over the meadow at a constant speed <code>v1</code>. After a time <code>t0</code> a wolf appears at the edge of the forest and starts chasing the bunny at a constant speed <code>v1</code>. Write a program that displays either the time it takes the wolf to catch the bunny or <code>-1</code> if the wolf never catches the bunny.</p>
+<p><strong>Exercise 15.</strong> What is the output of the code below?</p>
+<pre tabindex="0"><code>a = 17
+b = 8
+a = a + b 
+b = a - b
+a = a-b
+print(a, b)
+</code></pre><p><strong>Exercise 16.</strong> What is the output of the code below?</p>
+<pre tabindex="0"><code>a = 1234
+b = a % 100
+a = a//100
+c = b*100 + a
+print(c)
+</code></pre><p><strong>Exercise 17.</strong> Which expressions are true if and only if <code>x</code> is a negative integer?</p>
+<p>a. <code>(x%2==1) and (x&lt;0)</code></p>
+<p>b. <code>(x%2!=0) or (x&lt;0)</code></p>
+<p>c. <code>not((x%2==0) or (x&gt;=0) )</code></p>
+<p>d. <code>not((x%2==0) and (x&gt;=0) )</code></p>
+<p><strong>Exercise 18.</strong> Which expressions are true if and only if <code>x</code> and <code>y</code> are consecutive positive integers?</p>
+<p>a. <code>x-y==1</code></p>
+<p>b. <code>(x==1) and (y==2)</code></p>
+<p>c. <code>(x-y == -1) and (y-x == 1)</code></p>
+<p>d. <code>(x-y==1) or (y-x==1)</code></p>
 
 
 <footer class="footline">
@@ -1644,26 +1638,6 @@ evaluate the expression on the right.   In this way, there are no unnecessary ev
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1723,6 +1697,23 @@ evaluate the expression on the right.   In this way, there are no unnecessary ev
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1730,6 +1721,9 @@ evaluate the expression on the right.   In this way, there are no unnecessary ev
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1863,10 +1857,10 @@ evaluate the expression on the right.   In this way, there are no unnecessary ev
 	 
 	 
 		
-			<a class="nav nav-prev" href="/pythonbook/chapter_04/s01/" title="Boolean values and expressions!"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/pythonbook/chapter_04/s07/" title="Logical opposites"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/pythonbook/chapter_04/s04/" title="Truth Tables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/pythonbook/chapter_06/" title="Loops and iterations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
