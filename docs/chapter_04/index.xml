@@ -6,56 +6,49 @@
     <description>Recent content in Conditionals on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blueridgeboost.com/pythonbook/chapter_04/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Boolean values and expressions!</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s01/</guid>
-      <description>Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean Algebra. This is the basis of all modern computer logic.
-In Python, the two Boolean values are True and False, and the Python type is bool. Remember, to find the type of a constant or variable use the function type. Execution of type(True) reports &amp;lt;class &amp;quot;bool&amp;quot;&amp;gt;</description>
+      <description>Boolean values and expressions A Boolean value is either true or false. It is named after the British mathematician, George Boole, who first formulated Boolean Algebra. This is the basis of all modern computer logic.&#xA;In Python, the two Boolean values are True and False, and the Python type is bool. Remember, to find the type of a constant or variable use the function type. Execution of type(True) reports &amp;lt;class &amp;quot;bool&amp;quot;&amp;gt;</description>
     </item>
     <item>
       <title>Logical Operators</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s02/</guid>
-      <description>Logical operators There are three logical operators, and, or, and not, that allow us to build more complex Boolean expressions from simpler Boolean expressions. The semantics (meaning) of these operators is similar to their meaning in English. For example, x &amp;gt; 0 and x &amp;lt; 10 evaluates to True only if x is greater than 0 and at the same time, x is less than 10.
-n % 2 == 0 or n % 3 == 0 is True if either of the conditions is True, that is if the number n is divisible by 2 or it is divisible by 3.</description>
+      <description>Logical operators There are three logical operators, and, or, and not, that allow us to build more complex Boolean expressions from simpler Boolean expressions. The semantics (meaning) of these operators is similar to their meaning in English. For example, x &amp;gt; 0 and x &amp;lt; 10 evaluates to True only if x is greater than 0 and at the same time, x is less than 10.&#xA;n % 2 == 0 or n % 3 == 0 is True if either of the conditions is True, that is if the number n is divisible by 2 or it is divisible by 3.</description>
     </item>
     <item>
       <title>Truth Tables</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s04/</guid>
-      <description>Truth Tables A truth table is a small table that allows us to list all the possible inputs, and to give the results for the logical operators. Because the and and or operators each have two operands, there are only four rows in a truth table that describes the semantics of and.
-aba and bFalseFalseFalseFalseTrueFalseTrueFalseFalseTrueTrueTrueIn a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
+      <description>Truth Tables A truth table is a small table that allows us to list all the possible inputs, and to give the results for the logical operators. Because the and and or operators each have two operands, there are only four rows in a truth table that describes the semantics of and.&#xA;a b a and b False False False False True False True False False True True True In a Truth Table, we sometimes use T and F as shorthand for the two Boolean values: here is the truth table describing or:</description>
     </item>
     <item>
       <title>Conditional Execution</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s05/</guid>
-      <description>Conditional execution To write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:
-x = 8if x % 2 == 0:print(str(x)+&amp;#34; is even.&amp;#34;)print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;)else:print(str(x)+&amp;#34; is odd.&amp;#34;)print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; +&amp;#34;always gives an odd result?</description>
+      <description>Conditional execution To write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:&#xA;x = 8 if x % 2 == 0: print(str(x)+&amp;#34; is even.&amp;#34;) print(&amp;#34;Did you know that 2 is the only even number that is prime?&amp;#34;) else: print(str(x)+&amp;#34; is odd.&amp;#34;) print(&amp;#34;Did you know that multiplying two odd numbers &amp;#34; + &amp;#34;always gives an odd result?</description>
     </item>
     <item>
       <title>Logical opposites</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s07/</guid>
-      <description>Logical opposites Each of the six relational operators has a logical opposite: for example, suppose we can get a driver’s licence when our age is greater or equal to 16, we can not get the driver’s licence when we are less than 16.
-Notice that the opposite of &amp;gt;= is &amp;lt;.
-operatorlogical opposite==!=!===&lt;&gt;=&lt;=&gt;&gt;&lt;=&gt;=&lt;Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
+      <description>Logical opposites Each of the six relational operators has a logical opposite: for example, suppose we can get a driver’s licence when our age is greater or equal to 16, we can not get the driver’s licence when we are less than 16.&#xA;Notice that the opposite of &amp;gt;= is &amp;lt;.&#xA;operator logical opposite == != != == &lt; &gt;= &lt;= &gt; &gt; &lt;= &gt;= &lt; Understanding these logical opposites allows us to sometimes get rid of not operators.</description>
     </item>
     <item>
       <title>Extra Practice</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_04/s08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_04/s08/</guid>
-      <description>Exercise 14. A bunny leaves the forest and starts to run over the meadow at a constant speed v1. After a time t0 a wolf appears at the edge of the forest and starts chasing the bunny at a constant speed v1. Write a program that displays either the time it takes the wolf to catch the bunny or -1 if the wolf never catches the bunny.
-Exercise 15. What is the output of the code below?</description>
+      <description>Exercise 14. A bunny leaves the forest and starts to run over the meadow at a constant speed v1. After a time t0 a wolf appears at the edge of the forest and starts chasing the bunny at a constant speed v1. Write a program that displays either the time it takes the wolf to catch the bunny or -1 if the wolf never catches the bunny.&#xA;Exercise 15. What is the output of the code below?</description>
     </item>
   </channel>
 </rss>

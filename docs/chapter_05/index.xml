@@ -6,102 +6,84 @@
     <description>Recent content in Iterations on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blueridgeboost.com/pythonbook/chapter_05/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Assignment</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s01/</guid>
-      <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
-airtime_remaining = 15print(airtime_remaining)airtime_remaining = 7print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.
-It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
+      <description>As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).&#xA;airtime_remaining = 15 print(airtime_remaining) airtime_remaining = 7 print(airtime_remaining) The first time airtime_remaining is printed, its value is 15, and the second time, its value is 7.&#xA;It is especially important to distinguish between an assignment statement and a Boolean expression that tests for equality.</description>
     </item>
     <item>
       <title>Updating variables</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s02/</guid>
-      <description>When an assignment statement is executed, First, the right-hand side expression that is the expression that comes after the assignment token is evaluated. The evaluation produces a value. Then the assignment is made, so that the variable on the left-hand side now refers to the new value.
-One of the most common forms of assignment is an update, where the new value of the variable depends on its old value. Deduct 40 cents from my airtime balance, or add one run to the scoreboard.</description>
+      <description>When an assignment statement is executed, First, the right-hand side expression that is the expression that comes after the assignment token is evaluated. The evaluation produces a value. Then the assignment is made, so that the variable on the left-hand side now refers to the new value.&#xA;One of the most common forms of assignment is an update, where the new value of the variable depends on its old value. Deduct 40 cents from my airtime balance, or add one run to the scoreboard.</description>
     </item>
     <item>
       <title>The for loop revisited</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s03/</guid>
-      <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:
-for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]:invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34;print(invitation) Running through all the items in a list is called traversing the list, or traversal.</description>
+      <description>Recall that the for loop processes each item in a list. Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter:&#xA;for f in [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]: invitation = &amp;#34;Hi &amp;#34; + f + &amp;#34;. Please come to my party on Saturday!&amp;#34; print(invitation) Running through all the items in a list is called traversing the list, or traversal.</description>
     </item>
     <item>
       <title>The while statement</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s04/</guid>
-      <description>Here is a fragment of code that demonstrates the use of the while statement:
-def sum_to(n):&amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34;current_sum = 0current_number = 1while current_number &amp;lt;= n:current_sum = current_sum + vcurrent_number = current_number + 1return ss# For your test suiteprint(sum_to(4))print(sum_to(1000)) You can almost read the while statement as if it were English. It means while current_number is less than or equal to n, continue executing the body of the loop.</description>
+      <description>Here is a fragment of code that demonstrates the use of the while statement:&#xA;def sum_to(n): &amp;#34;&amp;#34;&amp;#34; Return the sum of 1+2+3+...+n &amp;#34;&amp;#34;&amp;#34; current_sum = 0 current_number = 1 while current_number &amp;lt;= n: current_sum = current_sum + v current_number = current_number + 1 return ss # For your test suite print(sum_to(4)) print(sum_to(1000)) You can almost read the while statement as if it were English. It means while current_number is less than or equal to n, continue executing the body of the loop.</description>
     </item>
     <item>
       <title>The Collatz 3n &#43; 1 sequence</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s05/</guid>
-      <description>So why have two kinds of loops if for looks easier? This next example shows a case where we need the extra power that we get from the while loop.
-Let&amp;rsquo;s look at a simple sequence that has fascinated mathematicians for many years. The rule for creating the sequence is to start from some given n, and to generate the next term of the sequence from n, either by halving n (whenever n is even), or else by multiplying it by three and adding 1 (whenever n is odd).</description>
+      <description>So why have two kinds of loops if for looks easier? This next example shows a case where we need the extra power that we get from the while loop.&#xA;Let&amp;rsquo;s look at a simple sequence that has fascinated mathematicians for many years. The rule for creating the sequence is to start from some given n, and to generate the next term of the sequence from n, either by halving n (whenever n is even), or else by multiplying it by three and adding 1 (whenever n is odd).</description>
     </item>
     <item>
       <title>Choosing between for and while</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s06/</guid>
-      <description>Use a for loop if you know the maximum number of times that the body will execute. For example, if you are traversing a list of elements, you know that the maximum number of loop iterations is given by all the elements in the list. Or if you need to print the 12 times table, we know right away how many times the loop will need to run.
-So any problem like iterating a weather model for 1000 cycles, searching a given list of words, or finding all prime numbers up to 10000 suggest that a for loop is best.</description>
+      <description>Use a for loop if you know the maximum number of times that the body will execute. For example, if you are traversing a list of elements, you know that the maximum number of loop iterations is given by all the elements in the list. Or if you need to print the 12 times table, we know right away how many times the loop will need to run.&#xA;So any problem like iterating a weather model for 1000 cycles, searching a given list of words, or finding all prime numbers up to 10000 suggest that a for loop is best.</description>
     </item>
     <item>
       <title>Tracing a program</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s07/</guid>
-      <description>To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to trace the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed.
-To understand this process, we will trace the call to seq_3n_plus_1 from a previous section.</description>
+      <description>To write effective computer programs, and to build a good conceptual model of program execution, a programmer needs to develop the ability to trace the execution of a computer program. Tracing involves becoming the computer and following the flow of execution through a sample program run, recording the state of all variables and any output the program generates after each instruction is executed.&#xA;To understand this process, we will trace the call to seq_3n_plus_1 from a previous section.</description>
     </item>
     <item>
       <title>Counting Digits</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s08/</guid>
-      <description>The following function counts the number of decimal digits in a positive integer:
-def num_digits(n):count = 0while n != 0:count = count + 1n = n // 10return countprint(num_digits(731)) Trace the execution of this function call to convince yourself that it works.
-This function demonstrates an important pattern of computation called a counter. The variable count is initialized to 0 and then incremented each time the loop body is executed.</description>
+      <description>The following function counts the number of decimal digits in a positive integer:&#xA;def num_digits(n): count = 0 while n != 0: count = count + 1 n = n // 10 return count print(num_digits(731)) Trace the execution of this function call to convince yourself that it works.&#xA;This function demonstrates an important pattern of computation called a counter. The variable count is initialized to 0 and then incremented each time the loop body is executed.</description>
     </item>
     <item>
       <title>Abbreviated Assignment</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s09/</guid>
-      <description>Incrementing a variable is so common that Python provides an abbreviated syntax for it:
-count = 0print(count)count += 1print(count)count += 1print(count) count += 1 is an abreviation for count = count + 1 . We pronounce the operator as plus-equals.
-The increment value does not have to be 1:
-n = 2n += 5print(n) There are similar abbreviations for -=, *=, /=, //=, and %=:</description>
+      <description>Incrementing a variable is so common that Python provides an abbreviated syntax for it:&#xA;count = 0 print(count) count += 1 print(count) count += 1 print(count) count += 1 is an abreviation for count = count + 1 . We pronounce the operator as plus-equals.&#xA;The increment value does not have to be 1:&#xA;n = 2 n += 5 print(n) There are similar abbreviations for -=, *=, /=, //=, and %=:</description>
     </item>
     <item>
       <title>Break and Continue</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s10/</guid>
-      <description>The break statement The break statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the body:
-for i in [12, 16, 17, 24, 29]:if i % 2 == 1: # If the number is oddbreak # ... immediately exit the loopprint(i)print(&amp;#34;done&amp;#34;) The continue statement This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration.</description>
+      <description>The break statement The break statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the body:&#xA;for i in [12, 16, 17, 24, 29]: if i % 2 == 1: # If the number is odd break # ... immediately exit the loop print(i) print(&amp;#34;done&amp;#34;) The continue statement This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration.</description>
     </item>
     <item>
       <title>Exercises</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_05/s11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_05/s11/</guid>
-      <description>Exercise 1 Write a Python program that calculates the product of the elements of a list.
-Exercise 2 Write a Python program that calculates the sum of squares of the elements of a list.
-Exercise 3 Write a program to count how many odd numbers are in a list.
-Exercise 4 Write a program that sums up all the even numbers in a list.
-Exercise 5 Write a program that sums up all the negative numbers in a list.</description>
+      <description>Exercise 1 Write a Python program that calculates the product of the elements of a list.&#xA;Exercise 2 Write a Python program that calculates the sum of squares of the elements of a list.&#xA;Exercise 3 Write a program to count how many odd numbers are in a list.&#xA;Exercise 4 Write a program that sums up all the even numbers in a list.&#xA;Exercise 5 Write a program that sums up all the negative numbers in a list.</description>
     </item>
   </channel>
 </rss>
