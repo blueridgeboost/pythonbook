@@ -350,6 +350,64 @@ Exercise 4 Write a program that sums up all the even numbers in a list.
 Exercise 5 Write a program that sums up all the negative numbers in a list.</description>
     </item>
     <item>
+      <title>Tables</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s01/</guid>
+      <description>One of the things loops are good for is generating tables. Before computers were readily available, people had to calculate logarithms, sines and cosines, and other mathematical functions by hand. To make that easier, mathematics books contained long tables listing the values of these functions. Creating the tables was slow and boring, and they tended to be full of errors.
+When computers appeared on the scene, one of the initial reactions was, “This is great!</description>
+    </item>
+    <item>
+      <title>Two Dimensional Tables</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s02/</guid>
+      <description>A two-dimensional table is a table where you read the value at the intersection of a row and a column. A multiplication table is a good example. Let’s say you want to print a multiplication table for the values from 1 to 6.
+A good way to start is to write a loop that prints the multiples of 2, all on one line:
+for i in range(1, 7):print(2 * i, end=&amp;#34; &amp;#34;)print() Here we’ve used the range function, but made it start its sequence at 1.</description>
+    </item>
+    <item>
+      <title>Local Variables</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s03/</guid>
+      <description>Let&amp;rsquo;s start with the code from the end of the last section.
+def print_multiples(n):for i in range(1, 7):print(n * i, end=&amp;#34; &amp;#34;)print()def print_mult_table():for i in range(1, 7):print_multiples(i)print_mult_table() You might be wondering how we can use the same variable, i, in both print_multiples and print_mult_table. Doesn’t it cause problems when one of the functions changes the value of the variable?
+The answer is no, because the i in print_multiples and the i in print_mult_table are not the same variable.</description>
+    </item>
+    <item>
+      <title>Break</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s04/</guid>
+      <description>The break statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the body:
+for i in [12, 16, 17, 24, 29]:if i % 2 == 1: # If the number is oddbreak # ... immediately exit the loopprint(i)print(&amp;#34;done&amp;#34;) </description>
+    </item>
+    <item>
+      <title>Other flavors of loops</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s05/</guid>
+      <description>The pre-test loop is standard loop behavior.
+for and while loops do their tests at the start, before executing any part of the body. They’re called pre-test loops, because the test happens before (pre) the body. break and return are our tools for adapting this standard behavior.
+Sometimes we’d like to have the middle-test loop with the exit test in the middle of the body, rather than at the beginning or at the end.</description>
+    </item>
+    <item>
+      <title>The continue statement</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s06/</guid>
+      <description>The continue statement is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration. But the loop still carries on running for its remaining iterations:
+for i in [12, 16, 17, 24, 29, 30]:if i % 2 == 1: # If the number is oddcontinue # Don&amp;#39;t process itprint(i)print(&amp;#34;done&amp;#34;) The program prints:</description>
+    </item>
+    <item>
+      <title>Practice</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_06/s10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_06/s10/</guid>
+      <description> Write a Python program that generates a random number between 1 and 100. Then asks the user for a guess repeatedly. If the random number is greater than the guess, then the program prints a helpful message. The same happens if the number </description>
+    </item>
+    <item>
       <title>Function</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_07/s01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

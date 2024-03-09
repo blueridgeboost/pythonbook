@@ -6,6 +6,7 @@ chapter = true
 pre = "<b>6. </b>"
 +++
 
+<<<<<<< HEAD
 </div>
 <div class="section" id="tables">
 <span id="index-7"></span><h2>6.9. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
@@ -435,4 +436,7 @@ program, debug them in isolation, and then compose them into a whole.</li>
 and debug one, you can reuse it.</li>
 </ol>
 
+=======
+In this chapter we will expand our knowledge of loops and their applications. 
+>>>>>>> 7865238f5381febc1bfb7c948dc42b8b8b6321cf
 
