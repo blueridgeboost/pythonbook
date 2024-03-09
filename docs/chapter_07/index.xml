@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functions on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+    <link>https://blueridgeboost.com/pythonbook/chapter_07/</link>
+    <description>Recent content in Functions on How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 11:30:50 -0400</lastBuildDate>
+    <atom:link href="https://blueridgeboost.com/pythonbook/chapter_07/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Function</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s01/</guid>
+      <description>In Python, a function is a named sequence of statements that belong together. Their primary purpose is to help us organize programs into chunks that match how we think about the problem.
+The syntax for a function definition is:
+def NAME( PARAMETERS ):STATEMENTS We can make up any names we want for the functions we create, except that we cannot use a name that is a Python keyword, and the names must follow the rules for legal identifiers.</description>
+    </item>
+    <item>
+      <title>Functions call functions</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s02/</guid>
+      <description>Let’s assume now we want a function to draw a rectangle. We need to be able to call the function with different arguments for width and height. And, unlike the case of the square, we cannot repeat the same thing 4 times, because the four sides are not equal.
+So we eventually came up with this rather nice code that can draw a rectangle.
+def draw_rectangle(t, w, h):&amp;#34;&amp;#34;&amp;#34;Get turtle t to draw a rectangle of width w and height h.</description>
+    </item>
+    <item>
+      <title>Flow of execution</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s03/</guid>
+      <description>To ensure that a function is defined before its first use, we have to know the order in which statements are executed, which is called the flow of execution.
+Execution always begins at the first statement of the program. Statements are executed one at a time, in order from top to bottom.
+Function definitions do not alter the flow of execution of the program, but remember that statements inside the function are not executed until the function is called.</description>
+    </item>
+    <item>
+      <title>Functions that require arguments</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s04/</guid>
+      <description>Most functions require arguments: the arguments provide for generalization. For example, if we want to find the absolute value of a number, we have to indicate what the number is. Python has a built-in function for computing the absolute value:
+&amp;gt;&amp;gt;&amp;gt; abs(5)5&amp;gt;&amp;gt;&amp;gt; abs(-5)5 In this example, the arguments to the abs function are 5 and -5.
+Some functions take more than one argument. For example, the built-in function pow takes two arguments, the base and the exponent.</description>
+    </item>
+    <item>
+      <title>Functions that return values</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s05/</guid>
+      <description>All the functions in the previous section return values. Furthermore, functions like range, int, abs all return values that can be used to build more complex expressions.
+So an important difference between these functions and one like draw_square is that draw_square was not executed because we wanted it to compute a value — on the contrary, we wrote draw_square because we wanted it to execute a sequence of steps that caused the turtle to draw.</description>
+    </item>
+    <item>
+      <title>Variables and parameters are local</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s06/</guid>
+      <description>When we create a local variable inside a function, it only exists inside the function, and we cannot use it outside. For example, consider again this function:
+def final_amt(p, r, n, t):a = p * (1 + r/n) ** (n*t)return a If we try to use a, outside the function, we will get an error:
+Traceback (most recent call last):File &amp;#34;&amp;lt;pyshell#12&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt;aNameError: name &amp;#39;a&amp;#39; is not defined The variable a is local to final_amt, and is not visible outside the function.</description>
+    </item>
+    <item>
+      <title>Turtles Revisited</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s07/</guid>
+      <description>Now that we have fruitful functions, we can focus our attention on reorganizing our code so that it fits more nicely into our mental chunks. This process of rearrangement is called refactoring the code.
+Two things we will always want to do when working with turtles are to create the window for the turtle, and to create one or more turtles. For example, we could write some functions to make these tasks easier in the future:</description>
+    </item>
+    <item>
+      <title>Return values</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s08/</guid>
+      <description>The built-in functions we have used, such as abs, pow, int, max, and range, have produced results. Calling each of these functions generates a value, which we usually assign to a variable or use as part of an expression.
+biggest = max(3, 7, 2, 5)x = abs(3 - 11) + 10 We also wrote a function to return the final amount for a compound interest calculation.
+We are going to write more functions that return values, which we will call fruitful functions, for want of a better name.</description>
+    </item>
+    <item>
+      <title>Program development</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s09/</guid>
+      <description>At this point, you should be able to look at complete functions and tell what they do. Also, you have already written some small functions. As you write larger functions, you might start to have more difficulty, especially with runtime and semantic errors.
+To deal with increasingly complex programs, we are going to suggest a technique called incremental development. The goal of incremental development is to avoid long debugging sessions by adding and testing only a small amount of code at a time.</description>
+    </item>
+    <item>
+      <title>Practice</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_07/s10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_07/s10/</guid>
+      <description>Practice 1. Write a void (non-fruitful) function to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units. (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+Practice 2. Write a program to draw this. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it.</description>
+    </item>
+  </channel>
+</rss>

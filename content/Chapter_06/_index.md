@@ -6,7 +6,6 @@ chapter = true
 pre = "<b>6. </b>"
 +++
 
-
 </div>
 <div class="section" id="tables">
 <span id="index-7"></span><h2>6.9. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
