@@ -1,0 +1,3239 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="description" content="Learn Python at Blue Ridge Boost!">
+<meta name="author" content="Nora Evans and David Evans">
+
+    <link rel="icon" href="/pythonbook/images/favicon.png" type="image/png">
+
+    <title>The ``in`` and ``not in`` operators - How to Think Like a Computer Scientist: Learning with Python 3 (Blue Ridge Boost Edition)</title>
+
+    
+    <link href="/pythonbook/css/nucleus.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/fontawesome-all.min.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/hybrid.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/featherlight.min.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/perfect-scrollbar.min.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/auto-complete.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/atom-one-dark-reasonable.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/theme.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/tabs.css?1712351861" rel="stylesheet">
+    <link href="/pythonbook/css/hugo-theme.css?1712351861" rel="stylesheet">
+    
+    <link href="/pythonbook/css/theme-blue.css?1712351861" rel="stylesheet">
+    
+    
+
+    <script src="/pythonbook/js/jquery-3.3.1.min.js?1712351861"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/pythonbook/chapter_08/s07/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<p></p>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/pythonbook/js/lunr.min.js?1712351861"></script>
+<script type="text/javascript" src="/pythonbook/js/auto-complete.js?1712351861"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/blueridgeboost.com\/pythonbook";
+    
+</script>
+<script type="text/javascript" src="/pythonbook/js/search.js?1712351861"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/pythonbook'>
+            <i class='fas fa-home'></i> Home
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_00/" title="Front Matter" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_00/">
+          <b>0. </b>Front Matter
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/copyright/" title="Copyright Notice" class="dd-item ">
+        <a href="/pythonbook/chapter_00/copyright/">
+        Copyright Notice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/foreword/" title="Foreword" class="dd-item ">
+        <a href="/pythonbook/chapter_00/foreword/">
+        Foreword
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/preface/" title="Preface" class="dd-item ">
+        <a href="/pythonbook/chapter_00/preface/">
+        Preface
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_00/contrib/" title="Contributor List" class="dd-item ">
+        <a href="/pythonbook/chapter_00/contrib/">
+        Contributor List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_01/" title="The Way of the Program" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_01/">
+          <b>1. </b>The Way of the Program
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s01/" title="Formal and natural languages" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s01/">
+        Formal and natural languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_01/s02/" title="Programs" class="dd-item ">
+        <a href="/pythonbook/chapter_01/s02/">
+        Programs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_02/" title="Variables, expressions and statements" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_02/">
+          <b>2. </b>Variables, expressions and statements
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s01/" title="Values and data types" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s01/">
+        Values and data types
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s02/" title="Variables" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s02/">
+        Variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s03/" title="Variable names and keywords" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s03/">
+        Variable names and keywords
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s05/" title="Evaluating expressions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s05/">
+        Evaluating expressions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s06/" title="Operators and operands" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s06/">
+        Operators and operands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s07/" title="Type converter functions" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s07/">
+        Type converter functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s08/" title="Order of operations" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s08/">
+        Order of operations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s09/" title="Operations on strings" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s09/">
+        Operations on strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s10/" title="Input" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s10/">
+        Input
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s11/" title="Composition" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s11/">
+        Composition
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_02/s12/" title="More Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_02/s12/">
+        More Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_03/" title="Draw with turtles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_03/">
+          <b>3. </b>Draw with turtles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s01/" title="Hello Turtles!" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s01/">
+        Hello Turtles!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s02/" title="Color" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s02/">
+        Color
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s03/" title="More Turtles" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s03/">
+        More Turtles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s04/" title="Loops" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s04/">
+        Loops
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s06/" title="More Turtle Tricks" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s06/">
+        More Turtle Tricks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_03/s07/" title="Drawing a Bar Graph" class="dd-item ">
+        <a href="/pythonbook/chapter_03/s07/">
+        Drawing a Bar Graph
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_04/" title="Conditionals" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_04/">
+          <b>4. </b>Conditionals
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s01/" title="Boolean values and expressions!" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s01/">
+        Boolean values and expressions!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s02/" title="Logical Operators" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s02/">
+        Logical Operators
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s04/" title="Truth Tables" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s04/">
+        Truth Tables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s05/" title="Conditional Execution" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s05/">
+        Conditional Execution
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s07/" title="Logical opposites" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s07/">
+        Logical opposites
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_04/s08/" title="Extra Practice" class="dd-item ">
+        <a href="/pythonbook/chapter_04/s08/">
+        Extra Practice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_05/" title="Conditional Loops" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_05/">
+          <b>5. </b>Conditional Loops
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s01/" title="Assignment" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s01/">
+        Assignment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s02/" title="Updating variables" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s02/">
+        Updating variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s03/" title="The for loop revisited" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s03/">
+        The for loop revisited
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s04/" title="The while statement" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s04/">
+        The while statement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s05/" title="The Collatz 3n &#43; 1 sequence" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s05/">
+        The Collatz 3n &#43; 1 sequence
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s06/" title="Choosing between for and while" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s06/">
+        Choosing between for and while
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s07/" title="Tracing a program" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s07/">
+        Tracing a program
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s08/" title="Counting Digits" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s08/">
+        Counting Digits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s09/" title="Abbreviated Assignment" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s09/">
+        Abbreviated Assignment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s10/" title="Break and Continue" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s10/">
+        Break and Continue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_05/s11/" title="Exercises" class="dd-item ">
+        <a href="/pythonbook/chapter_05/s11/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_06/" title="More on Loops" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_06/">
+          <b>6. </b>More on Loops
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s01/" title="Tables" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s01/">
+        Tables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s02/" title="Two Dimensional Tables" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s02/">
+        Two Dimensional Tables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s03/" title="Local Variables" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s03/">
+        Local Variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s04/" title="Break" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s04/">
+        Break
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s05/" title="Other flavors of loops" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s05/">
+        Other flavors of loops
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s06/" title="The continue statement" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s06/">
+        The continue statement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_06/s10/" title="Practice" class="dd-item ">
+        <a href="/pythonbook/chapter_06/s10/">
+        Practice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_07/" title="Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pythonbook/chapter_07/">
+          <b>7. </b>Functions
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s01/" title="Function" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s01/">
+        Function
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s02/" title="Functions call functions" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s02/">
+        Functions call functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s03/" title="Flow of execution" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s03/">
+        Flow of execution
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s04/" title="Functions that require arguments" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s04/">
+        Functions that require arguments
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s05/" title="Functions that return values" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s05/">
+        Functions that return values
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s06/" title="Variables and parameters are local" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s06/">
+        Variables and parameters are local
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s07/" title="Turtles Revisited" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s07/">
+        Turtles Revisited
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s08/" title="Return values" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s08/">
+        Return values
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s09/" title="Program development" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s09/">
+        Program development
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_07/s10/" title="Practice" class="dd-item ">
+        <a href="/pythonbook/chapter_07/s10/">
+        Practice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pythonbook/chapter_08/" title="Strings" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/pythonbook/chapter_08/">
+          <b>8. </b>Strings
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s01/" title="Working with strings as single things" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s01/">
+        Working with strings as single things
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s02/" title="Working with the parts of a string" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s02/">
+        Working with the parts of a string
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s03/" title="Length" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s03/">
+        Length
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s04/" title="Slices" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s04/">
+        Slices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s05/" title="String comparison" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s05/">
+        String comparison
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s06/" title="Strings are immutable" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s06/">
+        Strings are immutable
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s07/" title="The ``in`` and ``not in`` operators" class="dd-item active">
+        <a href="/pythonbook/chapter_08/s07/">
+        The ``in`` and ``not in`` operators
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s08/" title="Looping and counting" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s08/">
+        Looping and counting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s09/" title="Built-in methods" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s09/">
+        Built-in methods
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pythonbook/chapter_08/s10/" title="Practice" class="dd-item ">
+        <a href="/pythonbook/chapter_08/s10/">
+        Practice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   The ``in`` and ``not in`` operators
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-find-function">A <code>find</code> function</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              The ``in`` and ``not in`` operators
+            </h1>
+          
+
+        
+
+
+<p>The <code>in</code> operator tests for membership. When both of the arguments to <code>in</code>
+are strings, <code>in</code> checks whether the left argument is a substring of the right
+argument.</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; &#34;p&#34; in &#34;apple&#34;
+True
+&gt;&gt;&gt; &#34;i&#34; in &#34;apple&#34;
+False
+&gt;&gt;&gt; &#34;ap&#34; in &#34;apple&#34;
+True
+&gt;&gt;&gt; &#34;pa&#34; in &#34;apple&#34;
+False
+</code></pre><p>Note that a string is a substring of itself, and the empty string is a
+substring of any other string. (Also note that computer scientists
+like to think about these edge cases quite carefully!)</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; &#34;a&#34; in &#34;a&#34;
+True
+&gt;&gt;&gt; &#34;apple&#34; in &#34;apple&#34;
+True
+&gt;&gt;&gt; &#34;&#34; in &#34;a&#34;
+True
+&gt;&gt;&gt; &#34;&#34; in &#34;apple&#34;
+True
+</code></pre><p>The <code>not in</code> operator returns the logical opposite results of <code>in</code>:</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; &#34;x&#34; not in &#34;apple&#34;
+True
+</code></pre><p>Combining the <code>in</code> operator with string concatenation using <code>+</code>, we can
+write a function that removes all the vowels from a string:</p>
+<pre tabindex="0"><code>def remove_vowels(s):
+    vowels = &#34;aeiouAEIOU&#34;
+    s_sans_vowels = &#34;&#34;
+    for x in s:
+        if x not in vowels:
+            s_sans_vowels += x
+    return s_sans_vowels 
+           
+test(remove_vowels(&#34;compsci&#34;) == &#34;cmpsc&#34;)
+test(remove_vowels(&#34;aAbEefIijOopUus&#34;) == &#34;bfjps&#34;)
+</code></pre><h2 id="a-find-function">A <code>find</code> function</h2>
+<p>What does the following function do?</p>
+<pre tabindex="0"><code>def find(strng, ch):
+    &#34;&#34;&#34;
+    Find and return the index of ch in strng.  
+    Return -1 if ch does not occur in strng.
+    &#34;&#34;&#34;
+    ix = 0
+    while ix &lt; len(strng):
+        if strng[ix] == ch:
+            return ix
+        ix += 1
+    return -1
+            
+test(find(&#34;Compsci&#34;, &#34;p&#34;) == 3)
+test(find(&#34;Compsci&#34;, &#34;C&#34;) == 0)
+test(find(&#34;Compsci&#34;, &#34;i&#34;) == 6)
+test(find(&#34;Compsci&#34;, &#34;x&#34;) == -1)
+</code></pre><p>In a sense, <code>find</code> is the opposite of the indexing operator. Instead of taking
+an index and extracting the corresponding character, it takes a character and
+finds the index where that character appears. If the character is not found,
+the function returns <code>-1</code>.</p>
+<p>This is another example where we see a <code>return</code> statement inside a loop.
+If <code>strng[ix] == ch</code>, the function returns immediately, breaking out of
+the loop prematurely.</p>
+<p>If the character doesn&rsquo;t appear in the string, then the program exits the loop
+normally and returns <code>-1</code>.</p>
+<p>This pattern of computation is sometimes called a <strong>eureka traversal</strong> or
+<strong>short-circuit evaluation</strong>,  because as soon as we find what we are looking for,
+we can cry &ldquo;Eureka!&rdquo;, take the short-circuit, and stop looking.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/pythonbook/chapter_08/s06/" title="Strings are immutable"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/pythonbook/chapter_08/s08/" title="Looping and counting" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/pythonbook/js/clipboard.min.js?1712351861"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.min.js?1712351861"></script>
+    <script src="/pythonbook/js/perfect-scrollbar.jquery.min.js?1712351861"></script>
+    <script src="/pythonbook/js/jquery.sticky.js?1712351861"></script>
+    <script src="/pythonbook/js/featherlight.min.js?1712351861"></script>
+    <script src="/pythonbook/js/highlight.pack.js?1712351861"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/pythonbook/js/modernizr.custom-3.6.0.js?1712351861"></script>
+    <script src="/pythonbook/js/learn.js?1712351861"></script>
+    <script src="/pythonbook/js/hugo-learn.js?1712351861"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

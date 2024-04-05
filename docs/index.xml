@@ -417,6 +417,15 @@ The syntax for a function definition is:
 def NAME( PARAMETERS ):STATEMENTS We can make up any names we want for the functions we create, except that we cannot use a name that is a Python keyword, and the names must follow the rules for legal identifiers.</description>
     </item>
     <item>
+      <title>Working with strings as single things</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s01/</guid>
+      <description>We previously saw that each turtle instance has attributes and methods that can be applied to the instance. For example, we could set the turtle&amp;rsquo;s color, and we wrote tess.turn(90).
+Just like a turtle, a string is also an object. So each string instance has attributes and methods.
+&amp;gt;&amp;gt;&amp;gt; ss = &amp;#34;Hello, World!&amp;#34;&amp;gt;&amp;gt;&amp;gt; tt = ss.upper()&amp;gt;&amp;gt;&amp;gt; tt&amp;#39;HELLO, WORLD!&amp;#39; upper is a method that can be invoked on any string object to create a new string, in which all the characters are in uppercase.</description>
+    </item>
+    <item>
       <title>Functions call functions</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_07/s02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -424,6 +433,15 @@ def NAME( PARAMETERS ):STATEMENTS We can make up any names we want for the func
       <description>Let’s assume now we want a function to draw a rectangle. We need to be able to call the function with different arguments for width and height. And, unlike the case of the square, we cannot repeat the same thing 4 times, because the four sides are not equal.
 So we eventually came up with this rather nice code that can draw a rectangle.
 def draw_rectangle(t, w, h):&amp;#34;&amp;#34;&amp;#34;Get turtle t to draw a rectangle of width w and height h.</description>
+    </item>
+    <item>
+      <title>Working with the parts of a string</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s02/</guid>
+      <description>The indexing operator (Python uses square brackets to enclose the index) selects a single character substring from a string:
+&amp;gt;&amp;gt;&amp;gt; fruit = &amp;#34;banana&amp;#34;&amp;gt;&amp;gt;&amp;gt; m = fruit[1]&amp;gt;&amp;gt;&amp;gt; print(m) The expression fruit[1] selects character number 1 from fruit, and creates a new string containing just this one character. The variable m refers to the result. When we display m, we could get a surprise.
+Computer scientists always start counting from zero!</description>
     </item>
     <item>
       <title>Flow of execution</title>
@@ -435,6 +453,15 @@ Execution always begins at the first statement of the program. Statements are ex
 Function definitions do not alter the flow of execution of the program, but remember that statements inside the function are not executed until the function is called.</description>
     </item>
     <item>
+      <title>Length</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s03/</guid>
+      <description>The len function, when applied to a string, returns the number of characters in a string:
+&amp;gt;&amp;gt;&amp;gt; fruit = &amp;#34;banana&amp;#34;&amp;gt;&amp;gt;&amp;gt; len(fruit)6 To get the last letter of a string, you might be tempted to try something like this:
+sz = len(fruit)last = fruit[sz] # ERROR! That won&amp;rsquo;t work. It causes the runtime error IndexError: string index out of range. The reason is that there is no character at index position 6 in &amp;quot;banana&amp;quot;.</description>
+    </item>
+    <item>
       <title>Functions that require arguments</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_07/s04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -444,12 +471,38 @@ Function definitions do not alter the flow of execution of the program, but reme
 Some functions take more than one argument. For example, the built-in function pow takes two arguments, the base and the exponent.</description>
     </item>
     <item>
+      <title>Slices</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s04/</guid>
+      <description>A substring of a string is obtained by taking a slice. Similarly, we can slice a list to refer to some sublist of the items in the list:
+&amp;gt;&amp;gt;&amp;gt; s = &amp;#34;Pirates of the Caribbean&amp;#34;&amp;gt;&amp;gt;&amp;gt; print(s[0:7])Pirates&amp;gt;&amp;gt;&amp;gt; print(s[11:14])the&amp;gt;&amp;gt;&amp;gt; print(s[15:24])Caribbean&amp;gt;&amp;gt;&amp;gt; friends = [&amp;#34;Joe&amp;#34;, &amp;#34;Zoe&amp;#34;, &amp;#34;Brad&amp;#34;, &amp;#34;Angelina&amp;#34;, &amp;#34;Zuki&amp;#34;, &amp;#34;Thandi&amp;#34;, &amp;#34;Paris&amp;#34;]&amp;gt;&amp;gt;&amp;gt; print(friends[2:4])[&amp;#39;Brad&amp;#39;, &amp;#39;Angelina&amp;#39;] The operator [n:m] returns the part of the string from the n&amp;rsquo;th character to the m&amp;rsquo;th character, including the first but excluding the last.</description>
+    </item>
+    <item>
+      <title>String comparison</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s05/</guid>
+      <description>The comparison operators work on strings. To see if two strings are equal:
+if word == &amp;#34;banana&amp;#34;:print(&amp;#34;Yes, we have no bananas!&amp;#34;) Other comparison operations are useful for putting words in lexicographical order:
+if word &amp;lt; &amp;#34;banana&amp;#34;:print(&amp;#34;Your word, &amp;#34; + word + &amp;#34;, comes before banana.&amp;#34;)elif word &amp;gt; &amp;#34;banana&amp;#34;:print(&amp;#34;Your word, &amp;#34; + word + &amp;#34;, comes after banana.&amp;#34;)else:print(&amp;#34;Yes, we have no bananas!&amp;#34;) This is similar to the alphabetical order you would use with a dictionary, except that all the uppercase letters come before all the lowercase letters.</description>
+    </item>
+    <item>
       <title>Functions that return values</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_07/s05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_07/s05/</guid>
       <description>All the functions in the previous section return values. Furthermore, functions like range, int, abs all return values that can be used to build more complex expressions.
 So an important difference between these functions and one like draw_square is that draw_square was not executed because we wanted it to compute a value — on the contrary, we wrote draw_square because we wanted it to execute a sequence of steps that caused the turtle to draw.</description>
+    </item>
+    <item>
+      <title>Strings are immutable</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s06/</guid>
+      <description>It is tempting to use the [] operator on the left side of an assignment, to change a character in a string. For example:
+greeting = &amp;#34;Hello, world!&amp;#34;greeting[0] = &amp;#39;J&amp;#39; # ERROR!print(greeting) Instead of producing the output Jello, world!, this code produces the runtime error TypeError: &#39;str&#39; object does not support item assignment.
+Strings are immutable, which means you can&amp;rsquo;t change an existing string. The best you can do is create a new string that is a variation on the original:</description>
     </item>
     <item>
       <title>Variables and parameters are local</title>
@@ -461,12 +514,30 @@ def final_amt(p, r, n, t):a = p * (1 + r/n) ** (n*t)return a If we try to use 
 Traceback (most recent call last):File &amp;#34;&amp;lt;pyshell#12&amp;gt;&amp;#34;, line 1, in &amp;lt;module&amp;gt;aNameError: name &amp;#39;a&amp;#39; is not defined The variable a is local to final_amt, and is not visible outside the function.</description>
     </item>
     <item>
+      <title>The ``in`` and ``not in`` operators</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s07/</guid>
+      <description>The in operator tests for membership. When both of the arguments to in are strings, in checks whether the left argument is a substring of the right argument.
+&amp;gt;&amp;gt;&amp;gt; &amp;#34;p&amp;#34; in &amp;#34;apple&amp;#34;True&amp;gt;&amp;gt;&amp;gt; &amp;#34;i&amp;#34; in &amp;#34;apple&amp;#34;False&amp;gt;&amp;gt;&amp;gt; &amp;#34;ap&amp;#34; in &amp;#34;apple&amp;#34;True&amp;gt;&amp;gt;&amp;gt; &amp;#34;pa&amp;#34; in &amp;#34;apple&amp;#34;False Note that a string is a substring of itself, and the empty string is a substring of any other string. (Also note that computer scientists like to think about these edge cases quite carefully!</description>
+    </item>
+    <item>
       <title>Turtles Revisited</title>
       <link>https://blueridgeboost.com/pythonbook/chapter_07/s07/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blueridgeboost.com/pythonbook/chapter_07/s07/</guid>
       <description>Now that we have fruitful functions, we can focus our attention on reorganizing our code so that it fits more nicely into our mental chunks. This process of rearrangement is called refactoring the code.
 Two things we will always want to do when working with turtles are to create the window for the turtle, and to create one or more turtles. For example, we could write some functions to make these tasks easier in the future:</description>
+    </item>
+    <item>
+      <title>Looping and counting</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s08/</guid>
+      <description>The following program counts the number of times the letter a appears in a string, and is another example of the counter pattern introduced in :ref:counting:
+.. sourcecode:: python3:linenos:def count_a(text): count = 0for c in text:if c == &amp;quot;a&amp;quot;:count += 1return(count)test(count_a(&amp;quot;banana&amp;quot;) == 3) .. index:: optional parameter, default value, parameter; optional
+.. _optional_parameters:
+Optional parameters To find the locations of the second or third occurrence of a character in a string, we can modify the find function, adding a third parameter for the starting position in the search string:</description>
     </item>
     <item>
       <title>Return values</title>
@@ -476,6 +547,14 @@ Two things we will always want to do when working with turtles are to create the
       <description>The built-in functions we have used, such as abs, pow, int, max, and range, have produced results. Calling each of these functions generates a value, which we usually assign to a variable or use as part of an expression.
 biggest = max(3, 7, 2, 5)x = abs(3 - 11) + 10 We also wrote a function to return the final amount for a compound interest calculation.
 We are going to write more functions that return values, which we will call fruitful functions, for want of a better name.</description>
+    </item>
+    <item>
+      <title>Built-in methods</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s09/</guid>
+      <description>The built-in find method Now that we&amp;rsquo;ve done all this work to write a powerful find function, we can reveal that strings already have their own built-in find method. It can do everything that our code can do, and more!
+test(ss.find(&amp;#34;s&amp;#34;) == 7)test(ss.find(&amp;#34;s&amp;#34;, 7) == 7)test(ss.find(&amp;#34;s&amp;#34;, 8) == 13)test(ss.find(&amp;#34;s&amp;#34;, 8, 13) == -1)test(ss.find(&amp;#34;.&amp;#34;) == len(ss)-1) The built-in find method is more general than our version. It can find substrings, not just single characters:</description>
     </item>
     <item>
       <title>Program development</title>
@@ -492,6 +571,16 @@ To deal with increasingly complex programs, we are going to suggest a technique 
       <guid>https://blueridgeboost.com/pythonbook/chapter_07/s10/</guid>
       <description>Practice 1. Write a void (non-fruitful) function to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units. (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
 Practice 2. Write a program to draw this. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it.</description>
+    </item>
+    <item>
+      <title>Practice</title>
+      <link>https://blueridgeboost.com/pythonbook/chapter_08/s10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blueridgeboost.com/pythonbook/chapter_08/s10/</guid>
+      <description>Practice 1. What is the result of each of the following:
+&amp;gt;&amp;gt;&amp;gt; &amp;#34;Python&amp;#34;[1]&amp;gt;&amp;gt;&amp;gt; &amp;#34;Strings are sequences of characters.&amp;#34;[5]&amp;gt;&amp;gt;&amp;gt; len(&amp;#34;wonderful&amp;#34;)&amp;gt;&amp;gt;&amp;gt; &amp;#34;Mystery&amp;#34;[:4]&amp;gt;&amp;gt;&amp;gt; &amp;#34;p&amp;#34; in &amp;#34;Pineapple&amp;#34;&amp;gt;&amp;gt;&amp;gt; &amp;#34;apple&amp;#34; in &amp;#34;Pineapple&amp;#34;&amp;gt;&amp;gt;&amp;gt; &amp;#34;pear&amp;#34; not in &amp;#34;Pineapple&amp;#34;&amp;gt;&amp;gt;&amp;gt; &amp;#34;apple&amp;#34; &amp;gt; &amp;#34;pineapple&amp;#34;&amp;gt;&amp;gt;&amp;gt; &amp;#34;pineapple&amp;#34; &amp;lt; &amp;#34;Peach&amp;#34; Practice 2. Modify:
+prefixes = &amp;#34;JKLMNOPQ&amp;#34;suffix = &amp;#34;ack&amp;#34;for letter in prefixes:print(letter + suffix) so that Ouack and Quack are spelled correctly.
+Practice 3. Encapsulate</description>
     </item>
   </channel>
 </rss>
